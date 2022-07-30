@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		
+			
+  <meta charset="utf-8">
+
+
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+
+  <title>404 error</title>
+  <meta name="description" content="This page cannot be found">
+  <meta name="keywords" content>
+      
+                  <link rel="alternate" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=pagenotfound&amp;id_lang=1" hreflang="en-us">
+                  <link rel="alternate" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=pagenotfound&amp;id_lang=3" hreflang="fr-fr">
+                  <link rel="alternate" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=pagenotfound&amp;id_lang=4" hreflang="es-es">
+                  <link rel="alternate" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=pagenotfound&amp;id_lang=5" hreflang="de-de">
+                  <link rel="alternate" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=pagenotfound&amp;id_lang=6" hreflang="it-it">
+                  <link rel="alternate" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=pagenotfound&amp;id_lang=7" hreflang="pl-pl">
+                  <link rel="alternate" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=pagenotfound&amp;id_lang=8" hreflang="nl-nl">
+                  <link rel="alternate" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=pagenotfound&amp;id_lang=9" hreflang="ru-ru">
+                  <link rel="alternate" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=pagenotfound&amp;id_lang=10" hreflang="ar-sa">
+        
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="../favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+
+<!-- Codezeel added -->
+<link href="//fonts.googleapis.com/css?family=Heebo:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../css/theme.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/font-awesome.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/front.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/myprestacomments.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/front_1.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/psblog.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/lightbox.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/jquery.ui.theme.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/jquery.fancybox.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/cz_verticalmenu.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/custom.css" type="text/css" media="all">
+
+
+
+
+  
+
+  <script type="text/javascript">
+        var buttoncompare_title_add = "Add to Compare";
+        var buttoncompare_title_remove = "Remove from Compare";
+        var buttonwishlist_title_add = "Add to Wishlist";
+        var buttonwishlist_title_remove = "Remove from WishList";
+        var comparator_max_item = 3;
+        var compared_products = [];
+        var isLogged = false;
+        var prestashop = {"cart":{"products":[],"totals":{"total":{"type":"total","label":"Total","amount":0,"value":"\u20ac0.00"},"total_including_tax":{"type":"total","label":"Total (tax incl.)","amount":0,"value":"\u20ac0.00"},"total_excluding_tax":{"type":"total","label":"Total (tax excl.)","amount":0,"value":"\u20ac0.00"}},"subtotals":{"products":{"type":"products","label":"Subtotal","amount":0,"value":"\u20ac0.00"},"discounts":null,"shipping":{"type":"shipping","label":"Shipping","amount":0,"value":"Free"},"tax":null},"products_count":0,"summary_string":"0 items","vouchers":{"allowed":0,"added":[]},"discounts":[],"minimalPurchase":0,"minimalPurchaseRequired":""},"currency":{"name":"Euro","iso_code":"EUR","iso_code_num":"978","sign":"\u20ac"},"customer":{"lastname":null,"firstname":null,"email":null,"birthday":null,"newsletter":null,"newsletter_date_add":null,"optin":null,"website":null,"company":null,"siret":null,"ape":null,"is_logged":false,"gender":{"type":null,"name":null},"addresses":[]},"language":{"name":"English (English)","iso_code":"en","locale":"en-US","language_code":"en-us","is_rtl":"0","date_format_lite":"m\/d\/Y","date_format_full":"m\/d\/Y H:i:s","id":1},"page":{"title":"The page you are looking for was not found.","canonical":null,"meta":{"title":"404 error","description":"This page cannot be found","keywords":"","robots":"index"},"page_name":"pagenotfound","body_classes":{"lang-en":true,"lang-rtl":false,"country-DE":true,"currency-EUR":true,"layout-full-width":true,"page-pagenotfound":true,"tax-display-enabled":true},"admin_notifications":[]},"shop":{"name":"Elocart - Furniture Store","logo":"\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/demo-store-logo-1626677799.jpg","stores_icon":"\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/logo_stores.png","favicon":"\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/favicon.ico"},"urls":{"base_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/","current_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/modules\/czcouponpop\/views\/css\/fonts\/UTM%20BanqueB.ttf","shop_domain_url":"https:\/\/demo.codezeel.com","img_ps_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/","img_cat_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/c\/","img_lang_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/l\/","img_prod_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/p\/","img_manu_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/m\/","img_sup_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/su\/","img_ship_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/s\/","img_store_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/st\/","img_col_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/co\/","img_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/themes\/Elocart_Furniture\/assets\/img\/","css_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/themes\/Elocart_Furniture\/assets\/css\/","js_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/themes\/Elocart_Furniture\/assets\/js\/","pic_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/upload\/","pages":{"address":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=address","addresses":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=addresses","authentication":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=authentication","cart":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=cart","category":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=category","cms":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=cms","contact":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=contact","discount":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=discount","guest_tracking":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=guest-tracking","history":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=history","identity":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=identity","index":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php","my_account":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=my-account","order_confirmation":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=order-confirmation","order_detail":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=order-detail","order_follow":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=order-follow","order":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=order","order_return":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=order-return","order_slip":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=order-slip","pagenotfound":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=pagenotfound","password":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=password","pdf_invoice":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=pdf-invoice","pdf_order_return":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=pdf-order-return","pdf_order_slip":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=pdf-order-slip","prices_drop":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=prices-drop","product":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=product","search":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=search","sitemap":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=sitemap","stores":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=stores","supplier":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=supplier","register":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=authentication&create_account=1","order_login":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=order&login=1"},"alternative_langs":{"en-us":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=pagenotfound&id_lang=1","fr-fr":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=pagenotfound&id_lang=3","es-es":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=pagenotfound&id_lang=4","de-de":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=pagenotfound&id_lang=5","it-it":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=pagenotfound&id_lang=6","pl-pl":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=pagenotfound&id_lang=7","nl-nl":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=pagenotfound&id_lang=8","ru-ru":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=pagenotfound&id_lang=9","ar-sa":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=pagenotfound&id_lang=10"},"theme_assets":"\/prestashop\/PRS17\/PRS170411\/PRS03\/themes\/Elocart_Furniture\/assets\/","actions":{"logout":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?mylogout="},"no_picture_image":{"bySize":{"cart_default":{"url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/p\/en-default-cart_default.jpg","width":83,"height":89},"small_default":{"url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/p\/en-default-small_default.jpg","width":83,"height":89},"home_default":{"url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/p\/en-default-home_default.jpg","width":214,"height":230},"medium_default":{"url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/p\/en-default-medium_default.jpg","width":498,"height":535},"large_default":{"url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/p\/en-default-large_default.jpg","width":930,"height":1000}},"small":{"url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/p\/en-default-cart_default.jpg","width":83,"height":89},"medium":{"url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/p\/en-default-home_default.jpg","width":214,"height":230},"large":{"url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/p\/en-default-large_default.jpg","width":930,"height":1000},"legend":""}},"configuration":{"display_taxes_label":true,"display_prices_tax_incl":true,"is_catalog":false,"show_prices":true,"opt_in":{"partner":true},"quantity_discount":{"type":"discount","label":"Discount"},"voucher_enabled":0,"return_enabled":0},"field_required":[],"breadcrumb":{"links":[{"title":"Home","url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php"}],"count":1},"link":{"protocol_link":"https:\/\/","protocol_content":"https:\/\/"},"time":1657994043,"static_token":"8bd9f42887793a736c2d38fd8a0dceff","token":"cac4ef315d3af2a8cf00c82ec4467ea3"};
+        var productcompare_add = "The product has been added to list compare";
+        var productcompare_max_item = "You cannot add more than 3 product(s) to the product comparison";
+        var productcompare_remove = "The product was successfully removed from list compare";
+        var productcompare_url = "https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?fc=module&module=stfeature&controller=productscompare&id_lang=1";
+        var productcompare_viewlistcompare = "View list compare";
+        var psr_icon_color = "#F19D76";
+        var wishlist_add = "The product was successfully added to your wishlist";
+        var wishlist_cancel_txt = "Cancel";
+        var wishlist_confirm_del_txt = "Delete selected item?";
+        var wishlist_del_default_txt = "Cannot delete default wishlist";
+        var wishlist_email_txt = "Email";
+        var wishlist_loggin_required = "You must be logged in to manage your wishlist";
+        var wishlist_ok_txt = "Ok";
+        var wishlist_quantity_required = "You must enter a quantity";
+        var wishlist_remove = "The product was successfully removed from your wishlist";
+        var wishlist_reset_txt = "Reset";
+        var wishlist_send_txt = "Send";
+        var wishlist_send_wishlist_txt = "Send wishlist";
+        var wishlist_url = "https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?fc=module&module=stfeature&controller=mywishlist&id_lang=1";
+        var wishlist_viewwishlist = "View your wishlist";
+      </script>
+
+
+
+  
+
+
+
+		
+	</head>
+
+	<body id="pagenotfound" class="lang-en country-de currency-eur layout-full-width page-pagenotfound tax-display-enabled">
+	
+		
+		  
+		
+
+		<main id="page">
+							
+									
+	  					
+			<header id="header">
+				
+					
+
+
+
+	<div class="header-top">
+		<div class="container">
+			<div class="header_logo">
+				<a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/">
+					<img class="logo img-responsive" src="../images/demo-store-logo-1626677799.jpg" alt="Elocart - Furniture Store">
+				</a>
+			</div>
+			<!-- Block search module TOP -->
+<div id="search_widget" class="col-lg-4 col-md-5 col-sm-12 search-widget" data-search-controller-url="//demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=search">
+	<span class="search_button"></span>
+	<div class="search_toggle">
+		<form method="get" action="//demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=search">
+			<input type="hidden" name="controller" value="search">
+			<input type="text" name="s" value placeholder="Search our catalog">
+			<button type="submit">
+			</button>
+		</form>
+	</div>
+</div>
+<!-- /Block search module TOP -->
+<div class="language-selector" id="language-selector">
+	<div class="language_block">
+		<span class="language-title">Language:</span>
+		<ul>
+					<li class="current">
+				<a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=pagenotfound&id_lang=1" class="language-item">English</a>
+			</li>
+					<li>
+				<a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=pagenotfound&id_lang=3" class="language-item">Français</a>
+			</li>
+					<li>
+				<a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=pagenotfound&id_lang=4" class="language-item">Español</a>
+			</li>
+					<li>
+				<a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=pagenotfound&id_lang=5" class="language-item">Deutsch</a>
+			</li>
+					<li>
+				<a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=pagenotfound&id_lang=6" class="language-item">Italiano</a>
+			</li>
+					<li>
+				<a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=pagenotfound&id_lang=7" class="language-item">Polski</a>
+			</li>
+					<li>
+				<a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=pagenotfound&id_lang=8" class="language-item">Nederlands</a>
+			</li>
+					<li>
+				<a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=pagenotfound&id_lang=9" class="language-item">Русский</a>
+			</li>
+					<li>
+				<a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=pagenotfound&id_lang=10" class="language-item">اللغة العربية</a>
+			</li>
+				</ul>
+	</div>
+</div>
+<div class="currency-selector" id="currency-selector">
+	<span class="currency-title">Currency:</span>
+	<div class="currency_block">
+		<ul>
+					<li class="current">
+				<a title="Euro" rel="nofollow" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=pagenotfound&amp;id_lang=1&amp;SubmitCurrency=1&amp;id_currency=1" class="currency-item">EUR</a>
+			</li>
+					<li>
+				<a title="US Dollar" rel="nofollow" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=pagenotfound&amp;id_lang=1&amp;SubmitCurrency=1&amp;id_currency=2" class="currency-item">USD</a>
+			</li>
+				</ul>
+	</div>
+</div><div id="desktop_cart">
+  <div class="blockcart cart-preview inactive" data-refresh-url="//demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?fc=module&amp;module=ps_shoppingcart&amp;controller=ajax&amp;id_lang=1">
+    <div class="header blockcart-header dropdown js-dropdown">
+
+		<a class="shopping-cart" rel="nofollow" href="//demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=cart&amp;action=show">
+			<span class="hidden-sm-down cart-headding">My Cart</span>
+			<span class="mobile_count">0</span>
+			<span class="cart-products-count hidden-sm-down">								<span class="value"> €0.00</span>
+			</span>
+		</a>
+		 
+		
+	      </div>
+  </div>
+</div>
+  <div class="user-info dropdown js-dropdown">
+  	<span class="user-info-title expand-more _gray-darker" data-toggle="dropdown"><span class="account_text">My Account</span></span>
+    <ul class="dropdown-menu">
+	      <li>
+	  <a class="dropdown-item" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=my-account" title="Log in to your customer account" rel="nofollow">
+        <span>Sign in</span>
+      </a>
+	  </li>
+    <li>
+      <a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=authentication&amp;create_account=1" data-link-action="display-register-form">
+            Register
+      </a>
+    </li>
+        <li><div class="head-wishlist">
+    <a class="ap-btn-wishlist dropdown-item" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?fc=module&amp;module=stfeature&amp;controller=mywishlist&amp;id_lang=1" title="Wishlist" rel="nofollow">
+        
+    	<i class="material-icons">&#xE87E;</i>
+	    <span>Wishlist</span>
+	  	    </a>
+</div>
+</li>  
+    <li><div class="head-compare">
+    <a class="ap-btn-compare dropdown-item" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?fc=module&amp;module=stfeature&amp;controller=productscompare&amp;id_lang=1" title="Compare" rel="nofollow">
+      <i class="material-icons">&#xE863;</i>
+      <span>Compare</span>
+    <!-- <span class="ap-total-compare ap-total"></span> -->
+    </a>
+</div></li>
+	</ul>
+  </div>	<div id="czheadercmsblock" class="header-cms-block">  
+		<div class="header-cms">
+<div class="headercms-title">Contact Us</div>
+<div class="contact-info"><a href="tel:0123456789">0123 456 789</a></div>
+</div>
+	</div>
+					
+		</div>
+		<div class="header-top-inner">
+			<div class="container">
+				
+
+<div class="menu vertical-menu js-top-menu position-static hidden-md-down">
+    <div id="czverticalmenublock" class="block verticalmenu-block">
+		<h4 class="expand-more h3 block_title" data-toggle="dropdown" id="verticalmenu-dropdown">Shop By Categories
+			<span class="dropdown-arrow"></span>
+		</h4>		
+		<div class="block_content verticalmenu_block dropdown-menu" id="_desktop_verticalmenu_menu">
+			
+  <ul class="top-menu" id="top-menu" data-depth="0"><li class="category" id="czcategory-3"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=3&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="0">			  <span class="pull-xs-right hidden-lg-up"><span data-target="#top_sub_menu_8035" data-toggle="collapse" class="navbar-toggler collapse-icons"><i class="fa-icon add">&nbsp;</i><i class="fa-icon remove">&nbsp;</i></span></span><span class="pull-xs-right sub-menu-arrow"></span>Furniture</a>			  <div class="popover sub-menu js-sub-menu collapse" id="top_sub_menu_8035">
+  <ul class="top-menu" data-depth="1"><li class="category" id="czcategory-4"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=4&amp;controller=category&amp;id_lang=1" class="dropdown-item dropdown-submenu" data-depth="1">			  <span class="pull-xs-right hidden-lg-up"><span data-target="#top_sub_menu_39768" data-toggle="collapse" class="navbar-toggler collapse-icons"><i class="fa-icon add">&nbsp;</i><i class="fa-icon remove">&nbsp;</i></span></span>Armoires</a>			  <div class="collapse" id="top_sub_menu_39768">
+  <ul class="top-menu" data-depth="2"><li class="category" id="czcategory-16"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=16&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="2">Recliner Sofa</a></li><li class="category" id="czcategory-17"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=17&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="2">Coffee Tables</a></li><li class="category" id="czcategory-18"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=18&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="2">Lux woods</a></li><li class="category" id="czcategory-19"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=19&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="2">Cupboards</a></li></ul><div class="menu-images-container"></div></div></li><li class="category" id="czcategory-5"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=5&amp;controller=category&amp;id_lang=1" class="dropdown-item dropdown-submenu" data-depth="1">			  <span class="pull-xs-right hidden-lg-up"><span data-target="#top_sub_menu_94558" data-toggle="collapse" class="navbar-toggler collapse-icons"><i class="fa-icon add">&nbsp;</i><i class="fa-icon remove">&nbsp;</i></span></span>Accessories</a>			  <div class="collapse" id="top_sub_menu_94558">
+  <ul class="top-menu" data-depth="2"><li class="category" id="czcategory-20"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=20&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="2">Night Lamp</a></li><li class="category" id="czcategory-21"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=21&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="2">Dining Chair</a></li><li class="category" id="czcategory-22"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=22&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="2">Modu-licious</a></li><li class="category" id="czcategory-23"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=23&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="2">Desk chairs</a></li></ul><div class="menu-images-container"></div></div></li><li class="category" id="czcategory-15"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=15&amp;controller=category&amp;id_lang=1" class="dropdown-item dropdown-submenu" data-depth="1">			  <span class="pull-xs-right hidden-lg-up"><span data-target="#top_sub_menu_21485" data-toggle="collapse" class="navbar-toggler collapse-icons"><i class="fa-icon add">&nbsp;</i><i class="fa-icon remove">&nbsp;</i></span></span>Storage</a>			  <div class="collapse" id="top_sub_menu_21485">
+  <ul class="top-menu" data-depth="2"><li class="category" id="czcategory-24"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=24&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="2">Cylinder light</a></li><li class="category" id="czcategory-25"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=25&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="2">Wood clock</a></li><li class="category" id="czcategory-26"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=26&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="2">Carving stool</a></li><li class="category" id="czcategory-27"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=27&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="2">Armchair</a></li></ul><div class="menu-images-container"></div></div></li></ul><div class="menu-images-container"><img src="../images/3-0_thumb.jpg"></div></div></li><li class="category" id="czcategory-16"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=16&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="0">Recliner Sofa</a></li><li class="category" id="czcategory-17"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=17&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="0">Coffee Tables</a></li><li class="category" id="czcategory-10"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=10&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="0">Wardrobe</a></li><li class="category" id="czcategory-18"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=18&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="0">Lux woods</a></li><li class="category" id="czcategory-19"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=19&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="0">Cupboards</a></li><li class="category" id="czcategory-21"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=21&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="0">Dining Chair</a></li><li class="category" id="czcategory-6"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=6&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="0">Dining Table</a></li><li class="category" id="czcategory-20"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=20&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="0">Night Lamp</a></li><li class="category" id="czcategory-23"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=23&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="0">Desk chairs</a></li><li class="category" id="czcategory-24"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=24&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="0">Cylinder light</a></li><li class="category" id="czcategory-25"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=25&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="0">Wood clock</a></li><li class="category" id="czcategory-12"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=12&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="0">Wood Box</a></li><li class="category" id="czcategory-9"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=9&amp;controller=category&amp;id_lang=1" class="dropdown-item" data-depth="0">Tv units</a></li></ul>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="mobile_menu_container menu-container">
+	<div class="text-xs-left mobile hidden-lg-up mobile-menu">
+	
+		<div class="menu-icon">
+			<div class="cat-title">Categories</div>		  
+		</div>
+	
+		<div id="mobile_top_menu_wrapper" class="row hidden-lg-up">
+			<div class="mobile-menu-inner">
+				<div class="menu-icon">
+					<div class="cat-title">Categories</div>		  
+				</div>
+				<div class="js-top-menu mobile" id="_mobile_verticalmenu_menu"></div>
+        <div class="js-top-menu mobile" id="_mobile_main_menu"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+ 
+<div class="menu horizontal-menu col-lg-12 js-top-menu position-static hidden-md-down" id="_desktop_main_menu">
+  
+          <ul class="top-menu  container" id="top-menu" data-depth="0">
+                    <li class="link " id="lnk-home">
+              <a class="dropdown-item" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php" data-depth="0">
+                                Home
+              </a>
+                          </li>
+                    <li class="cms-page " id="cms-page-4">
+              <a class="dropdown-item" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_cms=4&amp;controller=cms&amp;id_lang=1" data-depth="0">
+                                About us
+              </a>
+                          </li>
+                    <li class="cms-page " id="cms-page-1">
+              <a class="dropdown-item" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_cms=1&amp;controller=cms&amp;id_lang=1" data-depth="0">
+                                Delivery
+              </a>
+                          </li>
+                    <li class="link " id="lnk-blog">
+              <a class="dropdown-item" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?fc=module&amp;module=psblog&amp;controller=list" data-depth="0">
+                                Blog
+              </a>
+                          </li>
+                    <li class="category " id="category-13">
+              <a class="dropdown-item" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_category=13&amp;controller=category&amp;id_lang=1" data-depth="0">
+                                Featured
+              </a>
+                          </li>
+              </ul>
+    
+</div>
+			</div>
+		</div>
+	</div>	
+
+				
+			</header>
+	  		
+							
+					
+<aside id="notifications">
+  <div class="container">
+    
+    
+    
+      </div>
+</aside>
+				
+      						
+			<section id="wrapper">
+			
+							
+					<nav data-depth="1" class="breadcrumb">
+<div class="container">
+    <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+      
+              
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a itemprop="item" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php">
+            <span itemprop="name">Home</span>
+          </a>
+          <meta itemprop="position" content="1">
+        </li>
+        
+            
+    </ol>
+  </div>
+</nav>
+				
+
+			<div class="container">
+				
+				<div id="columns_inner">
+					
+	
+					
+  <div id="content-wrapper">
+    
+    
+
+  <section id="main">
+
+    
+      
+        <header class="page-header">
+          <h1>
+  The page you are looking for was not found.
+</h1>
+        </header>
+      
+    
+
+    
+  <section id="content" class="page-content page-not-found">
+  
+
+    <h4>Sorry for the inconvenience.</h4>
+    <p>Search again what you are looking for</p>
+
+    
+      <!-- Block search module TOP -->
+<div id="search_widget" class="col-lg-4 col-md-5 col-sm-12 search-widget" data-search-controller-url="//demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=search">
+	<span class="search_button"></span>
+	<div class="search_toggle">
+		<form method="get" action="//demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=search">
+			<input type="hidden" name="controller" value="search">
+			<input type="text" name="s" value placeholder="Search our catalog">
+			<button type="submit">
+			</button>
+		</form>
+	</div>
+</div>
+<!-- /Block search module TOP -->
+
+    
+
+    
+      
+    
+
+  
+</section>
+
+
+    
+      <footer class="page-footer">
+        
+          <!-- Footer content -->
+        
+      </footer>
+    
+
+  </section>
+
+
+    
+  </div>
+
+	
+					
+				</div>
+			</div>
+
+			</section>
+
+			<footer id="footer">
+				
+						
+
+	<div class="footer-before">
+		<div class="container">
+			
+			  	<div id="czservicecmsblock">
+		<div class="service_container">
+			<div class="service-area">
+<div class="service-fourth service1">
+<div class="service-icon icon1"></div>
+<div class="service-content">
+<div class="service-heading">14-Day Money Back</div>
+</div>
+</div>
+<div class="service-fourth service2">
+<div class="service-icon icon2"></div>
+<div class="service-content">
+<div class="service-heading">Fast Free Shipment</div>
+</div>
+</div>
+<div class="service-fourth service3">
+<div class="service-icon icon3"></div>
+<div class="service-content">
+<div class="service-heading">Money Back Guarentee</div>
+</div>
+</div>
+<div class="service-fourth service4">
+<div class="service-icon icon4"></div>
+<div class="service-content">
+<div class="service-heading">Save 20% when you</div>
+</div>
+</div>
+</div>
+		</div>
+	</div>
+
+			
+		</div>
+	</div>
+	
+	<div class="footer-container">
+	<div class="container">
+		<div class="row footer">
+		  
+			<div class="block-contact col-md-4 links wrapper">
+  
+   		<h3 class="text-uppercase block-contact-title hidden-sm-down"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=stores">Store information</a></h3>
+      
+		<div class="title clearfix hidden-md-up" data-target="#block-contact_list" data-toggle="collapse">
+		  <span class="h3">Store information</span>
+		  <span class="pull-xs-right">
+			  <span class="navbar-toggler collapse-icons">
+				<i class="fa-icon add"></i>
+				<i class="fa-icon remove"></i>
+			  </span>
+		  </span>
+		</div>
+	  
+	  <ul id="block-contact_list" class="collapse">
+	  <li>
+	  	<i class="fa fa-map-marker"></i>
+	  	<span>Elocart - Furniture Store<br>507-Union Trade ipsum Doler Centre<br>France</span>
+      </li>
+	          <li>
+		<span class="title">Call Us:</span>
+		<i class="fa fa-phone"></i>
+                <span>000-000-0000</span>
+		</li>
+                          <li>
+		
+		<i class="fa fa-envelope-o"></i>
+                <span>sales@yourcompany.com</span>
+		</li>
+      	  </ul>
+  
+</div><div class="col-md-4 links block">
+      <h3 class="h3 hidden-md-down">Products</h3>
+            <div class="title h3 block_title hidden-lg-up" data-target="#footer_sub_menu_39218" data-toggle="collapse">
+        <span class>Products</span>
+        <span class="pull-xs-right">
+          <span class="navbar-toggler collapse-icons">
+            <i class="fa-icon add"></i>
+            <i class="fa-icon remove"></i>
+          </span>
+        </span>
+      </div>
+      <ul id="footer_sub_menu_39218" class="collapse block_content">
+                  <li>
+            <a id="link-product-page-prices-drop-1" class="cms-page-link" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=prices-drop" title="Our special products">
+              Prices drop
+            </a>
+          </li>
+                  <li>
+            <a id="link-product-page-new-products-1" class="cms-page-link" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=new-products" title="Our new products">
+              New products
+            </a>
+          </li>
+                  <li>
+            <a id="link-product-page-best-sales-1" class="cms-page-link" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=best-sales" title="Our best sales">
+              Best sales
+            </a>
+          </li>
+                  <li>
+            <a id="link-static-page-contact-1" class="cms-page-link" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=contact" title="Use our form to contact us">
+              Contact us
+            </a>
+          </li>
+                  <li>
+            <a id="link-static-page-sitemap-1" class="cms-page-link" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=sitemap" title="Lost ? Find what your are looking for">
+              Sitemap
+            </a>
+          </li>
+              </ul>
+</div>
+<div class="col-md-4 links block">
+      <h3 class="h3 hidden-md-down">Our company</h3>
+            <div class="title h3 block_title hidden-lg-up" data-target="#footer_sub_menu_95991" data-toggle="collapse">
+        <span class>Our company</span>
+        <span class="pull-xs-right">
+          <span class="navbar-toggler collapse-icons">
+            <i class="fa-icon add"></i>
+            <i class="fa-icon remove"></i>
+          </span>
+        </span>
+      </div>
+      <ul id="footer_sub_menu_95991" class="collapse block_content">
+                  <li>
+            <a id="link-cms-page-1-2" class="cms-page-link" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_cms=1&amp;controller=cms&amp;id_lang=1" title="Our terms and conditions of delivery">
+              Delivery
+            </a>
+          </li>
+                  <li>
+            <a id="link-cms-page-2-2" class="cms-page-link" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_cms=2&amp;controller=cms&amp;id_lang=1" title="Legal notice">
+              Legal Notice
+            </a>
+          </li>
+                  <li>
+            <a id="link-cms-page-3-2" class="cms-page-link" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_cms=3&amp;controller=cms&amp;id_lang=1" title="Our terms and conditions of use">
+              Terms and conditions of use
+            </a>
+          </li>
+                  <li>
+            <a id="link-cms-page-4-2" class="cms-page-link" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_cms=4&amp;controller=cms&amp;id_lang=1" title="Learn more about us">
+              About us
+            </a>
+          </li>
+                  <li>
+            <a id="link-cms-page-5-2" class="cms-page-link" href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_cms=5&amp;controller=cms&amp;id_lang=1" title="Our secure payment method">
+              Secure payment
+            </a>
+          </li>
+              </ul>
+</div>
+<div class="block_newsletter">
+  <div class="row">
+    <div class="newsletter-detail">
+      <h4 class="title"><span class="news1">Subscribe Now</span></h4>
+      <span class="desc">Subscribe our newsletter get 10% off your first update.</span>
+    </div>
+    <div class="block_content">
+      <form action="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php#footer" method="post">
+          <div class="newsletter-form">
+            <input class="btn btn-primary pull-xs-right hidden-xs-down" name="submitNewsletter" type="submit" value="Sign Up">
+            <input class="btn btn-primary pull-xs-right hidden-sm-up" name="submitNewsletter" type="submit" value="OK">
+            <div class="input-wrapper">
+              <input name="email" type="text" value placeholder="Your email address">
+            </div>
+            <input type="hidden" name="action" value="0">
+            <div class="clearfix"></div>
+          </div>
+          <div class="newsletter-message">
+                              <p>You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.</p>
+                        </div>
+		  		                  
+                    </form>
+    </div>
+  </div>
+</div>
+
+
+  <div class="block-social">
+    <ul>
+              <li class="facebook"><a href="https://www.facebook.com/" target="_blank"><span>Facebook</span></a></li>
+              <li class="twitter"><a href="https://twitter.com/" target="_blank"><span>Twitter</span></a></li>
+              <li class="youtube"><a href="https://www.youtube.com/" target="_blank"><span>YouTube</span></a></li>
+              <li class="instagram"><a href="https://www.instagram.com/" target="_blank"><span>Instagram</span></a></li>
+          </ul>
+  </div>
+
+
+		  
+		</div>
+		</div>      
+	</div>
+	
+	
+	<div class="footer-after">
+	<div class="container">
+		
+			<!-- Block payment logo module -->
+<div id="payement_logo_block_left" class="payement_logo_block">
+	<a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_cms=1&amp;controller=cms&amp;id_lang=1">
+		<img class="lazyload" data-src="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/modules/cz_blockpaymentlogo/views/img/visa.png" alt="visa" width="32" height="20">
+		<img class="lazyload" data-src="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/modules/cz_blockpaymentlogo/views/img/discover.png" alt="discover" width="32" height="20">
+		<img class="lazyload" data-src="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/modules/cz_blockpaymentlogo/views/img/american_express.png" alt="american_express" width="32" height="20">
+		<img class="lazyload" data-src="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/modules/cz_blockpaymentlogo/views/img/google_wallet.png" alt="google_wallet" width="32" height="20">
+		<img class="lazyload" data-src="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/modules/cz_blockpaymentlogo/views/img/paypal.png" alt="paypal" width="32" height="20">
+		<img class="lazyload" data-src="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/modules/cz_blockpaymentlogo/views/img/master_card.png" alt="master_card" width="32" height="20">		
+			</a>
+</div>
+<!-- /Block payment logo module -->
+		
+		
+		<div class="copyright">
+		  
+			  <a class="_blank" href="http://www.prestashop.com" target="_blank">
+		© 2022 - Ecommerce software by PrestaShop™
+			  </a>
+		  
+		</div>
+	</div>
+	</div>
+
+<a class="top_button" href="#" style>&nbsp;</a>
+<style>
+    
+    #cookie_notice{
+		background: #000000;
+		padding: 12px;
+		text-align: center;
+		color: #fff;
+		z-index: 9999;
+		position: fixed;
+		width: 100%;
+		bottom: 0px;
+		right: 0;
+		left: 0;
+	}
+	.closeFontAwesome:before {
+        content: "\f00d";
+        font-family: "FontAwesome";
+        display: inline-block;
+        font-size: 23px;
+        line-height: 23px; 
+        padding-right: 15px;
+        cursor: pointer;
+    }
+	#cookie_notice a{ 
+		text-decoration: underline; 
+    	color: #fff;
+	}
+	#cookie_notice a:hover { 
+		text-decoration: none;
+	}
+    .closeButtonNormal {
+        text-align: center;
+        padding: 2px 5px;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    #cookieNotice p {
+        margin: 0px;
+        padding: 0px;
+    }
+	.cookie-button{
+		padding: 4px 13px;
+		margin-left: 10px;
+		font-size: 13px;
+		background: #fff;
+		color: #000;
+		border-radius: 3px;
+	}
+	#footer{ margin-bottom: 56px; }
+	.top_button{  bottom: 70px; }
+    
+</style>
+
+<div id="cookie_notice" class="global-site-notice cookie_notice">
+	<div class="cookie-inner"><span>By continuing use this site, you agree to the Privacy Policy and our use of cookies.</span>
+	<button class="button btn cookie-button" onclick="closeCookieNotice()">Allow</button></div>
+</div>
+
+<script type="text/javascript">
+	function setCookie()
+	{
+		var cookiename = 'cookie_law';
+		var cookievalue = '1';
+		var expire = new Date();
+		expire.setMonth(expire.getMonth()+12);
+		document.cookie = cookiename + "=" + escape(cookievalue) +";path=/;" + ((expire==null)?"" : ("; expires=" + expire.toGMTString()))
+	}
+	function closeCookieNotice()
+	{
+		$('#cookie_notice').slideUp();
+		setCookie();
+	} 
+</script>
+				
+			</footer>
+		
+		</main>
+
+		
+			  <script type="text/javascript" src="../js/core.js"></script>
+  <script type="text/javascript" src="../js/theme.js"></script>
+  <script type="text/javascript" src="../js/front.js"></script>
+  <script type="text/javascript" src="../js/jquery.rating.pack.js"></script>
+  <script type="text/javascript" src="../js/jquery.textareaCounter.plugin.js"></script>
+  <script type="text/javascript" src="../js/myprestacomments.js"></script>
+  <script type="text/javascript" src="../js/stfeature_compare.js"></script>
+  <script type="text/javascript" src="../js/stfeature_wishlist.js"></script>
+  <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.fancybox.js"></script>
+  <script type="text/javascript" src="../js/ps_searchbar.js"></script>
+  <script type="text/javascript" src="../js/ps_shoppingcart.js"></script>
+  <script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
+  <script type="text/javascript" src="../js/parallax.js"></script>
+  <script type="text/javascript" src="../js/owl.carousel.js"></script>
+  <script type="text/javascript" src="../js/totalstorage.js"></script>
+  <script type="text/javascript" src="../js/lightbox.js"></script>
+  <script type="text/javascript" src="../js/lazysizes.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.hoverdir.js"></script>
+  <script type="text/javascript" src="../js/modernizr.js"></script>
+  <script type="text/javascript" src="../js/custom.js"></script>
+
+
+		
+
+		
+		  
+		
+	
+	</body>
+</html>

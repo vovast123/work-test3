@@ -1,0 +1,850 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>{%block title%}Logis Cargo - Furniture Store{%endblock title%}</title>
+      <meta name="description" content="Shop powered by PrestaShop">
+      <meta name="keywords" content>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Codezeel added -->
+      <link href="//fonts.googleapis.com/css?family=Heebo:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+      <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+      <link rel="stylesheet" href="{%static 'css/theme.css'%}" />
+      <link rel="stylesheet" href="{%static 'css/font-awesome.css'%}" />
+      <link rel="stylesheet" href="{%static 'css/front.css'%}" />
+      <link rel="stylesheet" href="{%static 'css/myprestacomments.css'%}" />
+      <link rel="stylesheet" href="{%static 'css/front_1.css'%}" />
+      <link rel="stylesheet" href="{%static 'css/psblog.css'%}" />
+      <link rel="stylesheet" href="{%static 'css/lightbox.css'%}" />
+      <link rel="stylesheet" href="{%static 'css/czcouponpop.css'%}" />
+      <link rel="stylesheet" href="{%static 'css/jquery-ui.min.css'%}" />
+      <link rel="stylesheet" href="{%static 'css/jquery.ui.theme.min.css'%}" />
+      <link rel="stylesheet" href="{%static 'css/cz_verticalmenu.css'%}" />
+      <link rel="stylesheet" href="{%static 'css/flexslider.css'%}" />
+      <link rel="stylesheet" href="{%static 'css/custom.css'%}" />
+      <link rel="stylesheet" href="{%static 'css/jquery.fancybox.css'%}" />
+      {%block link%} {%endblock link%}
+      <script type="text/javascript">
+         var buttoncompare_title_add = "Add to Compare";
+         var buttoncompare_title_remove = "Remove from Compare";
+         var buttonwishlist_title_add = "Add to Wishlist";
+         var buttonwishlist_title_remove = "Remove from WishList";
+         var comparator_max_item = 3;
+         var compared_products = [];
+         var isLogged = false;
+         var prestashop = {"cart":{"products":[],"totals":{"total":{"type":"total","label":"Total","amount":0,"value":"\u20ac0.00"},"total_including_tax":{"type":"total","label":"Total (tax incl.)","amount":0,"value":"\u20ac0.00"},"total_excluding_tax":{"type":"total","label":"Total (tax excl.)","amount":0,"value":"\u20ac0.00"}},"subtotals":{"products":{"type":"products","label":"Subtotal","amount":0,"value":"\u20ac0.00"},"discounts":null,"shipping":{"type":"shipping","label":"Shipping","amount":0,"value":"Free"},"tax":null},"products_count":0,"summary_string":"0 items","vouchers":{"allowed":0,"added":[]},"discounts":[],"minimalPurchase":0,"minimalPurchaseRequired":""},"currency":{"name":"Euro","iso_code":"EUR","iso_code_num":"978","sign":"\u20ac"},"customer":{"lastname":null,"firstname":null,"email":null,"birthday":null,"newsletter":null,"newsletter_date_add":null,"optin":null,"website":null,"company":null,"siret":null,"ape":null,"is_logged":false,"gender":{"type":null,"name":null},"addresses":[]},"language":{"name":"English (English)","iso_code":"en","locale":"en-US","language_code":"en-us","is_rtl":"0","date_format_lite":"m\/d\/Y","date_format_full":"m\/d\/Y H:i:s","id":1},"page":{"title":"","canonical":null,"meta":{"title":"Elocart - Furniture Store","description":"Shop powered by PrestaShop","keywords":"","robots":"index"},"page_name":"index","body_classes":{"lang-en":true,"lang-rtl":false,"country-DE":true,"currency-EUR":true,"layout-full-width":true,"page-index":true,"tax-display-enabled":true},"admin_notifications":[]},"shop":{"name":"Elocart - Furniture Store","logo":"\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/demo-store-logo-1626677799.jpg","stores_icon":"\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/logo_stores.png","favicon":"\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/favicon.ico"},"urls":{"base_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/","current_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php","shop_domain_url":"https:\/\/demo.codezeel.com","img_ps_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/","img_cat_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/c\/","img_lang_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/l\/","img_prod_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/p\/","img_manu_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/m\/","img_sup_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/su\/","img_ship_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/s\/","img_store_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/st\/","img_col_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/co\/","img_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/themes\/Elocart_Furniture\/assets\/img\/","css_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/themes\/Elocart_Furniture\/assets\/css\/","js_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/themes\/Elocart_Furniture\/assets\/js\/","pic_url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/upload\/","pages":{"address":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=address","addresses":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=addresses","authentication":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=authentication","cart":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=cart","category":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=category","cms":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=cms","contact":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=contact","discount":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=discount","guest_tracking":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=guest-tracking","history":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=history","identity":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=identity","index":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php","my_account":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=my-account","order_confirmation":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=order-confirmation","order_detail":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=order-detail","order_follow":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=order-follow","order":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=order","order_return":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=order-return","order_slip":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=order-slip","pagenotfound":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=pagenotfound","password":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=password","pdf_invoice":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=pdf-invoice","pdf_order_return":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=pdf-order-return","pdf_order_slip":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=pdf-order-slip","prices_drop":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=prices-drop","product":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=product","search":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=search","sitemap":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=sitemap","stores":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=stores","supplier":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=supplier","register":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=authentication&create_account=1","order_login":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?controller=order&login=1"},"alternative_langs":{"en-us":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?id_lang=1","fr-fr":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?id_lang=3","es-es":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?id_lang=4","de-de":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?id_lang=5","it-it":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?id_lang=6","pl-pl":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?id_lang=7","nl-nl":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?id_lang=8","ru-ru":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?id_lang=9","ar-sa":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?id_lang=10"},"theme_assets":"\/prestashop\/PRS17\/PRS170411\/PRS03\/themes\/Elocart_Furniture\/assets\/","actions":{"logout":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?mylogout="},"no_picture_image":{"bySize":{"cart_default":{"url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/p\/en-default-cart_default.jpg","width":83,"height":89},"small_default":{"url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/p\/en-default-small_default.jpg","width":83,"height":89},"home_default":{"url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/p\/en-default-home_default.jpg","width":214,"height":230},"medium_default":{"url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/p\/en-default-medium_default.jpg","width":498,"height":535},"large_default":{"url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/p\/en-default-large_default.jpg","width":930,"height":1000}},"small":{"url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/p\/en-default-cart_default.jpg","width":83,"height":89},"medium":{"url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/p\/en-default-home_default.jpg","width":214,"height":230},"large":{"url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/img\/p\/en-default-large_default.jpg","width":930,"height":1000},"legend":""}},"configuration":{"display_taxes_label":true,"display_prices_tax_incl":true,"is_catalog":false,"show_prices":true,"opt_in":{"partner":true},"quantity_discount":{"type":"discount","label":"Discount"},"voucher_enabled":0,"return_enabled":0},"field_required":[],"breadcrumb":{"links":[{"title":"Home","url":"https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php"}],"count":1},"link":{"protocol_link":"https:\/\/","protocol_content":"https:\/\/"},"time":1657994031,"static_token":"8bd9f42887793a736c2d38fd8a0dceff","token":"cac4ef315d3af2a8cf00c82ec4467ea3"};
+         var productcompare_add = "The product has been added to list compare";
+         var productcompare_max_item = "You cannot add more than 3 product(s) to the product comparison";
+         var productcompare_remove = "The product was successfully removed from list compare";
+         var productcompare_url = "https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?fc=module&module=stfeature&controller=productscompare&id_lang=1";
+         var productcompare_viewlistcompare = "View list compare";
+         var psr_icon_color = "#F19D76";
+         var wishlist_add = "The product was successfully added to your wishlist";
+         var wishlist_cancel_txt = "Cancel";
+         var wishlist_confirm_del_txt = "Delete selected item?";
+         var wishlist_del_default_txt = "Cannot delete default wishlist";
+         var wishlist_email_txt = "Email";
+         var wishlist_loggin_required = "You must be logged in to manage your wishlist";
+         var wishlist_ok_txt = "Ok";
+         var wishlist_quantity_required = "You must enter a quantity";
+         var wishlist_remove = "The product was successfully removed from your wishlist";
+         var wishlist_reset_txt = "Reset";
+         var wishlist_send_txt = "Send";
+         var wishlist_send_wishlist_txt = "Send wishlist";
+         var wishlist_url = "https:\/\/demo.codezeel.com\/prestashop\/PRS17\/PRS170411\/PRS03\/index.php?fc=module&module=stfeature&controller=mywishlist&id_lang=1";
+         var wishlist_viewwishlist = "View your wishlist";
+      </script>
+   </head>
+   <body id="index" class="lang-en country-de currency-eur layout-full-width page-index tax-display-enabled">
+      {%block maincontent%}
+      <main id="page">
+         <header id="header">
+            <div class="header-top">
+               <div class="container">
+                  <div class="header_logo">
+                     <a href="#">
+                     <img class="logo img-responsive" src="{%static 'images/demo-store-logo-1626677799.png'%}" alt="Logis Cargo - Furniture Store">
+                     </a>
+                  </div>
+                  <!-- Block search module TOP -->
+                  <div id="search_widget" class="col-lg-4 col-md-5 col-sm-12 search-widget" data-search-controller-url="#">
+                     <span class="search_button"></span>
+                     <div class="search_toggle">
+                        <form method="get" action="#">
+                           <input type="hidden" name="controller" value="search">
+                           <input type="text" name="s" value placeholder="Search our catalog">
+                           <button type="submit">
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+                  <!-- /Block search module TOP -->
+                  <div class="language-selector" id="language-selector">
+                     <div class="language_block">
+                        <span class="language-title">Language:</span>
+                        <ul>
+                           <li class="current">
+                              <a href="" class="language-item">English</a>
+                           </li>
+                           <li>
+                              <a href="" class="language-item">Français</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div id="desktop_cart">
+                     <div class="blockcart cart-preview inactive" data-refresh-url="//demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?fc=module&module=ps_shoppingcart&controller=ajax&id_lang=1">
+                        <div class="header blockcart-header dropdown js-dropdown">
+                           <a class="shopping-cart" rel="nofollow" href="//demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=cart&action=show">
+                           <span class="hidden-sm-down cart-headding">My Cart</span>
+                           <span class="mobile_count">0</span>
+                           <span class="cart-products-count hidden-sm-down">								<span class="value"> €0.00</span>
+                           </span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="user-info dropdown js-dropdown">
+                     <span class="user-info-title expand-more _gray-darker" data-toggle="dropdown"><span class="account_text">My Account</span></span>
+                     <ul class="dropdown-menu">
+                        <li>
+                           <a class="dropdown-item" href="{%url 'login'%}" title="Log in to your customer account" rel="nofollow">
+                           <span>Sign in</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="{%url 'reg'%}" data-link-action="display-register-form">
+                           Register
+                           </a>
+                        </li>
+                        <li>
+                           <div class="head-wishlist">
+                           </div>
+                        </li>
+                        <li>
+                           <div class="head-compare">
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div id="czheadercmsblock" class="header-cms-block">
+                     <div class="header-cms">
+                        <div class="headercms-title">Contact Us</div>
+                        <div class="contact-info"><a href="tel:0123456789">0 50 97 855 71</a></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="header-top-inner">
+                  <div class="container">
+                     <div class="menu vertical-menu js-top-menu position-static hidden-md-down">
+                        <div id="czverticalmenublock" class="block verticalmenu-block">
+                           <h4 class="expand-more h3 block_title" data-toggle="dropdown" id="verticalmenu-dropdown">Shop By Categories
+                              <span class="dropdown-arrow"></span>
+                           </h4>
+                           <div class="block_content verticalmenu_block dropdown-menu" id="_desktop_verticalmenu_menu">
+                              <ul class="top-menu" id="top-menu" data-depth="0">
+                                 <li class="category" id="czcategory-16"><a href="!" class="dropdown-item" data-depth="0">Recliner Sofa</a></li>
+                                 <li class="category" id="czcategory-17"><a href="!" class="dropdown-item" data-depth="0">Coffee Tables</a></li>
+                                 <li class="category" id="czcategory-10"><a href="!" class="dropdown-item" data-depth="0">Wardrobe</a></li>
+                                 <li class="category" id="czcategory-18"><a href="!" class="dropdown-item" data-depth="0">Lux woods</a></li>
+                                 <li class="category" id="czcategory-19"><a href="!" class="dropdown-item" data-depth="0">Cupboards</a></li>
+                                 <li class="category" id="czcategory-21"><a href="!" class="dropdown-item" data-depth="0">Dining Chair</a></li>
+                                 <li class="category" id="czcategory-6"><a href="!" class="dropdown-item" data-depth="0">Dining Table</a></li>
+                                 <li class="category" id="czcategory-20"><a href="!" class="dropdown-item" data-depth="0">Night Lamp</a></li>
+                                 <li class="category" id="czcategory-23"><a href="!" class="dropdown-item" data-depth="0">Desk chairs</a></li>
+                                 <li class="category" id="czcategory-24"><a href="!" class="dropdown-item" data-depth="0">Cylinder light</a></li>
+                                 <li class="category" id="czcategory-25"><a href="!" class="dropdown-item" data-depth="0">Wood clock</a></li>
+                                 <li class="category" id="czcategory-12"><a href="!" class="dropdown-item" data-depth="0">Wood Box</a></li>
+                                 <li class="category" id="czcategory-9"><a href="!" class="dropdown-item" data-depth="0">Tv units</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="mobile_menu_container menu-container">
+                        <div class="text-xs-left mobile hidden-lg-up mobile-menu">
+                           <div class="menu-icon">
+                              <div class="cat-title">Categories</div>
+                           </div>
+                           <div id="mobile_top_menu_wrapper" class="row hidden-lg-up">
+                              <div class="mobile-menu-inner">
+                                 <div class="menu-icon">
+                                    <div class="cat-title">Categories</div>
+                                 </div>
+                                 <div class="js-top-menu mobile" id="_mobile_verticalmenu_menu"></div>
+                                 <div class="js-top-menu mobile" id="_mobile_main_menu"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="menu horizontal-menu col-lg-12 js-top-menu position-static hidden-md-down" id="_desktop_main_menu">
+                        <ul class="top-menu  container" id="top-menu" data-depth="0">
+                           <li class="link " id="lnk-home">
+                              <a class="dropdown-item" href="!" data-depth="0">
+                              Home
+                              </a>
+                           </li>
+                           <li class="cms-page " id="cms-page-4">
+                              <a class="dropdown-item" href="!" data-depth="0">
+                              About us
+                              </a>
+                           </li>
+                           <li class="cms-page " id="cms-page-1">
+                              <a class="dropdown-item" href="!" data-depth="0">
+                              Delivery
+                              </a>
+                           </li>
+                           <li class="link " id="lnk-blog">
+                              <a class="dropdown-item" href="!" data-depth="0">
+                              Blog
+                              </a>
+                           </li>
+                           <li class="category " id="category-13">
+                              <a class="dropdown-item" href="!" data-depth="0">
+                              Featured
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         {%block content%}
+         <aside id="notifications">
+            <div class="container">
+            </div>
+         </aside>
+         <section id="wrapper">
+            <nav data-depth="1" class="breadcrumb">
+               <div class="container">
+                  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+                     <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                        
+                        <span itemprop="name">Home</span>
+                        
+                        <meta itemprop="position" content="1">
+                     </li>
+                  </ol>
+               </div>
+            </nav>
+            <div class="home-container">
+               <div id="columns_inner">
+                  <div id="content-wrapper">
+                     <section id="main">
+                        <section id="content" class="page-home">
+                           <div class="display-top-inner">
+                              <div class="flexslider" data-interval="8000" data-pause="true">
+                                 <div class="loadingdiv spinner"></div>
+                                 <ul class="slides">
+                                    <li class="slide">
+                                       <a href="#" title="sample-1">
+                                       <img class="lazyload" data-src="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/modules/cz_imageslider/views/img/sample-1.jpg" alt="sample-1" title="Sample 1">
+                                       </a>				
+                                    </li>
+                                    <li class="slide">
+                                       <a href="#" title="sample-2">
+                                       <img class="lazyload" data-src="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/modules/cz_imageslider/views/img/sample-2.jpg" alt="sample-2" title="Sample 2">
+                                       </a>				
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <section class="newproducts clearfix">
+                              <div class="container">
+                                 <h2 class="h1 products-section-title text-uppercase">
+                                    Latest products
+                                 </h2>
+
+
+
+
+
+
+
+
+
+                                 <div class="newproducts-wrapper">
+                                    <div class="products">
+                                       <!-- Define Number of product for SLIDER -->
+                                       <ul id="newproduct-carousel" class="cz-carousel product_list">
+                                          <li class="item">
+                                             <div class="product-miniature js-product-miniature" data-id-product="33" data-id-product-attribute="305" itemscope itemtype="http://schema.org/Product">
+                                                <div class="thumbnail-container">
+                                                   <div class="image">
+                                                      <a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_product=33&id_product_attribute=305&rewrite=hummingbird-printed-t-shirt&controller=product&id_lang=1#/1-size-s/14-color-blue" class="thumbnail product-thumbnail">
+                                                         <img class="lazyload" data-src="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/img/p/1/0/9/109-home_default.jpg" alt="Voluptas assume nostrum..." >
+                                                      </a>
+                                                   </div>
+                                                   <div class="outer-functional">
+                                                      <div class="functional-buttons">
+                                                         <div class="wishlist">
+                                                            <a class="st-wishlist-button btn-product btn" href="#" data-id-wishlist data-id-product="33" data-id-product-attribute="305" title="Add to Wishlist">
+                                                            <span class="st-wishlist-bt-content">
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            Add to Wishlist
+                                                            </span>
+                                                            </a>
+                                                         </div>
+                                                         <div class="compare">
+                                                            <a class="st-compare-button btn-product btn" href="#" data-id-product="33" title="Add to Compare">
+                                                            <span class="st-compare-bt-content">
+                                                            <i class="fa fa-area-chart"></i>
+                                                            Add to Compare
+                                                            </span>
+                                                            </a>
+                                                         </div>
+                                                         <a href="#" class="quick-view" data-link-action="quickview">
+                                                         <i class="material-icons search"></i> Quick view
+                                                         </a>
+                                                      </div>
+                                                   </div>
+                                                </div>
+
+
+                                                <div class="product-description">
+                                                   <div class="brand-title" itemprop="name">
+                                                      <a href="">Durian</a>
+                                                   </div>
+                                                   <span class="h3 product-title" itemprop="name"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_product=33&id_product_attribute=305&rewrite=hummingbird-printed-t-shirt&controller=product&id_lang=1#/1-size-s/14-color-blue">Voluptas assume nostrum hamp-sydney</a></span>
+                                                   <div class="product-price-and-shipping">
+                                                      <span class="regular-price">€94.00</span>
+                                                      <span class="discount-amount discount-product">-€9.00</span>
+                                                      <span itemprop="price" class="price">€85.00</span>
+                                                   </div>
+                                                   <div class="comments_note">
+                                                      <div class="star_content clearfix">
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="product-actions">
+                                                      <form action="" method="post" class="add-to-cart-or-refresh">
+                                                         <input type="hidden" name="token" value="8bd9f42887793a736c2d38fd8a0dceff">
+                                                         <input type="hidden" name="id_product" value="33" class="product_page_product_id">
+                                                         <input type="hidden" name="id_customization" value="0" class="product_customization_id">
+                                                         <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit" disabled>
+                                                         Add to cart
+                                                         </button>
+                                                      </form>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </li>
+                                          <li class="item">
+                                             <div class="product-miniature js-product-miniature" data-id-product="33" data-id-product-attribute="305" itemscope itemtype="http://schema.org/Product">
+                                                <div class="thumbnail-container">
+                                                   <div class="image">
+                                                      <a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_product=33&id_product_attribute=305&rewrite=hummingbird-printed-t-shirt&controller=product&id_lang=1#/1-size-s/14-color-blue" class="thumbnail product-thumbnail">
+                                                         <img class="lazyload" data-src="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/img/p/1/0/9/109-home_default.jpg" alt="Voluptas assume nostrum..." >
+                                                      </a>
+                                                   </div>
+                                                   <div class="outer-functional">
+                                                      <div class="functional-buttons">
+                                                         <div class="wishlist">
+                                                            <a class="st-wishlist-button btn-product btn" href="#" data-id-wishlist data-id-product="33" data-id-product-attribute="305" title="Add to Wishlist">
+                                                            <span class="st-wishlist-bt-content">
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            Add to Wishlist
+                                                            </span>
+                                                            </a>
+                                                         </div>
+                                                         <div class="compare">
+                                                            <a class="st-compare-button btn-product btn" href="#" data-id-product="33" title="Add to Compare">
+                                                            <span class="st-compare-bt-content">
+                                                            <i class="fa fa-area-chart"></i>
+                                                            Add to Compare
+                                                            </span>
+                                                            </a>
+                                                         </div>
+                                                         <a href="#" class="quick-view" data-link-action="quickview">
+                                                         <i class="material-icons search"></i> Quick view
+                                                         </a>
+                                                      </div>
+                                                   </div>
+                                                </div>
+
+
+                                                <div class="product-description">
+                                                   <div class="brand-title" itemprop="name">
+                                                      <a href="">Durian</a>
+                                                   </div>
+                                                   <span class="h3 product-title" itemprop="name"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_product=33&id_product_attribute=305&rewrite=hummingbird-printed-t-shirt&controller=product&id_lang=1#/1-size-s/14-color-blue">Voluptas assume nostrum hamp-sydney</a></span>
+                                                   <div class="product-price-and-shipping">
+                                                      <span class="regular-price">€94.00</span>
+                                                      <span class="discount-amount discount-product">-€9.00</span>
+                                                      <span itemprop="price" class="price">€85.00</span>
+                                                   </div>
+                                                   <div class="comments_note">
+                                                      <div class="star_content clearfix">
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="product-actions">
+                                                      <form action="" method="post" class="add-to-cart-or-refresh">
+                                                         <input type="hidden" name="token" value="8bd9f42887793a736c2d38fd8a0dceff">
+                                                         <input type="hidden" name="id_product" value="33" class="product_page_product_id">
+                                                         <input type="hidden" name="id_customization" value="0" class="product_customization_id">
+                                                         <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit" disabled>
+                                                         Add to cart
+                                                         </button>
+                                                      </form>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </li>
+                                          </li>
+                                          </li>
+                                       </ul>
+
+
+                                    </div>
+                                    
+                                 </div>
+                                 
+                              </div>
+
+                           </section>
+                           <section class="featured-products clearfix">
+                              <div class="container">
+                                 <h2 class="h1 products-section-title text-uppercase">
+                                    <span>Featured products</span>
+                                 </h2>
+                                 <div class="featureproducts-wrapper">
+                                    <div class="products">
+                                       <!-- Define Number of product for SLIDER -->
+                                       <ul id="feature-carousel" class="cz-carousel product_list">
+                                          <li class="item">
+                                             <div class="product-miniature js-product-miniature" data-id-product="33" data-id-product-attribute="305" itemscope itemtype="http://schema.org/Product">
+                                                <div class="thumbnail-container">
+                                                   <div class="image">
+                                                      <a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_product=33&id_product_attribute=305&rewrite=hummingbird-printed-t-shirt&controller=product&id_lang=1#/1-size-s/14-color-blue" class="thumbnail product-thumbnail">
+                                                         <img class="lazyload" data-src="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/img/p/1/0/9/109-home_default.jpg" alt="Voluptas assume nostrum..." >
+                                                      </a>
+                                                   </div>
+                                                   <div class="outer-functional">
+                                                      <div class="functional-buttons">
+                                                         <div class="wishlist">
+                                                            <a class="st-wishlist-button btn-product btn" href="#" data-id-wishlist data-id-product="33" data-id-product-attribute="305" title="Add to Wishlist">
+                                                            <span class="st-wishlist-bt-content">
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            Add to Wishlist
+                                                            </span>
+                                                            </a>
+                                                         </div>
+                                                         <div class="compare">
+                                                            <a class="st-compare-button btn-product btn" href="#" data-id-product="33" title="Add to Compare">
+                                                            <span class="st-compare-bt-content">
+                                                            <i class="fa fa-area-chart"></i>
+                                                            Add to Compare
+                                                            </span>
+                                                            </a>
+                                                         </div>
+                                                         <a href="#" class="quick-view" data-link-action="quickview">
+                                                         <i class="material-icons search"></i> Quick view
+                                                         </a>
+                                                      </div>
+                                                   </div>
+                                                </div>
+
+
+                                                <div class="product-description">
+                                                   <div class="brand-title" itemprop="name">
+                                                      <a href="">Durian</a>
+                                                   </div>
+                                                   <span class="h3 product-title" itemprop="name"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_product=33&id_product_attribute=305&rewrite=hummingbird-printed-t-shirt&controller=product&id_lang=1#/1-size-s/14-color-blue">Voluptas assume nostrum hamp-sydney</a></span>
+                                                   <div class="product-price-and-shipping">
+                                                      <span class="regular-price">€94.00</span>
+                                                      <span class="discount-amount discount-product">-€9.00</span>
+                                                      <span itemprop="price" class="price">€85.00</span>
+                                                   </div>
+                                                   <div class="comments_note">
+                                                      <div class="star_content clearfix">
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="product-actions">
+                                                      <form action="" method="post" class="add-to-cart-or-refresh">
+                                                         <input type="hidden" name="token" value="8bd9f42887793a736c2d38fd8a0dceff">
+                                                         <input type="hidden" name="id_product" value="33" class="product_page_product_id">
+                                                         <input type="hidden" name="id_customization" value="0" class="product_customization_id">
+                                                         <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit" disabled>
+                                                         Add to cart
+                                                         </button>
+                                                      </form>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </li>
+                                          <li class="item">
+                                             <div class="product-miniature js-product-miniature" data-id-product="33" data-id-product-attribute="305" itemscope itemtype="http://schema.org/Product">
+                                                <div class="thumbnail-container">
+                                                   <div class="image">
+                                                      <a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_product=33&id_product_attribute=305&rewrite=hummingbird-printed-t-shirt&controller=product&id_lang=1#/1-size-s/14-color-blue" class="thumbnail product-thumbnail">
+                                                         <img class="lazyload" data-src="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/img/p/1/0/9/109-home_default.jpg" alt="Voluptas assume nostrum..." >
+                                                      </a>
+                                                   </div>
+                                                   <div class="outer-functional">
+                                                      <div class="functional-buttons">
+                                                         <div class="wishlist">
+                                                            <a class="st-wishlist-button btn-product btn" href="#" data-id-wishlist data-id-product="33" data-id-product-attribute="305" title="Add to Wishlist">
+                                                            <span class="st-wishlist-bt-content">
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            Add to Wishlist
+                                                            </span>
+                                                            </a>
+                                                         </div>
+                                                         <div class="compare">
+                                                            <a class="st-compare-button btn-product btn" href="#" data-id-product="33" title="Add to Compare">
+                                                            <span class="st-compare-bt-content">
+                                                            <i class="fa fa-area-chart"></i>
+                                                            Add to Compare
+                                                            </span>
+                                                            </a>
+                                                         </div>
+                                                         <a href="#" class="quick-view" data-link-action="quickview">
+                                                         <i class="material-icons search"></i> Quick view
+                                                         </a>
+                                                      </div>
+                                                   </div>
+                                                </div>
+
+
+                                                <div class="product-description">
+                                                   <div class="brand-title" itemprop="name">
+                                                      <a href="">Durian</a>
+                                                   </div>
+                                                   <span class="h3 product-title" itemprop="name"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_product=33&id_product_attribute=305&rewrite=hummingbird-printed-t-shirt&controller=product&id_lang=1#/1-size-s/14-color-blue">Voluptas assume nostrum hamp-sydney</a></span>
+                                                   <div class="product-price-and-shipping">
+                                                      <span class="regular-price">€94.00</span>
+                                                      <span class="discount-amount discount-product">-€9.00</span>
+                                                      <span itemprop="price" class="price">€85.00</span>
+                                                   </div>
+                                                   <div class="comments_note">
+                                                      <div class="star_content clearfix">
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="product-actions">
+                                                      <form action="" method="post" class="add-to-cart-or-refresh">
+                                                         <input type="hidden" name="token" value="8bd9f42887793a736c2d38fd8a0dceff">
+                                                         <input type="hidden" name="id_product" value="33" class="product_page_product_id">
+                                                         <input type="hidden" name="id_customization" value="0" class="product_customization_id">
+                                                         <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit" disabled>
+                                                         Add to cart
+                                                         </button>
+                                                      </form>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </li>
+                                       </ul>
+                                       <div class="customNavigation">
+                                          <a class="btn prev feature_prev"> </a>
+                                          <a class="btn next feature_next"> </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </section>
+
+
+
+                           
+                           <div id="cztestimonialcmsblock" class="block testimonial-block">
+                              <div class="parallax czparallax_1 lazyload" data-source-url="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/modules/cz_testimonialcmsblock/views/img/parallax-bg.jpg">
+                                 <div class="testimonial_container container">
+                                    <div class="testimonial_wrapper">
+                                       <div class="customNavigation"><a class="btn prev cztestimonial_prev"> </a> <a class="btn next cztestimonial_next"> </a></div>
+                                       <div class="testimonial-area">
+                                          <ul id="testimonial-carousel" class="cz-carousel product_list">
+                                             <li class="item">
+                                                <div class="testimonial-item">
+                                                   <div class="item cms_face">
+                                                      <div class="quote_img"></div>
+                                                      <div class="product_inner_cms">
+                                                         <div class="des">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book It has survived not only</div>
+                                                      </div>
+                                                      <div class="title">
+                                                         <div class="name"><a href="#">jecob goeckno</a></div>
+                                                         <span class="subheading">Designer</span>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </li>
+                                             <li class="item">
+                                                <div class="testimonial-item">
+                                                   <div class="item cms_face">
+                                                      <div class="quote_img"></div>
+                                                      <div class="product_inner_cms">
+                                                         <div class="des">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus officiis debitis aut rerum</div>
+                                                      </div>
+                                                      <div class="title">
+                                                         <div class="name"><a href="#">Din Desuza</a></div>
+                                                         <span class="subheading">Web developer</span>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </li>
+                                             <li class="item">
+                                                <div class="testimonial-item">
+                                                   <div class="item cms_face">
+                                                      <div class="quote_img"></div>
+                                                      <div class="product_inner_cms">
+                                                         <div class="des">These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided repudiated and annoyances owing</div>
+                                                      </div>
+                                                      <div class="title">
+                                                         <div class="name"><a href="#">Mark Jofferson</a></div>
+                                                         <span class="subheading">Manager</span>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+
+
+                           <section class="special-products">
+                              <div class="container">
+                                 <h1 class="h1 products-section-title text-uppercase">
+                                    Special products
+                                 </h1>
+                                 <div class="special-products-wrapper">
+                                    <div class="products">
+                                       <!-- Define Number of product for SLIDER -->
+                                       <ul id="special-carousel" class="cz-carousel product_list">
+                                          <li class="item">
+                                             <div class="product-miniature js-product-miniature" data-id-product="33" data-id-product-attribute="305" itemscope itemtype="http://schema.org/Product">
+                                                <div class="thumbnail-container">
+                                                   <div class="image">
+                                                      <a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_product=33&id_product_attribute=305&rewrite=hummingbird-printed-t-shirt&controller=product&id_lang=1#/1-size-s/14-color-blue" class="thumbnail product-thumbnail">
+                                                         <img class="lazyload" data-src="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/img/p/1/0/9/109-home_default.jpg" alt="Voluptas assume nostrum..." >
+                                                      </a>
+                                                   </div>
+                                                   <div class="outer-functional">
+                                                      <div class="functional-buttons">
+                                                         <div class="wishlist">
+                                                            <a class="st-wishlist-button btn-product btn" href="#" data-id-wishlist data-id-product="33" data-id-product-attribute="305" title="Add to Wishlist">
+                                                            <span class="st-wishlist-bt-content">
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            Add to Wishlist
+                                                            </span>
+                                                            </a>
+                                                         </div>
+                                                         <div class="compare">
+                                                            <a class="st-compare-button btn-product btn" href="#" data-id-product="33" title="Add to Compare">
+                                                            <span class="st-compare-bt-content">
+                                                            <i class="fa fa-area-chart"></i>
+                                                            Add to Compare
+                                                            </span>
+                                                            </a>
+                                                         </div>
+                                                         <a href="#" class="quick-view" data-link-action="quickview">
+                                                         <i class="material-icons search"></i> Quick view
+                                                         </a>
+                                                      </div>
+                                                   </div>
+                                                </div>
+
+
+                                                <div class="product-description">
+                                                   <div class="brand-title" itemprop="name">
+                                                      <a href="">Durian</a>
+                                                   </div>
+                                                   <span class="h3 product-title" itemprop="name"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_product=33&id_product_attribute=305&rewrite=hummingbird-printed-t-shirt&controller=product&id_lang=1#/1-size-s/14-color-blue">Voluptas assume nostrum hamp-sydney</a></span>
+                                                   <div class="product-price-and-shipping">
+                                                      <span class="regular-price">€94.00</span>
+                                                      <span class="discount-amount discount-product">-€9.00</span>
+                                                      <span itemprop="price" class="price">€85.00</span>
+                                                   </div>
+                                                   <div class="comments_note">
+                                                      <div class="star_content clearfix">
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="product-actions">
+                                                      <form action="" method="post" class="add-to-cart-or-refresh">
+                                                         <input type="hidden" name="token" value="8bd9f42887793a736c2d38fd8a0dceff">
+                                                         <input type="hidden" name="id_product" value="33" class="product_page_product_id">
+                                                         <input type="hidden" name="id_customization" value="0" class="product_customization_id">
+                                                         <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit" disabled>
+                                                         Add to cart
+                                                         </button>
+                                                      </form>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </li>
+                                          <li class="item">
+                                             <div class="product-miniature js-product-miniature" data-id-product="33" data-id-product-attribute="305" itemscope itemtype="http://schema.org/Product">
+                                                <div class="thumbnail-container">
+                                                   <div class="image">
+                                                      <a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_product=33&id_product_attribute=305&rewrite=hummingbird-printed-t-shirt&controller=product&id_lang=1#/1-size-s/14-color-blue" class="thumbnail product-thumbnail">
+                                                         <img class="lazyload" data-src="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/img/p/1/0/9/109-home_default.jpg" alt="Voluptas assume nostrum..." >
+                                                      </a>
+                                                   </div>
+                                                   <div class="outer-functional">
+                                                      <div class="functional-buttons">
+                                                         <div class="wishlist">
+                                                            <a class="st-wishlist-button btn-product btn" href="#" data-id-wishlist data-id-product="33" data-id-product-attribute="305" title="Add to Wishlist">
+                                                            <span class="st-wishlist-bt-content">
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            Add to Wishlist
+                                                            </span>
+                                                            </a>
+                                                         </div>
+                                                         <div class="compare">
+                                                            <a class="st-compare-button btn-product btn" href="#" data-id-product="33" title="Add to Compare">
+                                                            <span class="st-compare-bt-content">
+                                                            <i class="fa fa-area-chart"></i>
+                                                            Add to Compare
+                                                            </span>
+                                                            </a>
+                                                         </div>
+                                                         <a href="#" class="quick-view" data-link-action="quickview">
+                                                         <i class="material-icons search"></i> Quick view
+                                                         </a>
+                                                      </div>
+                                                   </div>
+                                                </div>
+
+
+                                                <div class="product-description">
+                                                   <div class="brand-title" itemprop="name">
+                                                      <a href="">Durian</a>
+                                                   </div>
+                                                   <span class="h3 product-title" itemprop="name"><a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_product=33&id_product_attribute=305&rewrite=hummingbird-printed-t-shirt&controller=product&id_lang=1#/1-size-s/14-color-blue">Voluptas assume nostrum hamp-sydney</a></span>
+                                                   <div class="product-price-and-shipping">
+                                                      <span class="regular-price">€94.00</span>
+                                                      <span class="discount-amount discount-product">-€9.00</span>
+                                                      <span itemprop="price" class="price">€85.00</span>
+                                                   </div>
+                                                   <div class="comments_note">
+                                                      <div class="star_content clearfix">
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                         <div class="star"></div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="product-actions">
+                                                      <form action="" method="post" class="add-to-cart-or-refresh">
+                                                         <input type="hidden" name="token" value="8bd9f42887793a736c2d38fd8a0dceff">
+                                                         <input type="hidden" name="id_product" value="33" class="product_page_product_id">
+                                                         <input type="hidden" name="id_customization" value="0" class="product_customization_id">
+                                                         <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit" disabled>
+                                                         Add to cart
+                                                         </button>
+                                                      </form>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </li>
+                                       </ul>
+                                       <div class="customNavigation">
+                                          <a class="btn prev special_prev"> </a>
+                                          <a class="btn next special_next"> </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </section>
+
+                           
+                        <footer class="page-footer">
+                           <!-- Footer content -->
+                        </footer>
+                     </section>
+                  </div>
+               </div>
+            </div>
+         </section>
+         {%endblock content%}
+         <footer>
+                     <script type="text/javascript">
+                        var regisNewsletterMessage = 'You have subscribled successfully!';
+                        var enterEmail = 'Please enter valid email address!';
+                     </script>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-after">
+               <div class="container">
+                  <!-- Block payment logo module -->
+                  <div id="payement_logo_block_left" class="payement_logo_block">
+                     <a href="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?id_cms=1&controller=cms&id_lang=1">
+                     <img class="lazyload" data-src="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/modules/cz_blockpaymentlogo/views/img/visa.png" alt="visa" width="32" height="20">
+                     <img class="lazyload" data-src="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/modules/cz_blockpaymentlogo/views/img/discover.png" alt="discover" width="32" height="20">
+                     <img class="lazyload" data-src="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/modules/cz_blockpaymentlogo/views/img/american_express.png" alt="american_express" width="32" height="20">
+                     <img class="lazyload" data-src="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/modules/cz_blockpaymentlogo/views/img/google_wallet.png" alt="google_wallet" width="32" height="20">
+                     <img class="lazyload" data-src="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/modules/cz_blockpaymentlogo/views/img/paypal.png" alt="paypal" width="32" height="20">
+                     <img class="lazyload" data-src="https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/modules/cz_blockpaymentlogo/views/img/master_card.png" alt="master_card" width="32" height="20">		
+                     </a>
+                  </div>
+                  <!-- /Block payment logo module -->
+                  <div class="copyright">
+                     <a class="_blank" href="http://www.prestashop.com" target="_blank">
+                     © 2022 - Ecommerce software by PrestaShop™
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <a class="top_button" href="#" style> </a>
+            <style>
+               #footer{ margin-bottom: 56px; }
+               .top_button{  bottom: 70px; }
+            </style>
+         </footer>
+      </main>
+      {%endblock maincontent%}
+      {%block script%} {%endblock script%}
+      <script type="text/javascript" src="{%static 'js/core.js'%}"></script>
+      <script type="text/javascript" src="{%static 'js/theme.js'%}"></script>
+      <script type="text/javascript" src="{%static 'js/front.js'%}"></script>
+      <script type="text/javascript" src="{%static 'js/jquery.rating.pack.js'%}"></script>
+      <script type="text/javascript" src="{%static 'js/jquery.textareaCounter.plugin.js'%}"></script>
+      <script type="text/javascript" src="{%static 'js/myprestacomments.js'%}"></script>
+      <script type="text/javascript" src="{%static 'js/stfeature_compare.js'%}"></script>
+      <script type="text/javascript" src="{%static 'js/stfeature_wishlist.js'%}"></script>
+      <script type="text/javascript" src="{%static 'js/czcouponpop.js'%}"></script>
+      <script type="text/javascript" src="{%static 'js/jquery-ui.min.js'%}"></script>
+      <script type="text/javascript" src="{%static 'js/jquery.fancybox.js'%}"></script>
+      <script type="text/javascript" src="{%static 'js/ps_searchbar.js'%}"></script>
+      <script type="text/javascript" src="{%static 'js/ps_shoppingcart.js'%}"></script>
+      <script type="text/javascript" src="{%static 'js/jquery.flexslider-min.js'%}"></script>
+      <script type="text/javascript" src="{%static 'js/parallax.js'%}"></script>
+      <script type="text/javascript" src="{%static 'js/owl.carousel.js'%}"></script>
+      <script type="text/javascript" src="{%static 'js/totalstorage.js'%}"></script>
+      <script type="text/javascript" src="{%static 'js/lightbox.js'%}"></script>
+      <script type="text/javascript" src="{%static 'js/lazysizes.min.js'%}"></script>
+      <script type="text/javascript" src="{%static 'js/jquery.hoverdir.js'%}"></script>
+      <script type="text/javascript" src="{%static 'js/modernizr.js'%}"></script>
+      <script type="text/javascript" src="{%static 'js/custom.js'%}"></script>
+   </body>
+</html>

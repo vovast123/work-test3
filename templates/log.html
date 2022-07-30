@@ -1,0 +1,65 @@
+{%extends 'base.html'%}
+{%load static%}
+
+{%block title%}
+    Register - Login
+{%endblock title%}
+
+
+{%block link%} 
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{%static 'css/reg_log.css'%}" />
+{%endblock link%}
+
+
+
+
+
+{%block maincontent%}
+
+{%block content%}
+
+<div class="container">
+	<header>
+		<h1>
+			<a href="{%url 'base'%}">
+				<img src="{%static 'images/demo-store-logo-1626677799.png'%}" alt="Logis Cargo">
+			</a>
+		</h1>
+	</header>
+	<h1 class="text-center">Sign in</h1>
+    {%for messages in messages%}
+        <p id="messages" >{{messages}} </p>
+    {%endfor%}
+	<form class="registration-form" method="POST">
+        {%csrf_token%}
+		<label>
+			<span class="label-text">Login</span>
+			<input type="text" name="username">
+		</label>
+		<label class="password">
+			<span class="label-text">Password</span>
+			<button class="toggle-visibility" title="toggle password visibility" tabindex="-1">
+				<span class="glyphicon glyphicon-eye-close"></span>
+			</button>
+			<input type="password" name="password">
+		</label>
+		<label class="checkbox">
+			<input type="checkbox" name="newsletter">
+			<span>Sign me up for the weekly newsletter.</span>
+		</label>
+		<div class="text-center">
+			<button class="submit"  type="submit" name="register">Sign Me In</button>
+		</div>
+	</form>
+</div>
+
+
+{%endblock content%}
+
+{%endblock maincontent%}
+
+{%block script%}
+
+<script type="text/javascript" src="{%static 'js/reg.js'%}"></script>
+{%endblock script%}
