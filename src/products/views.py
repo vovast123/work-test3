@@ -38,6 +38,7 @@ class Reg(DetailView):
     def get(self, request):
         form=UserForm()
         form2 = ProfileForm()
+
         if request.user.is_authenticated:
             return redirect(to='base')
         return render(request, 'reg.html',{
@@ -47,8 +48,8 @@ class Reg(DetailView):
 
     def post(self,request,*args, **kwargs):
         form = UserForm(request.POST)
-        if form.is_valid():
-            newuser = form.save(commit=False)
+        if form.is_valid(): 
+            newuser = form.save(commit=False)                
             newuser.save()
             form2 = ProfileForm(request.POST, instance=newuser.profile)
             if form2.is_valid():
@@ -59,6 +60,7 @@ class Reg(DetailView):
         return render(request, 'reg.html',{
             'form':form,
             'form2':form2,
+            
         })
 
 

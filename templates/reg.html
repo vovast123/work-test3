@@ -28,18 +28,24 @@
 		</h1>
 	</header>
 	<h1 class="text-center">Register</h1>
+	{% for message in messages %}
+	<div class="ui {{message.tags}} message">
+   	 	{{message}}
+		{{feil}}
+	</div>
+	{% endfor %}
 	<form class="registration-form" method="POST">
         {%csrf_token%}
 		<label>
-			<span class="label-text">First name</span>
+			<span class="label-text">Image</span>
 			{{form2.picture}}
 		</label>
 		<label>
-			<span class="label-text">First name</span>
+			<span class="label-text">Nickname(must be unique)</span>
 			{{form.username}}
 		</label>
 		<label>
-			<span class="label-text">Last name</span>
+			<span class="label-text">First name and Last name</span>
 			{{form.last_name}}
 		</label>
 		<label>
@@ -58,6 +64,7 @@
 			<button class="submit"  type="submit" name="register">Sign Me In</button>
 		</div>
 	</form>
+	<span class="label-text"><a href="{%url 'login'%}">Sign in</a></span>
 </div>
 
 

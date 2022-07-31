@@ -11,7 +11,7 @@ class Profile(models.Model):
 
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     picture = models.ImageField(
-        default='no-avavtar.jpeg',
+        default='no-avatar.jpeg',
         upload_to=get_path_upload_profile_image,
         blank=True,
         null=True,
@@ -19,6 +19,7 @@ class Profile(models.Model):
             FileExtensionValidator(allowed_extensions=['jpg', 'jpeg', 'png', 'gif']),
             validate_size_image],
     )
+    is_email_verified=  models.BooleanField('Verified email',default=False)
     code = models.TextField('Code company',blank=True)
     check_code = models.BooleanField('Check',default=False)
     check_code_fail = models.BooleanField('Fail',default=False)
