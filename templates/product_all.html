@@ -1,0 +1,33 @@
+{%extends 'base.html'%}
+{%load static%}
+
+{%block title%}
+    Product
+{%endblock title%}
+
+
+{%block link%} 
+
+{%endblock link%}
+
+
+{%block content%}
+
+{%for p in product %}
+    <h1>{{p.title}}</h1>
+    <br>
+    
+
+{%endfor%}
+
+
+
+
+
+
+{%endblock content%}
+
+
+{%block script%}
+
+{%endblock script%}

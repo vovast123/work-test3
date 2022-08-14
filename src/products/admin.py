@@ -4,10 +4,13 @@ from src.products import models
 
 
 
+@admin.register(models.Profile)
+class SubCategoryAdmin(admin.ModelAdmin):
+    list_display = ("id", "user", "for_checking")
+    list_display_links = ("id", "user", )
+    list_filter = ( "for_checking",)
 
-admin.site.register(models.Profile)
 admin.site.register(models.Reviews)
-admin.site.register(models.CategoryLegal)
 admin.site.register(models.ReviewsLg)
 
 class ProductImageAdmin(admin.ModelAdmin):
@@ -50,10 +53,23 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 @admin.register(models.SubCategory)
-class CategoryAdmin(admin.ModelAdmin):
+class SubCategoryAdmin(admin.ModelAdmin):
     list_display = ("id", "category", "title")
     list_display_links = ("id", "title", )
     list_filter = ("title", "category")
     prepopulated_fields = {"slug": ("title", )}
 
 
+@admin.register(models.CategoryLegal)
+class CategorylgAdmin(admin.ModelAdmin):
+    list_display = ("id", "title")
+    list_display_links = ("id", "title", )
+    list_filter = ("title", )
+    prepopulated_fields = {"slug": ("title", )}
+
+@admin.register(models.SubCategoryLegal)
+class SubCategorylgAdmin(admin.ModelAdmin):
+    list_display = ("id", "category", "title")
+    list_display_links = ("id", "title", )
+    list_filter = ("title", "category")
+    prepopulated_fields = {"slug": ("title", )}

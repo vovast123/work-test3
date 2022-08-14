@@ -25,6 +25,9 @@
       <link rel="stylesheet" href="{%static 'css/flexslider.css'%}" />
       <link rel="stylesheet" href="{%static 'css/custom.css'%}" />
       <link rel="stylesheet" href="{%static 'css/jquery.fancybox.css'%}" />
+      <link rel="preconnect" href="https://fonts.googleapis.com"> 
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+      <link href="https://fonts.googleapis.com/css2?family=Poor+Story&family=Radio+Canada&family=Rubik&family=Rubik+Distressed&family=Square+Peg&family=Syne+Mono&display=swap" rel="stylesheet">  
       {%block link%} {%endblock link%}
       <script type="text/javascript">
          var buttoncompare_title_add = "Add to Compare";
@@ -60,11 +63,12 @@
    <body id="index" class="lang-en country-de currency-eur layout-full-width page-index tax-display-enabled">
       {%block maincontent%}
       <main id="page">
+         
          <header id="header">
             <div class="header-top">
                <div class="container">
                   <div class="header_logo">
-                     <a href="#">
+                     <a href="{%url 'base'%}">
                      <img class="logo img-responsive" src="{%static 'images/demo-store-logo-1626677799.png'%}" alt="Logis Cargo - Furniture Store">
                      </a>
                   </div>
@@ -94,21 +98,21 @@
                         </ul>
                      </div>
                   </div>
-                  <div id="desktop_cart">
-                     <div class="blockcart cart-preview inactive" data-refresh-url="//demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?fc=module&module=ps_shoppingcart&controller=ajax&id_lang=1">
-                        <div class="header blockcart-header dropdown js-dropdown">
-                           <a class="shopping-cart" rel="nofollow" href="//demo.codezeel.com/prestashop/PRS17/PRS170411/PRS03/index.php?controller=cart&action=show">
-                           <span class="hidden-sm-down cart-headding">My Cart</span>
-                           <span class="mobile_count">0</span>
-                           <span class="cart-products-count hidden-sm-down">								<span class="value"> €0.00</span>
-                           </span>
-                           </a>
-                        </div>
-                     </div>
-                  </div>
                   <div class="user-info dropdown js-dropdown">
                      <span class="user-info-title expand-more _gray-darker" data-toggle="dropdown"><span class="account_text">My Account</span></span>
                      <ul class="dropdown-menu">
+                        {% if user.is_authenticated %}
+                        <li>
+                           <a href="{%url 'profile_detail' request.user.id%}" data-link-action="display-register-form">
+                              Name: {{ request.user }} 
+                           </a>
+                        </li>
+                        <li>
+                           <a href="{%url 'logout'%}" data-link-action="display-register-form">
+                              Logout
+                           </a>
+                        </li>
+                        {%else%}
                         <li>
                            <a class="dropdown-item" href="{%url 'login'%}" title="Log in to your customer account" rel="nofollow">
                            <span>Sign in</span>
@@ -119,11 +123,7 @@
                            Register
                            </a>
                         </li>
-                        <li>
-                           <a href="{%url 'logout'%}" data-link-action="display-register-form">
-                              Logout
-                           </a>
-                        </li>
+                        {%endif%}
                         <li>
                            <div class="head-wishlist">
                            </div>
@@ -149,7 +149,31 @@
                               <span class="dropdown-arrow"></span>
                            </h4>
                            <div class="block_content verticalmenu_block dropdown-menu" id="_desktop_verticalmenu_menu">
+
+
                               <ul class="top-menu" id="top-menu" data-depth="0">
+                                 <li class="category" id="czcategory-1">		  <span class="pull-xs-right hidden-lg-up"><span data-target="#top_sub_menu_13813" data-toggle="collapse" class="navbar-toggler collapse-icons"><i class="fa-icon add"> </i><i class="fa-icon remove"> </i></span></span><span class="pull-xs-right sub-menu-arrow"></span>Furniture
+                                    <div class="popover sub-menu js-sub-menu collapse" id="top_sub_menu_13813">
+                                       <ul class="top-menu" data-depth="1">
+                                          <li class="category" id="czcategory-1"><a href="" class="dropdown-item dropdown-submenu" data-depth="1">			  <span class="pull-xs-right hidden-lg-up"><span data-target="#top_sub_menu_62654" data-toggle="collapse" class="navbar-toggler collapse-icons"><i class="fa-icon add"> </i><i class="fa-icon remove"> </i></span></span>Armoires</a>
+                                             <div class="collapse" id="top_sub_menu_62654">
+                                                <ul class="top-menu" data-depth="2">
+                                                   <li class="category" id="czcategory-16"><a href="" class="dropdown-item" data-depth="2">Recliner Sofa</a></li>
+                                                   <li class="category" id="czcategory-17"><a href="" class="dropdown-item" data-depth="2">Coffee Tables</a></li>
+                                                   <li class="category" id="czcategory-18"><a href="" class="dropdown-item" data-depth="2">Lux woods</a></li>
+                                                   <li class="category" id="czcategory-19"><a href="" class="dropdown-item" data-depth="2">Cupboards</a></li>
+                                                </ul>
+                                             </div>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </li>
+                              </ul>
+                                 
+                                 
+                                 
+                                 
+                                 <ul class="top-menu" id="top-menu" data-depth="0">
                                  <li class="category" id="czcategory-16"><a href="!" class="dropdown-item" data-depth="0">Recliner Sofa</a></li>
                                  <li class="category" id="czcategory-17"><a href="!" class="dropdown-item" data-depth="0">Coffee Tables</a></li>
                                  <li class="category" id="czcategory-10"><a href="!" class="dropdown-item" data-depth="0">Wardrobe</a></li>
@@ -196,13 +220,13 @@
                               </a>
                            </li>
                            <li class="cms-page " id="cms-page-1">
-                              <a class="dropdown-item" href="!" data-depth="0">
-                              Delivery
+                              <a class="dropdown-item" href="{%url 'all_product'%}" data-depth="0">
+                              All product
                               </a>
                            </li>
                            <li class="link " id="lnk-blog">
-                              <a class="dropdown-item" href="!" data-depth="0">
-                              Blog
+                              <a class="dropdown-item" href="{%url 'all_product_lg'%}" data-depth="0">
+                              All legal product
                               </a>
                            </li>
                            <li class="category " id="category-13">
@@ -216,6 +240,7 @@
                </div>
             </div>
          </header>
+         
          {%block content%}
          <aside id="notifications">
             <div class="container">

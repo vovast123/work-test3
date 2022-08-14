@@ -1,0 +1,44 @@
+{%extends 'base.html'%}
+{%load static%}
+
+{%block title%}
+    Code
+{%endblock title%}
+
+
+{%block link%} 
+
+<link rel="stylesheet" href="{%static 'css/profile.css'%}" />
+
+{%endblock link%}
+
+
+{%block content%}
+
+
+<div class="profile-block mb-3 w">
+    <form action="{%url 'code' user.id%}" method="POST"  >
+        {%csrf_token%}
+		
+			<h5 class="prf-text-1 mb-2 w "><strong>Code</strong></h5>
+            <br>
+			{{form.code}}
+            <br>
+		
+		<div class="text-center">
+			<button class="button-37 up"  type="submit" name="POST">Enter</button>
+		</div>
+	</form>
+</div>
+
+
+
+
+{%endblock content%}
+
+
+{%block script%}
+
+{%endblock script%}
+
+

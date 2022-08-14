@@ -1,0 +1,78 @@
+{%extends 'base.html'%}
+{%load static%}
+
+{%block title%}
+    Profile - {{user}}
+{%endblock title%}
+
+
+{%block link%} 
+<link rel="stylesheet" href="{%static 'css/profile.css'%}" />
+
+{%endblock link%}
+
+
+{%block content%}
+
+
+<div class="profile-block mb-3 w">
+    <img class="rounded-circle mb-3" src="{{ profile.picture.url }}" style="width: 150px;"
+    alt="Avatar"  title="Sample 1">
+    <h5 class="prf-text-1 mb-2 w "><strong>{{user}}</strong></h5>
+    <h3 class="prf-text-1 mb-2 w"><strong>Full name - {{user.last_name}}</strong></h3>
+    {%if profile.check_code_fail == True%}
+        <p class="prf-text-2 mb-2">Verification - <span class="badge">failed</span></p>
+    {%elif profile.check_code == True%}
+        <p class="prf-text-2 mb-2">Verification - <span class="badge-p">passed</span></p>
+        {%if user == request.user%}
+        <a href="{%url 'create_product' user.id%}">  <button class="custom-btn btn-3"><span>Create Product</span></button></a>
+        <a href="{%url 'create_product_lg' user.id%}"><button class="button-37 mb-2" role="button">Сreate a legal service</button>
+        <br>
+        <a href=""><button class="button-37 mb-2" role="button">look at my product</button>
+        <a href=""><button class="button-37 mb-2" role="button">look at my legal service</button>
+        {%endif%}
+    {%elif profile.for_checking == True%}
+        <p class="prf-text-2 mb-2">Verification - <span class="badge-w">for review (may take some time)</span></p>
+    {%endif%}
+    {%if profile.check_code or profile.for_checking == True%}
+
+    {%else %}
+        {%if user == request.user%}
+        <p class="prf-text-2 mb-2">Before you click on the button, please enter the company code (without it you will not receive a promotion)</p>
+        <a href="{%url 'cheking' user.id%}"><button class="button-37 mb-2" role="button">Start Verification</button></a>
+        {%endif%}
+    {%endif%}
+
+
+    <h5 class="prf-text-1 mb-2"><strong>Code - {{profile.code}}</strong></h5>
+    {%if user == request.user%}
+        <a href="{%url 'code' user.id%}"><button class="button-37 mb-2" role="button">Enter or change company code</button></a>
+    {%endif%}
+    <br>
+    {%if profile.check_code == True %}
+        <p class="prf-text-2 mb-2">Сheck date - {{profile.date_created}}</p>
+    {%endif%}
+    {%if user == request.user%}
+    <a href="{%url 'reset_password' user.id%}">  <button class="custom-btn btn-7"><span>Read More</span></button></a>
+    {%endif%}
+
+</div>
+<div class="message">
+    <h3 class="mb-1"> <span class="badge">Everyone</span> - even an unregistered user can see your profile.</h3>
+    <h3>Only after checking your mail and your code you will be able to create your posts, but you can leave comments and buy something without checking.</h3>
+</div>
+
+
+
+
+
+
+
+{%endblock content%}
+
+
+{%block script%}
+
+{%endblock script%}
+
+

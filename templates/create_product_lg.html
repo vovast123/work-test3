@@ -1,0 +1,62 @@
+{%extends 'base.html'%}
+{%load static%}
+
+{%block title%}
+    Code
+{%endblock title%}
+
+
+{%block link%} 
+
+<link rel="stylesheet" href="{%static 'css/profile.css'%}" />
+<link rel="stylesheet" href="{%static 'css/product.css'%}" />
+
+{%endblock link%}
+
+
+{%block content%}
+
+
+
+<div class="box1">
+        <form action="{%url 'create_product_lg' user.id%}" method="POST" >
+            {%csrf_token%}
+            <h5 class="big-size "><strong>Image</strong></h5>
+            {{form.picture}}
+            
+            <h5 class="big-size"><strong>Category</strong></h5>
+            {{form.category}}
+            <h5 class="big-size"><strong>category_sub</strong></h5>
+            {{form.category_sub}}
+            
+            <h5 class="big-size"><strong>Title</strong></h5>
+            {{form.title}}
+            {{form.phone}}
+            
+            <h5 class="big-size"><strong>Description</strong></h5>
+            {{form.description}}
+            {{form.description_add}}
+            <h5 class="big-size"><strong>price</strong></h5>
+            {{form.price}}
+            
+            <h5 class="big-size"><strong>discount</strong></h5>
+            {{form.discount}}
+
+            <button class="custom-btn btn-3"><span>Reset Password</span></button>
+        </form>
+        
+</div>
+
+
+
+
+
+background: rgb(240, 205, 7);
+{%endblock content%}
+
+
+{%block script%}
+
+{%endblock script%}
+
+

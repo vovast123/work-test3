@@ -1,4 +1,3 @@
-from tabnanny import verbose
 from django.db import models
 from django.core.validators import FileExtensionValidator
 from django.contrib.auth.models import User
@@ -19,7 +18,7 @@ class Profile(models.Model):
             FileExtensionValidator(allowed_extensions=['jpg', 'jpeg', 'png', 'gif']),
             validate_size_image],
     )
-    is_email_verified=  models.BooleanField('Verified email',default=False)
+    for_checking = models.BooleanField('Checking',default=False)
     code = models.TextField('Code company',blank=True)
     check_code = models.BooleanField('Check',default=False)
     check_code_fail = models.BooleanField('Fail',default=False)
@@ -85,8 +84,13 @@ class Product(models.Model):
         Category, on_delete=models.CASCADE,
         related_name='product_category', verbose_name="Category of product"
     )
+    category_sub = models.ForeignKey(
+        SubCategory, on_delete=models.CASCADE,
+        related_name='product_category_sub', verbose_name="Category of product"
+    )
     title = models.CharField(db_index=True, max_length=255, verbose_name="title")
     slug = models.SlugField(unique=True, verbose_name="Link")
+    phone = models.SmallIntegerField('phone number',default=0)
     picture = models.ImageField(
         upload_to=get_path_upload_product_image,
         blank=True,
@@ -164,7 +168,22 @@ class CategoryLegal(models.Model):
         verbose_name_plural = "Categories for ls"
 
 
+class SubCategoryLegal(models.Model):
+    """ Модель подкатегорий """
+    category = models.ForeignKey(
+        CategoryLegal, on_delete=models.CASCADE,
+        related_name="sub_categorylg", verbose_name="Category"
+    )
+    title = models.CharField(db_index=True, max_length=255, verbose_name="title")
+    slug = models.SlugField(unique=True, verbose_name="Link")
 
+    def __str__(self):
+        return f"{self.category} ({self.title})"
+
+    class Meta:
+        ordering = ("title", )
+        verbose_name = "SubCategoryLegal"
+        verbose_name_plural = "SubCategoryLegals"
 
 
 
@@ -177,8 +196,13 @@ class LegalProduct(models.Model):
         CategoryLegal, on_delete=models.CASCADE,
         related_name='product_category_lg', verbose_name="Category of product"
     )
+    category_sub = models.ForeignKey(
+        SubCategoryLegal, on_delete=models.CASCADE,
+        related_name='product_category_sub_lg', verbose_name="Category of product"
+    )
     title = models.CharField(db_index=True, max_length=255, verbose_name="title")
     slug = models.SlugField(unique=True, verbose_name="Link")
+    phone = models.SmallIntegerField('phone number',default=0)
     picture = models.ImageField(
         upload_to=get_path_upload_product_image,
         blank=True,
@@ -204,6 +228,7 @@ class LegalProduct(models.Model):
         verbose_name = "Legal product"
         verbose_name_plural = "Legal products"
 
+        
 
 class ProductImageLg(models.Model):
     """ Модель для загрузки нескольких изображений для товара """
