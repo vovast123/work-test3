@@ -1,8 +1,8 @@
 {%extends 'base.html'%}
 {%load static%}
-
+{% load i18n %}
 {%block title%}
-    Code
+    {% trans "Code" %}
 {%endblock title%}
 
 
@@ -12,24 +12,26 @@
 
 {%endblock link%}
 
+{%block header%}
+<form action="{%url 'code' user.id%}" method="POST"  >
+	{%csrf_token%}
+	
+		<h1 class="avatar-text ">{% trans "Code" %}</h1>
+		<br>
+		<div class="group">      
+			{{form.code}}
+		  </div>
+		<br>
+	
 
+		<br>
+		<button class="btn-prf-up"  type="submit" name="POST">{% trans "Enter" %}</button>
+
+</form>
+{%endblock header%}
 {%block content%}
 
 
-<div class="profile-block mb-3 w">
-    <form action="{%url 'code' user.id%}" method="POST"  >
-        {%csrf_token%}
-		
-			<h5 class="prf-text-1 mb-2 w "><strong>Code</strong></h5>
-            <br>
-			{{form.code}}
-            <br>
-		
-		<div class="text-center">
-			<button class="button-37 up"  type="submit" name="POST">Enter</button>
-		</div>
-	</form>
-</div>
 
 
 

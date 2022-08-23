@@ -1,0 +1,406 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-20 15:58+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
+"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
+"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
+"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: templates/base.html:8
+msgid "Store of the future"
+msgstr "Магазин майбутнього"
+
+#: templates/base.html:42 templates/category_lg.html:5
+#: templates/product_all.html:5
+msgid "All product"
+msgstr "Весь товар"
+
+#: templates/base.html:63 templates/base_lg.html:34
+#: templates/category_lg.html:27 templates/product_all_lg.html:28
+#: templates/user_detail.html:69
+msgid "Legal services"
+msgstr "Юридичні послуги"
+
+#: templates/base.html:65 templates/detail_product.html:30
+#: templates/detail_product_lg.html:32
+msgid "Name:"
+msgstr "Ім'я:"
+
+#: templates/base.html:66
+msgid "Logout"
+msgstr "Вийти"
+
+#: templates/base.html:68 templates/reg.html:66
+msgid "Sign in"
+msgstr "Увійти"
+
+#: templates/base.html:69 templates/log.html:54 templates/reg.html:60
+msgid "Register"
+msgstr "зареєструватися"
+
+#: templates/base.html:79 templates/base_lg.html:36
+#, fuzzy
+#| msgid "The best legal services and wholesale prices for goods"
+msgid "The best legal services and wholesale prices for goods"
+msgstr "Найкращі юридичні послуги та оптові ціни на товари"
+
+#: templates/base.html:90 templates/base_lg.html:44
+msgid "Design"
+msgstr "Дизайн"
+
+#: templates/base.html:95
+msgid "The site is made for your convenience and ease"
+msgstr "Сайт створено для вашої зручності та простоти"
+
+#: templates/base.html:104 templates/base_lg.html:58
+msgid "Recommendations"
+msgstr "Рекомендації"
+
+#: templates/base.html:109 templates/base_lg.html:63
+msgid "The site is designed so that we select the best products for you."
+msgstr ""
+"Сайт розроблений таким чином, щоб ми підбирали для вас найкращі продукти."
+
+#: templates/base.html:118 templates/base_lg.html:72
+msgid "Launch"
+msgstr "Запуск"
+
+#: templates/base.html:123 templates/base_lg.html:77
+msgid "The fastest work of administrators and employees."
+msgstr "Максимально швидка робота адміністраторів і співробітників."
+
+#: templates/base.html:130 templates/base_lg.html:86 templates/category.html:38
+#: templates/category_lg.html:44 templates/product_all.html:36
+#: templates/product_all_lg.html:46
+msgid "Latest arrivals"
+msgstr "Останні надходження"
+
+#: templates/base.html:140 templates/base_lg.html:96 templates/category.html:48
+#: templates/category_lg.html:54 templates/detail_product.html:40
+#: templates/detail_product_lg.html:44 templates/product_all.html:46
+#: templates/product_all_lg.html:56
+msgid "Owner:"
+msgstr "Власник:"
+
+#: templates/base.html:142 templates/base_lg.html:98 templates/category.html:50
+#: templates/category_lg.html:56 templates/detail_product.html:42
+#: templates/detail_product_lg.html:46 templates/product_all.html:48
+#: templates/product_all_lg.html:58 templates/user_detail.html:81
+#: templates/user_detail_lg.html:83
+msgid "Price:"
+msgstr "Ціна:"
+
+#: templates/base.html:142 templates/base_lg.html:98 templates/category.html:50
+#: templates/category_lg.html:56 templates/product_all.html:48
+#: templates/product_all_lg.html:58 templates/user_detail.html:81
+#: templates/user_detail_lg.html:83
+msgid "per item"
+msgstr "за одиницю"
+
+#: templates/base.html:146 templates/base_lg.html:102
+#: templates/category.html:54 templates/category_lg.html:60
+#: templates/product_all.html:52 templates/product_all_lg.html:62
+#: templates/user_detail.html:85 templates/user_detail_lg.html:87
+msgid "Read More"
+msgstr "Детальніше"
+
+#: templates/base.html:162
+msgid "Director"
+msgstr "Директор"
+
+#: templates/base.html:163
+msgid "Go to Top"
+msgstr "Перейти вгору"
+
+#: templates/base.html:166
+msgid "Site created By"
+msgstr "Сайт створено"
+
+#: templates/base_lg.html:5
+msgid "The best legal services"
+msgstr "Найкращі юридичні послуги"
+
+#: templates/base_lg.html:19 templates/category_lg.html:21
+#: templates/product_all_lg.html:5 templates/product_all_lg.html:22
+msgid "All legal services"
+msgstr "Всі юридичні послуги"
+
+#: templates/base_lg.html:21 templates/category_lg.html:23
+#: templates/product_all_lg.html:24 templates/user_detail_lg.html:71
+msgid "Product"
+msgstr "Продукт"
+
+#: templates/base_lg.html:49
+msgid "The site is made for your convenience and prostate."
+msgstr "Сайт створений для вашої зручності та простати."
+
+#: templates/category.html:23 templates/category_lg.html:29
+#: templates/product_all.html:20 templates/product_all_lg.html:30
+msgid "Еhe best legal services and wholesale prices for goods"
+msgstr "Найкращі юридичні послуги та оптові ціни на товари"
+
+#: templates/code.html:5 templates/code.html:19
+msgid "Code"
+msgstr "Код"
+
+#: templates/code.html:28
+msgid "Enter"
+msgstr "Ввести"
+
+#: templates/create_product.html:5 templates/create_product.html:44
+#: templates/user_detail.html:53 templates/user_detail_lg.html:55
+msgid "Create product"
+msgstr "Створити продукт"
+
+#: templates/create_product.html:18 templates/create_product_lg.html:24
+#: templates/edit_product.html:18 templates/edit_product_lg.html:24
+#: templates/reg.html:40
+msgid "Image"
+msgstr "Зображення"
+
+#: templates/create_product.html:22 templates/create_product_lg.html:28
+#: templates/edit_product.html:22 templates/edit_product_lg.html:28
+msgid "Category"
+msgstr "Категорія"
+
+#: templates/create_product.html:30 templates/create_product_lg.html:36
+#: templates/edit_product.html:30 templates/edit_product_lg.html:36
+msgid "Title"
+msgstr "Назва"
+
+#: templates/create_product.html:32 templates/create_product_lg.html:40
+#: templates/edit_product.html:32 templates/edit_product_lg.html:40
+msgid "Phone"
+msgstr "Номер телефону:"
+
+#: templates/create_product.html:34 templates/create_product_lg.html:52
+#: templates/edit_product.html:34 templates/edit_product_lg.html:52
+msgid "Contact information"
+msgstr "Контактна інформація"
+
+#: templates/create_product.html:37 templates/create_product_lg.html:44
+#: templates/edit_product.html:37 templates/edit_product_lg.html:44
+msgid "Description"
+msgstr "опис"
+
+#: templates/create_product.html:39 templates/create_product_lg.html:55
+#: templates/edit_product.html:39 templates/edit_product_lg.html:55
+msgid "price"
+msgstr "ціна"
+
+#: templates/create_product_lg.html:5
+msgid "Created legal services"
+msgstr "Створено юридичні служби"
+
+#: templates/create_product_lg.html:48 templates/edit_product_lg.html:48
+msgid "If you need more description"
+msgstr "Якщо вам потрібно більше опису"
+
+#: templates/create_product_lg.html:61
+msgid "Create legal service"
+msgstr "Створити юридичну послугу"
+
+#: templates/detail_product.html:5 templates/detail_product.html:20
+#: templates/detail_product_lg.html:5 templates/detail_product_lg.html:22
+msgid "Detailed information"
+msgstr "Детальна інформація"
+
+#: templates/detail_product.html:22
+msgid "Here you can see full information about the product or service."
+msgstr "Тут ви можете побачити повну інформацію про продукт або послугу."
+
+#: templates/detail_product.html:32 templates/detail_product_lg.html:34
+msgid "Category:"
+msgstr "Категорія:"
+
+#: templates/detail_product.html:34 templates/detail_product_lg.html:36
+msgid "Description:"
+msgstr "Опис:"
+
+#: templates/detail_product.html:36 templates/detail_product_lg.html:40
+msgid "Phone:"
+msgstr "Номер телефона:"
+
+#: templates/detail_product.html:38 templates/detail_product_lg.html:42
+msgid "Contact information:"
+msgstr "Контактна інформація:"
+
+#: templates/detail_product.html:51 templates/detail_product_lg.html:55
+#: templates/edit_product.html:5 templates/edit_product.html:44
+msgid "Edit product"
+msgstr "Редагувати товар"
+
+#: templates/detail_product.html:53 templates/detail_product_lg.html:57
+msgid "Delete product"
+msgstr "Видалити товар"
+
+#: templates/detail_product.html:62 templates/detail_product_lg.html:66
+msgid "Your email address will not be published."
+msgstr "Ваша електронна адреса не буде опублікована."
+
+#: templates/detail_product.html:63 templates/detail_product_lg.html:67
+msgid "Required fields are marked"
+msgstr "Обов'язкові поля позначені"
+
+#: templates/detail_product.html:69 templates/detail_product_lg.html:73
+msgid "the higher the number,"
+msgstr "чим більше число,"
+
+#: templates/detail_product.html:70 templates/detail_product_lg.html:74
+msgid "the higher the rating of the product or servic."
+msgstr "тим вищий рейтинг товару чи послуги."
+
+#: templates/detail_product.html:76 templates/detail_product_lg.html:80
+msgid "Text:"
+msgstr "Текст:"
+
+#: templates/detail_product.html:80 templates/detail_product_lg.html:84
+msgid "Create comment"
+msgstr "Створити коментар"
+
+#: templates/detail_product.html:86 templates/detail_product_lg.html:90
+msgid "Reviews"
+msgstr "Відгуки"
+
+#: templates/detail_product_lg.html:24
+msgid "Here you can see full information about the legal service."
+msgstr "Тут Ви можете ознайомитися з повною інформацією про юридичну послугу."
+
+#: templates/detail_product_lg.html:38
+msgid "Additional description:"
+msgstr "Додатковий опис:"
+
+#: templates/detail_product_lg.html:71
+msgid "Rate:"
+msgstr "Оцінка:"
+
+#: templates/edit_product_lg.html:5 templates/edit_product_lg.html:61
+msgid "Edit legal service"
+msgstr "Правка юридичної служби"
+
+#: templates/log.html:5 templates/reg.html:6
+msgid "Register - Login"
+msgstr "Реєстрація - Вхід"
+
+#: templates/log.html:37
+msgid "Login"
+msgstr "Логін"
+
+#: templates/log.html:41 templates/reg.html:52 templates/reset_password.html:5
+#: templates/reset_password.html:23
+msgid "Password"
+msgstr "Пароль"
+
+#: templates/log.html:49
+msgid "Log in"
+msgstr "Авторизуватися"
+
+#: templates/reg.html:44
+msgid "Nickname(must be unique)"
+msgstr "Нік (має бути унікальним)"
+
+#: templates/reg.html:48
+msgid "First name and Last name"
+msgstr "Ім'я та Прізвище"
+
+#: templates/reg.html:56
+msgid "Сonfirm password"
+msgstr "Підтвердьте пароль"
+
+#: templates/reset_password.html:32
+msgid "Reset Password"
+msgstr "Скинути пароль"
+
+#: templates/user_detail.html:5
+msgid "Profile"
+msgstr "Профіль"
+
+#: templates/user_detail.html:18 templates/user_detail_lg.html:20
+msgid "Your nickname:"
+msgstr "Ваш псевдонім:"
+
+#: templates/user_detail.html:19 templates/user_detail_lg.html:21
+msgid "Your code of company:"
+msgstr "Ваш код компанії:"
+
+#: templates/user_detail.html:22 templates/user_detail.html:24
+#: templates/user_detail.html:28 templates/user_detail_lg.html:24
+#: templates/user_detail_lg.html:26 templates/user_detail_lg.html:30
+msgid "Verification"
+msgstr "Перевірка"
+
+#: templates/user_detail.html:22 templates/user_detail_lg.html:24
+msgid "failed"
+msgstr "не вдалося"
+
+#: templates/user_detail.html:24 templates/user_detail_lg.html:26
+msgid "passed"
+msgstr "пройшли"
+
+#: templates/user_detail.html:25 templates/user_detail_lg.html:27
+msgid "Сheck date"
+msgstr "Дата перевірки"
+
+#: templates/user_detail.html:28 templates/user_detail_lg.html:30
+msgid "for review (may take some time)"
+msgstr "на перевірці (може зайняти деякий час)"
+
+#: templates/user_detail.html:31 templates/user_detail.html:37
+#: templates/user_detail_lg.html:33 templates/user_detail_lg.html:39
+msgid "Setting"
+msgstr "Налаштування"
+
+#: templates/user_detail.html:41
+msgid ""
+"In the settings you can enter the company code or change the password, also "
+"if you have passed the verification you can create a product for sale"
+msgstr ""
+"У налаштуваннях також можна ввести код компанії або змінити парольякщо ви "
+"пройшли верифікацію, ви можете створити продукт для продажу"
+
+#: templates/user_detail.html:43 templates/user_detail_lg.html:45
+msgid ""
+"Before you click on the button, please enter the company code (without it "
+"you will not receive a promotion)"
+msgstr ""
+"Перед тим, як натиснути кнопку, введіть код компанії (без нього ви не "
+"отримаєте підвищення)"
+
+#: templates/user_detail.html:45 templates/user_detail_lg.html:47
+msgid "Start Verification"
+msgstr "Почати перевірку"
+
+#: templates/user_detail.html:50 templates/user_detail_lg.html:52
+msgid "Change code"
+msgstr "Змінити код"
+
+#: templates/user_detail.html:55 templates/user_detail_lg.html:57
+msgid "Create Legal service"
+msgstr "Створення юридичної служби"
+
+#: templates/user_detail.html:58 templates/user_detail_lg.html:60
+msgid "Edit password"
+msgstr "Змінити пароль"
+
+#: templates/user_detail_lg.html:43
+msgid ""
+" In the settings you can enter the company code or change the password, also "
+"if you have passed the verification you can create a product for sale"
+msgstr ""
+" В налаштуваннях ви можете ввести код компанії або змінити пароль, також "
+"якщо ви пройшли верифікацію, ви можете створити продукт для продажу"

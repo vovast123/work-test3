@@ -5,11 +5,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-x&o4$j4$0rrwgs!i^=nld&binuj^ez2fm$_1w68)f_sgbq750y'
 
+CSRF_COOKIE_SECURE = True
+
 DEBUG = True
 
 ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
+    'modeltranslation',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -32,8 +36,10 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -92,8 +98,19 @@ USE_I18N = True
 USE_TZ = True
 #AUTH_USER_MODEL = 'src.CustomUser'
 
+gettext = lambda s: s
+LANGUAGES = (
+    ('en', gettext('English')),
+    ('uk', gettext('Ukraine')),
+    ('de', gettext('Germany')),
+    ('pl', gettext('Poland')),
 
+)
 
+LOCALE_PATHS =(
+    os.path.join(BASE_DIR,'locale'),
+)
+CSRF_TRUSTED_ORIGINS = []
 
 
 STATIC_URL = 'static/'
@@ -109,4 +126,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-SITE_ID= 1
+SITE_ID= 2

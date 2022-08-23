@@ -1,61 +1,63 @@
 {%extends 'base.html'%}
 {%load static%}
-
+{% load i18n %}
 {%block title%}
-    Code
+    {% trans "Create product" %}
 {%endblock title%}
 
 
 {%block link%} 
 
 <link rel="stylesheet" href="{%static 'css/profile.css'%}" />
-<link rel="stylesheet" href="{%static 'css/product.css'%}" />
 
 {%endblock link%}
-
-
+{%block header%}
+    <form action="{%url 'create_product' user.id%}" method="POST" enctype="multipart/form-data" >
+        {%csrf_token%}
+        
+        <h5 class="avatar-text mb-2">{% trans "Image" %}</h5>
+        {{form.picture}}
+        <br>
+        
+        <h5 class="avatar-text-2 mb-2">{% trans "Category" %}</h5>
+        <br>
+        
+            <div class="dropdown dropdown-dark">
+                {{form.category_sub}}
+            </div>
+         
+        
+        <h5 class="avatar-text-2">{% trans "Title" %}</h5>
+        {{form.title}}
+        <h5 class="avatar-text-2">{% trans "Phone" %}</h5>
+        {{form.phone}}
+        <h5 class="avatar-text-2">{% trans "Contact information" %}</h5>
+        {{form.contact}}
+        
+        <h5 class="avatar-text-2">{% trans "Description" %}</h5>
+        {{form.description}}
+        <h5 class="avatar-text-2">{% trans "price" %}</h5>
+        {{form.price}}
+        <br>
+        
+        <br>
+        <button class="btn-prf-up w" type="submit" >{% trans "Create product" %}</button>
+        <h3 class="avatar-text-2 mb-2"><span class="badge">{{form.errors}}</span></h3>
+    </form>
+{%endblock header%}
 {%block content%}
 
 
 
-<div class="box1">
-        <form action="{%url 'create_product' user.id%}" method="POST" >
-            {%csrf_token%}
-            <h5 class="big-size "><strong>Image</strong></h5>
-            {{form.picture}}
-            
-            <h5 class="big-size"><strong>Category</strong></h5>
-            {{form.category}}
-            <h5 class="big-size"><strong>category_sub</strong></h5>
-            {{form.category_sub}}
-            
-            <h5 class="big-size"><strong>Title</strong></h5>
-            {{form.title}}
-            {{form.phone}}
-            
-            <h5 class="big-size"><strong>Description</strong></h5>
-            {{form.description}}
-            <h5 class="big-size"><strong>price</strong></h5>
-            {{form.price}}
-            
-            <h5 class="big-size"><strong>discount</strong></h5>
-            {{form.discount}}
-
-            <button class="custom-btn btn-3"><span>Reset Password</span></button>
-        </form>
-        
-</div>
 
 
 
-
-
-background: rgb(240, 205, 7);
 {%endblock content%}
 
 
 {%block script%}
-
 {%endblock script%}
+
+
 
 
