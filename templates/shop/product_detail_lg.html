@@ -1,0 +1,313 @@
+{% extends 'shop/index.html' %}
+{% load static %}
+{% load i18n %}
+
+{%block title%}<title>Logis Cargo &#8211; {{product.title}}</title>{%endblock title%}
+
+
+
+
+
+{%block class %}
+class="product-template-default single single-product postid-9356 page-shadow header-shadow responsive-fluid  theme-neighborhood woocommerce woocommerce-page woocommerce-no-js"
+{%endblock class%}
+{%block content%}
+<div id="main-container" class="clearfix">
+   <div class="page-heading  clearfix asset-bg alt-one">
+      <div class="container">
+         <div class="heading-text">
+            <h1 class="entry-title">{{ product.title }}</h1><br>
+         </div>
+      </div>
+   </div>
+   <div class="pb-fw-wrap">
+      <div id="page-wrap">
+         <div class="page-content clearfix">
+            <div class="inner-page-wrap has-no-sidebar clearfix">
+               <article class="clearfix post-9356 product type-product status-publish has-post-thumbnail product_cat-footwear product_cat-sneakers product_tag-adidas product_tag-sneakers product_shipping_class-standard-shipping pa_colour-grey pa_colour-red pa_size-eu41-us8 pa_size-eu42-us9 pa_size-eu43-us10 pa_size-eu45-us12 pa_fabric-leather-2 pa_fabric-mesh pa_fabric-suede first instock sale shipping-taxable purchasable product-type-simple" id="9356">
+                  <div class="page-content clearfix">
+                     <section class="article-body-wrap">
+                        <div class="container">
+                           <div class="woocommerce-notices-wrapper"></div>
+                        </div>
+                        <div id="product-9356" class="product type-product post-9356 status-publish instock product_cat-footwear product_cat-sneakers product_tag-adidas product_tag-sneakers has-post-thumbnail sale shipping-taxable purchasable product-type-simple">
+                           <div class="entry-title" itemprop="name">{{ product.title }}</div>
+                           <div class="container">
+                            
+                              <div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 woocommerce-thumb-nav--bottom images" data-columns="4" style="">
+                                
+                                 <figure class="woocommerce-product-gallery__wrapper">
+                                    <!-- Product info -->
+                                    <div data-thumb="{{ product.picture.url }}" data-thumb-alt="" class="woocommerce-product-gallery__image">
+                                       <a href="{{ product.picture.url }}">
+                                          <img src="{{ product.picture.url }}"
+                                               class="wp-post-image" alt="" loading="lazy" title="adidas-grey-red001_1" data-caption=""
+                                               data-src="{{ product.picture.url }}"
+                                               data-large_image="{{ product.picture.url }}"
+                                               data-large_image_width="1200" data-large_image_height="1800"
+                                               srcset="{{ product.picture.url }} 1200w,
+                                               {{ product.picture.url }} 200w,
+                                               {{ product.picture.url }} 682w"
+                                               sizes="(max-width: 540px) 100vw, 540px" />
+                                       </a>
+                                    </div>
+                                    <!-- Endblock -->
+                                 </figure>
+                                 <style>
+                                    .pswp__img {
+                                       height: 300px;
+                                    }
+                                 </style>
+                              </div>
+                              <div class="summary entry-summary">
+                                 <div class="summary-top clearfix">
+                                    
+
+                                    <p class="price"> <ins>
+                                       <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">{{ product.price }}</span>&#x20ac;</span></ins></p>
+                                 </div>
+                                 <div class="accordion" id="product-accordion">
+                                    <div class="accordion-group">
+                                       <div class="accordion-heading">
+                                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#product-accordion" href="#product-informations">
+                                          {% trans "Contact informations" %} </a>
+                                       </div>
+                                       <div id="product-informations" class="accordion-body collapse in">
+                                          <div class="accordion-inner">
+
+                                             <p> {% trans "Contact informations" %}: {{ product.contact }}</p>
+                                             <p>Phone: {{product.phone}}</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="accordion-group">
+                                       <div class="accordion-heading">
+                                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#product-accordion" href="#ds">
+                                          {% trans "Add description" %} </a>
+                                       </div>
+                                       <div id="ds" class="accordion-body collapse in">
+                                          <div class="accordion-inner">
+
+                                             <p> {% trans "Additional description" %} : {{ product.description_add }}</p>
+                                             
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="accordion-group">
+                                       <div class="accordion-heading">
+                                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#product-accordion" href="#product-description">
+                                          {% trans "Description" %} </a>
+                                       </div>
+                                       <div id="product-description" class="accordion-body collapse in">
+                                          <div class="accordion-inner">
+
+                                             <p>{{ product.description }}</p>
+                                             <p>{% trans "Owner" %}: {{product.owner}}</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="accordion-group">
+                                       <div class="accordion-heading">
+                                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#product-accordion" href="#product-reviews">
+                                             {% trans "Reviews" %} ({{comments.total_comments}})
+                                          </a>
+                                       </div>
+                                       <div id="product-reviews" class="accordion-body collapse ">
+                                          <div class="accordion-inner">
+                                             <div id="reviews" class="woocommerce-Reviews">
+                                                <div id="comments">
+                                                   <h2 class="woocommerce-Reviews-title">
+                                                      {% trans "Reviews" %}
+                                                   </h2>
+
+                                                   {% if reviews %}
+                                                      {% for comment in page_obj %}
+                                                         <ol class="commentlist">
+                                                            <li class="comment even thread-even depth-1" id="li-comment-223498">
+                                                               <div id="comment-223498" class="comment_container">
+                                                                  <img alt="" src="https://secure.gravatar.com/avatar/829561d79c574992f97591607f1e29fc?s=60&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/829561d79c574992f97591607f1e29fc?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60" loading="lazy">
+                                                                     <div class="comment-text">
+
+                                                                        {% if comment.rating == "1" %}
+                                                                           <div class="star-rating" role="img" aria-label="Rated 3 out of 5">
+                                                                              <span style="width:20%">{% trans "Rated" %} <strong class="rating">4</strong> {% trans "out of 5" %}</span>
+                                                                           </div>
+                                                                        {% elif comment.rating == "2" %}
+                                                                            <div class="star-rating" role="img" aria-label="Rated 3 out of 5">
+                                                                              <span style="width:40%">{% trans "Rated" %} <strong class="rating">4</strong> {% trans "out of 5" %}</span>
+                                                                            </div>
+                                                                        {% elif comment.rating == "3" %}
+                                                                           <div class="star-rating" role="img" aria-label="Rated 3 out of 5">
+                                                                              <span style="width:60%">{% trans "Rated" %} <strong class="rating">4</strong> {% trans "out of 5" %}</span>
+                                                                           </div>
+                                                                        {% elif comment.rating == "4" %}
+                                                                            <div class="star-rating" role="img" aria-label="Rated 3 out of 5">
+                                                                              <span style="width:80%">{% trans "Rated" %} <strong class="rating">4</strong>{% trans "out of 5" %}</span>
+                                                                           </div>
+                                                                        {% elif comment.rating == "5" %}
+                                                                            <div class="star-rating" role="img" aria-label="Rated 3 out of 5">
+                                                                              <span style="width:100%">{% trans "Rated" %} <strong class="rating">4</strong> {% trans "out of 5" %}</span>
+                                                                           </div>
+                                                                        {% endif %}
+
+                                                                        <p class="meta">
+                                                                        <em class="woocommerce-review__awaiting-approval">{% trans "Author" %}: {{ comment.author.username }}</em></p>
+                                                                        <div class="description"><p>{{ comment.text }}</p>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </li>
+                                                         </ol>
+                                                      {% endfor %}
+                                                      {%if page_obj.has_other_pages%}
+                                                      <div class="centre-text">
+                                                         <div class="pagination">
+                                                               {%if page_obj.has_previous%}
+                                                               <a class="pa" href="?page={{page_obj.previous_page_number}}">«</a>
+                                                               {%endif%}
+                                                               {%for p in page_obj.paginator.page_range%}
+                                                      
+                                                      
+                                                               {%if page_obj.number == p%}
+                                                               <a class="pa active" href="?page={{p}}" >{{p}}</a>
+                                                               {%elif p >= page_obj.number|add:-2 and p <= page_obj.number|add:2  %}
+                                                               <a class="pa" href="?page={{p}}" >{{p}}</a>
+                                                               {%endif%}
+                                                               {%endfor%}
+                                                               {%if page_obj.has_next%}
+                                                               <a class="pa" href="?page={{page_obj.next_page_number}}">»</a>
+                                                               {%endif%}
+                                                         </div>
+                                                      
+                                                      </div>
+                                                      {%endif%}
+                                                   {% else %}
+                                                   <p class="woocommerce-noreviews">{% trans "There are no reviews yet." %}</p>
+                                                   <span id="reply-title" class="comment-reply-title">{% trans "Be the first to review" %} &ldquo;{{product.title}}&rdquo; <small><a rel="nofollow" id="cancel-comment-reply-link" href="/product/adidas-boston-super-og/#respond" style="display:none;">{% trans "Cancel reply" %}</a></small></span>
+
+                                                   {% endif %}
+
+                                                   
+                                                </div>
+                                                <div id="review_form_wrapper">
+                                                   <div id="review_form">
+                                                      <div id="respond" class="comment-respond">
+
+                                                         <h2 style="color: green;">{% trans "Create Comment" %}</h2><br>
+
+                                                         <!-- Добавление комментария -->
+                                                         <form action="" method="POST" id="commentform" class="comment-form">
+                                                            {% csrf_token %}
+                                                            <p class="comment-notes">
+                                                               <span id="email-notes">{% trans "Your email address will not be published." %}</span>
+                                                               <span class="required-field-message" aria-hidden="true">{% trans "Required fields are marked" %}
+                                                                  <span class="required" aria-hidden="true">*</span>
+                                                               </span>
+                                                            </p>
+
+                                                            {{ form.as_p }}
+
+                                                            <p class="form-submit">
+                                                               <input name="submit" type="submit" id="submit" class="submit" value="Submit" />
+                                                            </p>
+                                                         </form>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <style>
+                                                   .woocommerce #reviews #comments ol.commentlist {
+                                                      margin-bottom: 0px;
+                                                   }
+                                                </style>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="product_meta">
+                                    <p>
+                                       <span class="posted_in">{% trans "Category" %}:
+                                          <a href="{%url 'category_lg' product.category_sub.slug%}" rel="tag">{{ product.category_sub }}</a>
+                                       </span>
+                                    </p>
+                                    {%if request.user == product.owner%}
+                                    <p>
+                                       <span class="tagged_as">{% trans "Setting" %}:
+                                          <p class="form-submit">
+                                             <a href="{%url 'delete_lg' product.slug  %}"><button type="button" class="btn btn-danger">{% trans "Delete product" %}</button></a>
+                                             <a href="{%url 'edit_lg' product.slug  %}"><button type="button" class="btn btn-success">{% trans "Edit product" %}</button></a>
+                                          </p>
+                                       </span>
+                                    </p>
+                                    {%endif%}
+                                    <div id="email-form" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="email-form-modal" aria-hidden="true">
+                                       <div class="modal-dialog">
+                                          <div class="modal-content">
+                                             <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fas fa-close"></i></button>
+                                                <h3 id="email-form-modal">{% trans "Contact Us" %}</h3>
+                                             </div>
+                                             <div class="modal-body">
+                                                {% trans "Enter your contact details or email form shortcode here." %} (Text/HTML/Shortcodes {% trans "accepted" %}).
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div id="feedback-form" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="feedback-form-modal" aria-hidden="true">
+                                       <div class="modal-dialog">
+                                          <div class="modal-content">
+                                             <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fas fa-close"></i></button>
+                                                <h3 id="feedback-form-modal">{% trans "Leave Feedback" %}</h3>
+                                             </div>
+                                             <div class="modal-body">
+                                               {% trans " Enter your feedback modal content here." %} (Text/HTML/Shortcodes {% trans "accepted" %}).
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="product-display-area" class="container clearfix">
+
+                           </div>
+                           <div class="container product-after-wrap">
+                              <div class="product-carousel spb_content_element related">
+                                 <h4 class="lined-heading"><span>{% trans "Related Products" %}</span></h4>
+                                 <div class="carousel-wrap">
+
+                                    <ul class="related products carousel-items" id="carousel-2" data-columns="4>">
+                                       {%for p in lastprod%}
+                                       <li class="product type-product post-9700 status-publish instock product_cat-footwear product_cat-sneakers product_tag-nike product_tag-sneakers has-post-thumbnail shipping-taxable purchasable product-type-simple">
+                                          <figure class="product-transition">
+                                             <div class="product-img-wrap">
+                                                <div class="product-image"><img width="540" height="720" src="{{ p.picture.url }}" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" /></div>
+                                                <div class="product-image second-image"><img width="540" height="720" src="{{ p.picture.url }}" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" /></div>
+                                             </div>
+
+                                             <a class="product-hover-link" href="{%url 'detail' p.slug%}"></a>
+                                          </figure>
+                                          <div class="product-details">
+                                             <h3><a href="{%url 'detail' p.slug%}">{{p.title}}</a></h3>
+                                             <span class="posted_in"><a href="{%url 'category' p.category_sub.slug%}" rel="tag">{{p.category_sub}}</a></span>
+                                          </div>
+                                          <span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">{{p.price}}</span>&#x20ac;</span></span>
+                                       </li>
+                                       {%endfor%}
+                                    </ul>
+                                    <a href="#" class="carousel-prev"><i class="fas fa-chevron-left"></i></a><a href="#" class="carousel-next"><i class="fas fa-chevron-right"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="container"></div>
+                     </section>
+                  </div>
+               </article>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+{%endblock content%}

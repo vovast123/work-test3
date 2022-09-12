@@ -1,0 +1,81 @@
+{% extends 'shop/index.html' %}
+{% load static %}
+{% load i18n %}
+{%block title%}<title>Logis Cargo &#8211; {% trans "Create legal service" %}</title>{%endblock title%}
+
+{%block class %}
+class="page-template-default page page-id-5864 page-shadow header-shadow responsive-fluid  theme-neighborhood woocommerce-account woocommerce-page woocommerce-no-js
+{%endblock class%}
+
+
+{%block content%}
+
+  
+      <div id="container">
+         <div id="super-search" class="sf-super-search clearfix">
+            <div class="container">
+
+               <div class="search-go"><a  class="super-search-go sf-roll-button" ><span>Find my items!</span><span>Find my items!</span></a><a  class="super-search-close sf-roll-button"><span>&times;</span><span>&times;</span></a></div>
+            </div>
+         </div>
+         <div id="main-container" class="clearfix">
+            <div class="page-heading  clearfix asset-bg alt-one">
+               <div class="container">
+                  <div class="heading-text">
+                     <h1 class="entry-title"> {% trans "Create legal service" %}</h1>
+                  </div>
+                  <div id="breadcrumbs">
+                     <a title="Go to Neighborhood." href="{%url 'base'%}" class="home">Logis Cargo</a><i class="fa-angle-right"></i> {% trans "Create legal service" %}
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div id="page-wrap">
+                  <div class="inner-page-wrap has-no-sidebar clearfix">
+                     <div class="clearfix post-5864 page type-page status-publish hentry" id="5864">
+                        <div class="page-content clearfix">
+                           <div class="woocommerce">
+                              <div class="woocommerce-notices-wrapper"></div>
+                              <div class="my-account-login-wrap">
+                                 <div class="u-columns col2-set" id="customer_login" style="">
+                                    <div class="u-column1 col-1" style="display:flex; align-items: center; justify-content: center; width: 100%;">
+                                       <div class="login-wrap" style="width: 50%;">
+                                          <h4 class="lined-heading"><span> {% trans "Create legal service" %}</span></h4>
+                                          <style>
+                                             .woocommerce-Input {
+                                                width: 100%;
+                                             }
+                                          </style>
+                                          <form class="woocommerce-form woocommerce-form-login login" method="post" enctype="multipart/form-data">
+                                              {% csrf_token %}
+                                              
+                                              {% for field in form %}
+                                                {{ field.label_tag}}
+                                                {{ field }}
+
+                                                {% for error in field.errors %}
+                                                    <small style="color: red;">{{ error }}</small>
+                                                {% endfor %}
+
+                                              {% endfor%}
+                                             <p class="form-row">
+                                            
+                                                <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="c5a353ccf2" /><input type="hidden" name="_wp_http_referer" value="/my-account/" /> <button type="submit" class="woocommerce-Button button" name="login" value="Log in">{% trans "Create" %}</button>
+                                             </p>
+                                             <p class="woocommerce-LostPassword lost_password">
+                                                <a href="{%url 'create_product'%}">{% trans "Want you create product?" %}</a>
+                                             </p>
+                                          </form>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+{%endblock content%}

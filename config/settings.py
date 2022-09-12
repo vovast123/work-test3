@@ -67,8 +67,19 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+
+        'NAME':'logiscargo',
+
+        'USER': 'postgres',
+
+        'PASSWORD': '0572',
+
+        'HOST': 'localhost',
+
+        'PORT': '5432',
+
     }
 }
 
@@ -91,12 +102,11 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Europe/Berlin'
+TIME_ZONE = 'Europe/Kiev'
 
 USE_I18N = True
 
 USE_TZ = True
-#AUTH_USER_MODEL = 'src.CustomUser'
 
 gettext = lambda s: s
 LANGUAGES = (
@@ -110,7 +120,7 @@ LANGUAGES = (
 LOCALE_PATHS =(
     os.path.join(BASE_DIR,'locale'),
 )
-CSRF_TRUSTED_ORIGINS = []
+CSRF_TRUSTED_ORIGINS = ['https://logis-cargo.com.ua','http://logis-cargo.com.ua']
 
 
 STATIC_URL = 'static/'

@@ -1,3 +1,4 @@
+from pydoc import describe
 from tabnanny import verbose
 from django.db import models
 from django.core.validators import FileExtensionValidator
@@ -38,6 +39,19 @@ def create_user_profile(sender, instance, created, **kwargs):
 def save_user_profile(sender, instance, **kwargs):
     instance.profile.save()
     
+
+
+class Message(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    describe = models.TextField('describe')
+
+    def __str__(self):
+        return f"{self.user}"
+    
+    class Meta:
+        ordering = ("user", )
+        verbose_name = "Message"
+        verbose_name_plural = "Messages"
 
 
 class Category(models.Model):

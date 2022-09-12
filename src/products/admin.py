@@ -1,6 +1,7 @@
 from django.contrib import admin
-from modeltranslation.admin import TranslationAdmin
 from src.products import models
+from modeltranslation.admin import TranslationAdmin
+
 
 
 
@@ -9,6 +10,11 @@ class SubCategoryAdmin(admin.ModelAdmin):
     list_display = ("id", "user", "for_checking","date_created")
     list_display_links = ("id", "user", )
     list_filter = ( "for_checking",)
+
+@admin.register(models.Message)
+class SubCategoryAdmin(admin.ModelAdmin):
+    list_display = ("id", "user",)
+    list_display_links = ("id", "user", )
 
 
 
@@ -21,11 +27,11 @@ admin.site.register(models.ProductCommentLg)
 
 
 @admin.register(models.LegalProduct)
-class ProductAdminLg(TranslationAdmin):
+class ProductAdminLg(admin.ModelAdmin):
     pass
 
 @admin.register(models.Product)
-class ProductAdmin(TranslationAdmin):
+class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'id', 'title', 'price',
         'owner', 'created_date', 'available'

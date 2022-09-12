@@ -1,17 +1,16 @@
 from dataclasses import fields
+from pyexpat import model
 from xml.dom import ValidationErr
-from .models import User,Profile,Product,LegalProduct,ProductComment,ProductCommentLg
+from .models import User,Profile,Product,LegalProduct,ProductComment,ProductCommentLg,Message
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm,UserChangeForm
 
-class UserForm(UserCreationForm):
-    username = forms.CharField(max_length=150)
-    def clean(self):
-        new_name = self.cleaned_data['username']
+class UserForm(UserCreationForm):      
     class Meta:
         model = User
-        fields = ('username', 'last_name', 'email','password1','password2',)
+        fields = ('username', 'last_name','password1','password2',)
+
 
 class ImageForm(forms.ModelForm):
     class Meta:
@@ -19,38 +18,33 @@ class ImageForm(forms.ModelForm):
         fields = ('picture',)
 
 
+class MessageForm(forms.ModelForm):
+    class Meta:
+        model = Message
+        fields = ('describe',)
+        widgets = {
+            "describe": forms.Textarea(attrs={"cols": "45", "rows": "8", "style": "height: 99px;"})
+        }
+
 class CodeForm(forms.ModelForm):
     code = forms.CharField(widget=forms.TextInput(attrs={'class': 'inp'}))
     class Meta:
         model = Profile
         fields = ('code',)
 
+
+
 class CreateProductForm(forms.ModelForm):
-    title = forms.CharField(widget=forms.TextInput(attrs={'class': 'inp mb-2'}))
-    description = forms.CharField(widget=forms.TextInput(attrs={'class': 'inp mb-2'}))
-    price = forms.IntegerField(widget=forms.TextInput(attrs={'class': 'inp mb-2'}))
-    phone = forms.IntegerField(widget=forms.TextInput(attrs={'class': 'inp mb-2'}))
-    contact = forms.CharField(widget=forms.TextInput(attrs={'class': 'inp mb-2'}))
-    picture = forms.ImageField()
-    
+  
     
     class Meta:
         model = Product
-        fields = ('picture','category_sub','contact','phone','title','description','price')
+        fields = ('title','picture','category_sub','description','contact','phone','price')
 
 
 
 
 class CreateProductLGForm(forms.ModelForm):
-    title = forms.CharField(widget=forms.TextInput(attrs={'class': 'inp mb-2'}))
-    description = forms.CharField(widget=forms.TextInput(attrs={'class': 'inp mb-2'}))
-    description_add = forms.CharField(widget=forms.TextInput(attrs={'class': 'inp mb-2'}))
-    price = forms.IntegerField(widget=forms.TextInput(attrs={'class': 'inp mb-2'}))
-    contact = forms.CharField(widget=forms.TextInput(attrs={'class': 'inp mb-2'}))
-    phone = forms.IntegerField(widget=forms.TextInput(attrs={'class': 'inp mb-2'}))
-
-    
-    
     class Meta:
         model = LegalProduct
         fields = ('picture','category_sub','title','contact','description','phone','description_add','price')
@@ -62,8 +56,8 @@ class CreateProductLGForm(forms.ModelForm):
  #   )
 
 class CommentForm(forms.ModelForm):
-    
-    
+
+
 
     class Meta:
         model = ProductComment
@@ -74,6 +68,7 @@ class CommentForm(forms.ModelForm):
         widgets = {
             "text": forms.Textarea(attrs={"cols": "45", "rows": "8", "style": "height: 99px;"})
         }
+
 
 class CommentForm_lg(forms.ModelForm):
     

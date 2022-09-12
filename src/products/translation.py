@@ -13,9 +13,6 @@ class SubCategoryTranslationOptions(TranslationOptions):
 
 
 
-@register(Product)
-class ProductTranslationOptions(TranslationOptions):
-    fields = ('title','description',)
 
 
 
@@ -30,8 +27,4 @@ class SubCategoryLegalTranslationOptions(TranslationOptions):
     fields = ('title',)
 
 
-
-@register(LegalProduct)
-class LegalProductTranslationOptions(TranslationOptions):
-    fields = ('title','description','description_add',)
 

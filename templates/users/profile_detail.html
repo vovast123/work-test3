@@ -1,0 +1,290 @@
+{% extends 'shop/index.html' %}
+{% load static %}
+{% load i18n %}
+
+
+{%block title%}<title>Logis Cargo &#8211; {{user.username}}</title>{%endblock title%}
+
+{%block link%}
+<link rel="stylesheet" href="{%static 'css/profile.css'%}" />
+{%endblock link%}
+
+
+
+{%block class %}
+class="product-template-default single single-product postid-9356 page-shadow header-shadow responsive-fluid  theme-neighborhood woocommerce woocommerce-page woocommerce-no-js"
+{%endblock class%}
+{%block content%}
+<div id="main-container" class="clearfix">
+   <div class="page-heading  clearfix asset-bg alt-one">
+      <div class="container profile-f">
+         <div class="heading-text">
+            <h1 class="entry-title">{{ user }}</h1><br>
+         </div>
+      </div>
+   </div>
+   <div class="pb-fw-wrap">
+      <div id="page-wrap">
+         <div class="page-content clearfix">
+            <div class="inner-page-wrap has-no-sidebar clearfix">
+               <article class="clearfix post-9356 product type-product status-publish has-post-thumbnail product_cat-footwear product_cat-sneakers product_tag-adidas product_tag-sneakers product_shipping_class-standard-shipping pa_colour-grey pa_colour-red pa_size-eu41-us8 pa_size-eu42-us9 pa_size-eu43-us10 pa_size-eu45-us12 pa_fabric-leather-2 pa_fabric-mesh pa_fabric-suede first instock sale shipping-taxable purchasable product-type-simple" id="9356">
+                  <div class="page-content clearfix">
+                     <section class="article-body-wrap">
+                        <div class="container">
+                           <div class="woocommerce-notices-wrapper"></div>
+                        </div>
+                        <div id="product-9356" class="product type-product post-9356 status-publish instock product_cat-footwear product_cat-sneakers product_tag-adidas product_tag-sneakers has-post-thumbnail sale shipping-taxable purchasable product-type-simple">
+                           <div class="entry-title" itemprop="name">{{ user.username }}</div>
+                           <div class="container">
+                            
+                              <div class="woocommerce-product-gallery woocommerce-product-gallery--with  woocommerce-thumb-nav--bottom " data-columns="4" >
+                                
+                                 
+                                    <!-- Product info -->
+                                    {%if user.profile.picture%}
+                                    <div data-thumb="{{ user.profile.picture.url }}" data-thumb-alt="" class="">
+                                       <a href="{{ user.profile.picture.url }}">
+                                          <img src="{{ user.profile.picture.url }}"
+                                               class="round" sizes="(max-width: 250px;)  250px"  />
+                                       </a>
+                                    </div>
+                                    {%endif%}
+                                    <!-- Endblock -->
+                                 
+                                 <style>
+                                    .pswp__img {
+                                       height: 300px;
+                                    }
+                                 </style>
+                              </div>
+                              <br>
+                              <br>
+                              <br>
+                              <div class="">
+                                 <div class="summary-top clearfix">
+                                    
+
+                                    <p class="price"> <ins>
+                                       <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">{{user.username}}</span></span></ins></p>
+                                 </div>
+                                 <div class="accordion" id="product-accordion">
+                                    <div class="accordion-group">
+                                       <div class="accordion-heading">
+                                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#product-accordion" href="#product-description">
+                                          {% trans "Setting" %} </a>
+                                       </div>
+                                       <div id="product-description" class="accordion-body collapse ">
+                                          <div class="accordion-inner">
+                                             
+                                             <p>{% trans "Here you can change the settings and parameters of your account" %}</p>
+                                             <p>{% trans "Code" %}: {{user.profile.code}}</p>
+                                             {%if request.user == user%}
+                                                <form action="{%url 'profile_detail' user.id%}" method="POST" id="commentform" class="comment-form">
+                                                   {% csrf_token %}
+                                                   <p class="comment-notes">
+                                                      <h3 style="color: green;">{% trans "Change or create a company code." %}</h3><br>
+                                                      <span class="required-field-message" aria-hidden="true">{% trans "Required fields are marked" %}
+                                                         <span class="required" aria-hidden="true">*</span>
+                                                      </span>
+                                                   </p>
+
+                                                   {{ form.as_p }}
+
+                                                   <p class="form-submit">
+                                                      <input name="submit" type="submit" id="submit" class="submit" value="Enter" />
+                                                   </p>
+                                                </form>
+                                             {%endif%}
+                                             {%if request.user == user%}
+                                                <hr>
+                                                <p class="comment-notes">
+                                                   <h3 style="color: green;">{% trans "Change avatar or password." %}</h3><br>
+                                                </p>
+                                                <form action="{%url 'edit_image' user.id%}" method="POST" id="commentform" class="comment-form" enctype="multipart/form-data">
+                                                   <h3 style="color: green;">{% trans "Avatar" %}</h3><br>
+                                                   {% csrf_token %}
+
+                                                   {{ form2.as_p }}
+
+                                                   <p class="form-submit">
+                                                      <input name="submit" type="submit" id="submit" class="submit" value="Change" />
+                                                   </p>
+                                                </form>
+                                                <form action="{%url 'reset_password' user.id%}" method="POST" id="commentform" class="comment-form">
+                                                   <h3 style="color: green;">{% trans "Password" %}</h3><br>
+                                                   <p>{% trans "Be careful because if you change your password and forget it, you will not be able to log into your account" %}</p>
+                                                   {% csrf_token %}
+
+                                                   <div class="group">      
+                                                      <input class="inp" type="password" name="password2">
+                                                     </div>
+
+                                                   <p class="form-submit">
+                                                      <input name="submit" type="submit" id="submit" class="submit" value="Change" />
+                                                   </p>
+                                                </form>
+
+
+
+                                             {%endif%}
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="accordion-group">
+                                       <div class="accordion-heading">
+                                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#product-accordion" href="#product-reviews">
+                                             {% trans "Verification" %}
+                                          </a>
+                                       </div>
+                                       <div id="product-reviews" class="accordion-body collapse in">
+                                          <div class="accordion-inner">
+                                             <div id="reviews" class="woocommerce-Reviews">
+                                                <div id="comments">
+                                                   <h2 class="woocommerce-Reviews-title">
+                                                      {% trans "Verification" %}
+                                                   </h2>                            
+                                                   <p class="woocommerce-noreviews">{% trans "To gain access to the creation of products or legal services, you must pass the code verification." %}</p>
+                                                   <span id="reply-title" class="comment-reply-title">&ldquo;{% trans "Before starting the check, check if you have entered the code " %}&ldquo; <small><a rel="nofollow" id="cancel-comment-reply-link" href="/product/adidas-boston-super-og/#respond" style="display:none;">{% trans "Cancel reply" %}</a></small></span>
+
+
+                                                   
+                                                </div>
+                                                <div id="review_form_wrapper">
+                                                   <div id="review_form">
+                                                      <div id="respond" class="comment-respond">
+                                                         {%if request.user == user%}
+                                                            {%if profile.check_code or profile.for_checking%}
+                                                            {%else%}
+                                                            <a href="{%url 'cheking' user.id %}"><button type="button" class="btn btn-success">{% trans "Start verification" %}</button></a>
+                                                            {%endif%}
+                                                            {%if profile.check_code_fail == True%}
+
+                                                            <h3 style="color: red;">{% trans "Something went wrong, try again" %}</h3><br>
+
+                                                            {%elif profile.check_code == True%}
+
+                                                            <h3 style="color: green;">{% trans "Congrats you passed the verification" %}</h3><br>
+
+                                                            {%elif profile.for_checking == True%}
+
+                                                            <h2 style="color: gray;">{% trans "Checking" %}</h2><br>
+
+                                                            {%endif%}
+                                                         {%elif request.user != user%}
+                                                            {%if profile.check_code_fail == True%}    
+
+                                                            <h3 style="color: red;">{% trans "User not verified" %}</h3><br>
+                                                            {%elif profile.check_code == True%}
+                                                            <h3 style="color: green;">{% trans "The user has been verified" %}</h3><br>
+                                                            {%elif profile.for_checking == True%}
+                                                            <h2 style="color: gray;">{% trans "The user is being verified" %}</h2><br>
+                                                            {%endif%}
+                                                         {%endif%}
+
+
+                                                
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <style>
+                                                   .woocommerce #reviews #comments ol.commentlist {
+                                                      margin-bottom: 0px;
+                                                   }
+                                                </style>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="product_meta">
+                                    <p>
+                                       <span class="posted_in"><a href="{%url 'all_product_user' user.id  %}"><button type="button" class="btn btn-success">{% trans "All product(this user)" %}</button></a></span>
+                                       <hr>
+                                       <span class="posted_in"><a href="{%url 'all_product_user_lg' user.id  %}"><button type="button" class="btn btn-secondary">{% trans "All legal service(this user)" %}</button></a></span>
+                                    </p>
+                                    <hr>
+                                    {%if request.user == user%}
+                                       {%if profile.check_code == True%}
+                                       <p>
+                                          <a href="{%url 'create_product' user.id  %}"><button type="button" class="btn btn-success">{% trans "Create product" %}</button></a>
+                                          <br>
+                                          <br>
+                                          <a href="{%url 'create_product_lg' user.id  %}"><button type="button" class="btn btn-secondary">{% trans "Create legal services" %}</button></a>
+                                       </p>
+                                       {%endif%}
+                                    <div>
+                                       {% trans "If you need to send an email to the admin and report a problem" %}
+                                       <span class="posted_in"><a href="{%url 'send_message' user.id  %}"><button type="button" class="btn btn-danger">{% trans "Send email" %}</button></a></span>
+                                    </div>
+                                    {%endif%}
+                                    <div id="email-form" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="email-form-modal" aria-hidden="true">
+                                       <div class="modal-dialog">
+                                          <div class="modal-content">
+                                             <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fas fa-close"></i></button>
+                                                <h3 id="email-form-modal">{% trans "Contact Us" %}</h3>
+                                             </div>
+                                             <div class="modal-body">
+                                                {% trans "Enter your contact details or email form shortcode here. (Text/HTML/Shortcodes accepted)." %}
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div id="feedback-form" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="feedback-form-modal" aria-hidden="true">
+                                       <div class="modal-dialog">
+                                          <div class="modal-content">
+                                             <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fas fa-close"></i></button>
+                                                <h3 id="feedback-form-modal">{% trans "Leave Feedback" %}</h3>
+                                             </div>
+                                             <div class="modal-body">
+                                                {% trans "Enter your feedback modal content here." %} (Text/HTML/Shortcodes accepted).
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="product-display-area" class="container clearfix">
+
+                           </div>
+                           <div class="container product-after-wrap">
+                              <div class="product-carousel spb_content_element related">
+                                 <h4 class="lined-heading"><span>{% trans "Related Products" %}</span></h4>
+                                 <div class="carousel-wrap">
+
+                                    <ul class="related products carousel-items" id="carousel-2" data-columns="4>">
+                                       {%for p in product%}
+                                       <li class="product type-product post-9700 status-publish instock product_cat-footwear product_cat-sneakers product_tag-nike product_tag-sneakers has-post-thumbnail shipping-taxable purchasable product-type-simple">
+                                          <figure class="product-transition">
+                                             <div class="product-img-wrap">
+                                                <div class="product-image"><img width="540" height="720" src="{{ p.picture.url }}" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" /></div>
+                                                <div class="product-image second-image"><img width="540" height="720" src="{{ p.picture.url }}" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" /></div>
+                                             </div>
+
+                                             <a class="product-hover-link" href="{%url 'detail' p.slug%}"></a>
+                                          </figure>
+                                          <div class="product-details">
+                                             <h3><a href="{%url 'detail' p.slug%}">{{p.title}}</a></h3>
+                                             <span class="posted_in"><a href="{%url 'category' p.category_sub.slug%}" rel="tag">{{p.category_sub}}</a></span>
+                                          </div>
+                                          <span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">{{p.price}}</span>&#x20ac;</span></span>
+                                       </li>
+                                       {%endfor%}
+                                    </ul>
+                                    <a href="#" class="carousel-prev"><i class="fas fa-chevron-left"></i></a><a href="#" class="carousel-next"><i class="fas fa-chevron-right"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="container"></div>
+                     </section>
+                  </div>
+               </article>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+{%endblock content%}

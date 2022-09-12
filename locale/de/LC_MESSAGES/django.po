@@ -4,11 +4,11 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
-msgid ""  
+msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-20 15:58+0200\n"
+"POT-Creation-Date: 2022-09-11 17:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,392 +18,484 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: templates/base.html:8
-msgid "Store of the future"
-msgstr "Laden der Zukunft"
+#: templates/shop/all_product.html:4 templates/shop/category.html:4
+#: templates/users/all_product_user.html:4
+msgid "all product"
+msgstr "alles Produkt"
 
-#: templates/base.html:42 templates/category_lg.html:5
-#: templates/product_all.html:5
-msgid "All product"
-msgstr "Alle Produkte"
+#: templates/shop/all_product.html:13 templates/shop/all_product.html:16
+#: templates/shop/all_product.html:183 templates/shop/all_product_lg.html:15
+#: templates/shop/all_product_lg.html:18 templates/shop/all_product_lg.html:185
+#: templates/shop/category.html:182 templates/shop/category_lg.html:182
+#: templates/users/all_product_user.html:13
+#: templates/users/all_product_user.html:16
+#: templates/users/all_product_user.html:185
+#: templates/users/all_product_user_lg.html:13
+#: templates/users/all_product_user_lg.html:16
+#: templates/users/all_product_user_lg.html:185
+msgid "Shop"
+msgstr "Geschäft"
 
-#: templates/base.html:63 templates/base_lg.html:34
-#: templates/category_lg.html:27 templates/product_all_lg.html:28
-#: templates/user_detail.html:69
-msgid "Legal services"
-msgstr "Rechtsberatung"
+#: templates/shop/all_product.html:16 templates/shop/all_product_lg.html:18
+#: templates/users/all_product_user.html:16
+#: templates/users/all_product_user_lg.html:16
+msgid "Blackout"
+msgstr "Blackout"
 
-#: templates/base.html:65 templates/detail_product.html:30
-#: templates/detail_product_lg.html:32
-msgid "Name:"
-msgstr "Name:"
+#: templates/shop/all_product.html:184 templates/shop/all_product_lg.html:186
+#: templates/shop/category.html:183 templates/shop/category_lg.html:183
+#: templates/users/all_product_user.html:186
+#: templates/users/all_product_user_lg.html:186
+msgid "Commerce"
+msgstr "Handel"
 
-#: templates/base.html:66
-msgid "Logout"
-msgstr "Ausloggen"
+#: templates/shop/all_product.html:203 templates/shop/all_product_lg.html:205
+#: templates/shop/category.html:202 templates/shop/category_lg.html:202
+#: templates/shop/product_detail.html:92
+#: templates/shop/product_detail_lg.html:105
+#: templates/users/all_product_user.html:205
+#: templates/users/all_product_user_lg.html:205
+msgid "Owner"
+msgstr "Eigentümer"
 
-#: templates/base.html:68 templates/reg.html:66
-msgid "Sign in"
-msgstr "Einloggen"
+#: templates/shop/all_product_lg.html:4
+#: templates/users/all_product_user_lg.html:4
+msgid "all legal services"
+msgstr "alle juristischen Dienstleistungen"
 
-#: templates/base.html:69 templates/log.html:54 templates/reg.html:60
-msgid "Register"
-msgstr "Registrieren"
+#: templates/shop/all_product_lg.html:9
+msgid "if you want search product you need go to"
+msgstr "Wenn Sie ein Suchprodukt wünschen, müssen Sie zu gehen"
 
-#: templates/base.html:79 templates/base_lg.html:36
-#, fuzzy
-#| msgid "The best legal services and wholesale prices for goods"
-msgid "The best legal services and wholesale prices for goods"
-msgstr "Die besten Rechtsdienstleistungen und Großhandelspreise für Waren"
+#: templates/shop/all_product_lg.html:9 templates/shop/index.html:548
+msgid "This"
+msgstr "Dies"
 
-#: templates/base.html:90 templates/base_lg.html:44
-msgid "Design"
-msgstr "Entwurf"
+#: templates/shop/all_product_lg.html:9
+msgid "here you can search only legal services"
+msgstr "Hier können Sie nur juristische Dienstleistungen suchen"
 
-#: templates/base.html:95
-msgid "The site is made for your convenience and ease"
-msgstr ""
-"Die Website wurde für Ihre Bequemlichkeit und Benutzerfreundlichkeit erstellt"
+#: templates/shop/category_lg.html:4
+msgid "category legal service"
+msgstr "Kategorie Rechtsdienst"
 
-#: templates/base.html:104 templates/base_lg.html:58
-msgid "Recommendations"
-msgstr "Empfehlungen"
+#: templates/shop/create_product.html:4 templates/shop/create_product.html:28
+msgid "Created product"
+msgstr "Erstelltes Produkt"
 
-#: templates/base.html:109 templates/base_lg.html:63
-msgid "The site is designed so that we select the best products for you."
-msgstr ""
-"Die Website ist so konzipiert, dass wir die besten Produkte für Sie "
-"auswählen."
-
-#: templates/base.html:118 templates/base_lg.html:72
-msgid "Launch"
-msgstr "Start"
-
-#: templates/base.html:123 templates/base_lg.html:77
-msgid "The fastest work of administrators and employees."
-msgstr "Die schnellste Arbeit von Administratoren und Mitarbeitern."
-
-#: templates/base.html:130 templates/base_lg.html:86 templates/category.html:38
-#: templates/category_lg.html:44 templates/product_all.html:36
-#: templates/product_all_lg.html:46
-msgid "Latest arrivals"
-msgstr "Neueste Ankünfte"
-
-#: templates/base.html:140 templates/base_lg.html:96 templates/category.html:48
-#: templates/category_lg.html:54 templates/detail_product.html:40
-#: templates/detail_product_lg.html:44 templates/product_all.html:46
-#: templates/product_all_lg.html:56
-msgid "Owner:"
-msgstr "Eigentümer:"
-
-#: templates/base.html:142 templates/base_lg.html:98 templates/category.html:50
-#: templates/category_lg.html:56 templates/detail_product.html:42
-#: templates/detail_product_lg.html:46 templates/product_all.html:48
-#: templates/product_all_lg.html:58 templates/user_detail.html:81
-#: templates/user_detail_lg.html:83
-msgid "Price:"
-msgstr "Preis:"
-
-#: templates/base.html:142 templates/base_lg.html:98 templates/category.html:50
-#: templates/category_lg.html:56 templates/product_all.html:48
-#: templates/product_all_lg.html:58 templates/user_detail.html:81
-#: templates/user_detail_lg.html:83
-msgid "per item"
-msgstr "pro Stück"
-
-#: templates/base.html:146 templates/base_lg.html:102
-#: templates/category.html:54 templates/category_lg.html:60
-#: templates/product_all.html:52 templates/product_all_lg.html:62
-#: templates/user_detail.html:85 templates/user_detail_lg.html:87
-msgid "Read More"
-msgstr "Weiterlesen"
-
-#: templates/base.html:162
-msgid "Director"
-msgstr "Direktorin"
-
-#: templates/base.html:163
-msgid "Go to Top"
-msgstr "Zur Spitze gehen"
-
-#: templates/base.html:166
-msgid "Site created By"
-msgstr "Website erstellt von"
-
-#: templates/base_lg.html:5
-msgid "The best legal services"
-msgstr "Die besten juristischen Dienstleistungen"
-
-#: templates/base_lg.html:19 templates/category_lg.html:21
-#: templates/product_all_lg.html:5 templates/product_all_lg.html:22
-msgid "All legal services"
-msgstr "Alle juristischen Dienstleistungen"
-
-#: templates/base_lg.html:21 templates/category_lg.html:23
-#: templates/product_all_lg.html:24 templates/user_detail_lg.html:71
-msgid "Product"
-msgstr "Produkt"
-
-#: templates/base_lg.html:49
-msgid "The site is made for your convenience and prostate."
-msgstr "Die Seite ist für Ihre Bequemlichkeit und Prostata gemacht."
-
-#: templates/category.html:23 templates/category_lg.html:29
-#: templates/product_all.html:20 templates/product_all_lg.html:30
-msgid "Еhe best legal services and wholesale prices for goods"
-msgstr "Die besten Rechtsdienstleistungen und Großhandelspreise für Waren"
-
-#: templates/code.html:5 templates/code.html:19
-msgid "Code"
-msgstr "Code"
-
-#: templates/code.html:28
-msgid "Enter"
-msgstr "Eintreten"
-
-#: templates/create_product.html:5 templates/create_product.html:44
-#: templates/user_detail.html:53 templates/user_detail_lg.html:55
+#: templates/shop/create_product.html:25 templates/shop/create_product.html:43
+#: templates/users/profile_detail.html:209
 msgid "Create product"
 msgstr "Produkt erstellen"
 
-#: templates/create_product.html:18 templates/create_product_lg.html:24
-#: templates/edit_product.html:18 templates/edit_product_lg.html:24
-#: templates/reg.html:40
-msgid "Image"
-msgstr "Bild"
+#: templates/shop/create_product.html:63
+#: templates/shop/create_product_lg.html:63
+msgid "Create"
+msgstr "Schaffen"
 
-#: templates/create_product.html:22 templates/create_product_lg.html:28
-#: templates/edit_product.html:22 templates/edit_product_lg.html:28
-msgid "Category"
-msgstr "Kategorie"
+#: templates/shop/create_product.html:66
+msgid "Want you  create legal service?"
+msgstr "Möchten Sie einen Rechtsdienst erstellen?"
 
-#: templates/create_product.html:30 templates/create_product_lg.html:36
-#: templates/edit_product.html:30 templates/edit_product_lg.html:36
-msgid "Title"
-msgstr "Titel"
-
-#: templates/create_product.html:32 templates/create_product_lg.html:40
-#: templates/edit_product.html:32 templates/edit_product_lg.html:40
-msgid "Phone"
-msgstr "Telefon"
-
-#: templates/create_product.html:34 templates/create_product_lg.html:52
-#: templates/edit_product.html:34 templates/edit_product_lg.html:52
-msgid "Contact information"
-msgstr "Kontaktinformationen"
-
-#: templates/create_product.html:37 templates/create_product_lg.html:44
-#: templates/edit_product.html:37 templates/edit_product_lg.html:44
-msgid "Description"
-msgstr "Beschreibung"
-
-#: templates/create_product.html:39 templates/create_product_lg.html:55
-#: templates/edit_product.html:39 templates/edit_product_lg.html:55
-msgid "price"
-msgstr "Preis"
-
-#: templates/create_product_lg.html:5
-msgid "Created legal services"
-msgstr "Juristische Dienstleistungen erstellt"
-
-#: templates/create_product_lg.html:48 templates/edit_product_lg.html:48
-msgid "If you need more description"
-msgstr "Wenn Sie mehr Beschreibung benötigen"
-
-#: templates/create_product_lg.html:61
+#: templates/shop/create_product_lg.html:4
+#: templates/shop/create_product_lg.html:25
+#: templates/shop/create_product_lg.html:28
+#: templates/shop/create_product_lg.html:43
 msgid "Create legal service"
 msgstr "Rechtsdienst erstellen"
 
-#: templates/detail_product.html:5 templates/detail_product.html:20
-#: templates/detail_product_lg.html:5 templates/detail_product_lg.html:22
-msgid "Detailed information"
-msgstr "Genaue Information"
+#: templates/shop/create_product_lg.html:66
+msgid "Want you create product?"
+msgstr "Möchten Sie ein Produkt erstellen?"
 
-#: templates/detail_product.html:22
-msgid "Here you can see full information about the product or service."
-msgstr ""
-"Hier können Sie alle Informationen über das Produkt oder die Dienstleistung "
-"einsehen."
-
-#: templates/detail_product.html:32 templates/detail_product_lg.html:34
-msgid "Category:"
-msgstr "Kategorie:"
-
-#: templates/detail_product.html:34 templates/detail_product_lg.html:36
-msgid "Description:"
-msgstr "Beschreibung:"
-
-#: templates/detail_product.html:36 templates/detail_product_lg.html:40
-msgid "Phone:"
-msgstr "Telefon:"
-
-#: templates/detail_product.html:38 templates/detail_product_lg.html:42
-msgid "Contact information:"
-msgstr "Kontaktinformationen:"
-
-#: templates/detail_product.html:51 templates/detail_product_lg.html:55
-#: templates/edit_product.html:5 templates/edit_product.html:44
+#: templates/shop/edit_product.html:4 templates/shop/edit_product.html:25
+#: templates/shop/edit_product.html:28 templates/shop/edit_product.html:43
+#: templates/shop/product_detail.html:225
+#: templates/shop/product_detail_lg.html:238
 msgid "Edit product"
 msgstr "Produkt bearbeiten"
 
-#: templates/detail_product.html:53 templates/detail_product_lg.html:57
-msgid "Delete product"
-msgstr "Produkt löschen"
+#: templates/shop/edit_product.html:63 templates/shop/edit_product_lg.html:63
+msgid "Edit"
+msgstr "Bearbeiten"
 
-#: templates/detail_product.html:62 templates/detail_product_lg.html:66
-msgid "Your email address will not be published."
-msgstr "Deine Email-Adresse wird nicht veröffentlicht."
-
-#: templates/detail_product.html:63 templates/detail_product_lg.html:67
-msgid "Required fields are marked"
-msgstr "Erforderliche Felder sind markiert"
-
-#: templates/detail_product.html:69 templates/detail_product_lg.html:73
-msgid "the higher the number,"
-msgstr "Je höher die Zahl,"
-
-#: templates/detail_product.html:70 templates/detail_product_lg.html:74
-msgid "the higher the rating of the product or servic."
-msgstr "desto höher ist die Bewertung des Produkts oder der Dienstleistung."
-
-#: templates/detail_product.html:76 templates/detail_product_lg.html:80
-msgid "Text:"
-msgstr "Text:"
-
-#: templates/detail_product.html:80 templates/detail_product_lg.html:84
-msgid "Create comment"
-msgstr "Kommentar erstellen"
-
-#: templates/detail_product.html:86 templates/detail_product_lg.html:90
-msgid "Reviews"
-msgstr "Bewertungen"
-
-#: templates/detail_product_lg.html:24
-msgid "Here you can see full information about the legal service."
-msgstr "Hier finden Sie alle Informationen zum Rechtsdienst."
-
-#: templates/detail_product_lg.html:38
-msgid "Additional description:"
-msgstr "Zusätzliche Beschreibung:"
-
-#: templates/detail_product_lg.html:71
-msgid "Rate:"
-msgstr "Rate:"
-
-#: templates/edit_product_lg.html:5 templates/edit_product_lg.html:61
+#: templates/shop/edit_product_lg.html:4 templates/shop/edit_product_lg.html:25
+#: templates/shop/edit_product_lg.html:28
+#: templates/shop/edit_product_lg.html:43
 msgid "Edit legal service"
 msgstr "Rechtsdienst bearbeiten"
 
-#: templates/log.html:5 templates/reg.html:6
-msgid "Register - Login"
-msgstr "Registrieren - Einloggen"
+#: templates/shop/index.html:17
+msgid " Welcome to the"
+msgstr " Willkommen zu"
 
-#: templates/log.html:37
+#: templates/shop/index.html:519 templates/shop/index.html:621
+msgid "Home"
+msgstr "Heim"
+
+#: templates/shop/index.html:523
+msgid "Products"
+msgstr "Produkte"
+
+#: templates/shop/index.html:524
+msgid "Legal services"
+msgstr "Rechtsberatung"
+
+#: templates/shop/index.html:525
+msgid "What&#8217;s New"
+msgstr "Was ist neu"
+
+#: templates/shop/index.html:526
+msgid "Сonnect with us"
+msgstr "Verbinden Sie sich mit uns"
+
+#: templates/shop/index.html:533
+msgid "Logout"
+msgstr "Logout"
+
+#: templates/shop/index.html:538 templates/users/login.html:4
+#: templates/users/login.html:30 templates/users/login.html:42
+#: templates/users/login.html:53 templates/users/register.html:60
 msgid "Login"
-msgstr "Anmeldung"
+msgstr "Login"
 
-#: templates/log.html:41 templates/reg.html:52 templates/reset_password.html:5
-#: templates/reset_password.html:23
-msgid "Password"
-msgstr "Passwort"
+#: templates/shop/index.html:542
+msgid "Register"
+msgstr "Registrieren"
 
-#: templates/log.html:49
-msgid "Log in"
-msgstr "Einloggen"
+#: templates/shop/index.html:548
+msgid "if you want search legal service you need go to"
+msgstr "Wenn Sie einen Rechtsdienst suchen möchten, müssen Sie zu gehen"
 
-#: templates/reg.html:44
-msgid "Nickname(must be unique)"
-msgstr "Nickname (muss einzigartig sein)"
+#: templates/shop/index.html:548
+msgid "here you can search only regular products"
+msgstr "Hier können Sie nur nach regulären Produkten suchen"
 
-#: templates/reg.html:48
-msgid "First name and Last name"
-msgstr "Vorname und Nachname"
+#: templates/shop/index.html:580
+msgid "The best wholesale products "
+msgstr "Die besten Großhandelsprodukte "
 
-#: templates/reg.html:56
-msgid "Сonfirm password"
-msgstr "Passwort bestätigen"
+#: templates/shop/index.html:580
+msgid "and prices"
+msgstr "und Preise"
 
-#: templates/reset_password.html:32
-msgid "Reset Password"
-msgstr "Passwort zurücksetzen"
+#: templates/shop/index.html:590
+msgid "The best legal services"
+msgstr "Die besten juristischen Dienstleistungen"
 
-#: templates/user_detail.html:5
-msgid "Profile"
-msgstr "Profil"
+#: templates/shop/index.html:590
+msgid "on the internet"
+msgstr "im Internet"
 
-#: templates/user_detail.html:18 templates/user_detail_lg.html:20
-msgid "Your nickname:"
-msgstr "Dein Spitzname:"
+#: templates/shop/index.html:639
+msgid "Latest Products"
+msgstr "Neueste Produkte"
 
-#: templates/user_detail.html:19 templates/user_detail_lg.html:21
-msgid "Your code of company:"
-msgstr "Ihr Firmencode:"
+#: templates/shop/index.html:657
+msgid "owner"
+msgstr "Eigentümer"
 
-#: templates/user_detail.html:22 templates/user_detail.html:24
-#: templates/user_detail.html:28 templates/user_detail_lg.html:24
-#: templates/user_detail_lg.html:26 templates/user_detail_lg.html:30
-msgid "Verification"
-msgstr "Überprüfung"
+#: templates/shop/index.html:686
+msgid "See all products"
+msgstr "Alle Produkte anzeigen"
 
-#: templates/user_detail.html:22 templates/user_detail_lg.html:24
-msgid "failed"
-msgstr "gescheitert"
+#: templates/shop/index.html:703
+msgid "Latest legal services"
+msgstr "Neueste juristische Dienstleistungen"
 
-#: templates/user_detail.html:24 templates/user_detail_lg.html:26
-msgid "passed"
-msgstr "bestanden"
+#: templates/shop/index.html:747
+msgid "See all legal services"
+msgstr "Alle Rechtsdienstleistungen anzeigen"
 
-#: templates/user_detail.html:25 templates/user_detail_lg.html:27
-msgid "Сheck date"
-msgstr "Datum prüfen"
+#: templates/shop/product_detail.html:73
+#: templates/shop/product_detail_lg.html:73
+#: templates/shop/product_detail_lg.html:78
+msgid "Contact informations"
+msgstr "Kontaktinformationen"
 
-#: templates/user_detail.html:28 templates/user_detail_lg.html:30
-msgid "for review (may take some time)"
-msgstr "zur Überprüfung (kann einige Zeit dauern)"
+#: templates/shop/product_detail.html:78
+msgid " Contact informations"
+msgstr " Kontaktinformationen"
 
-#: templates/user_detail.html:31 templates/user_detail.html:37
-#: templates/user_detail_lg.html:33 templates/user_detail_lg.html:39
+#: templates/shop/product_detail.html:79
+msgid "Phone"
+msgstr "Telefon"
+
+#: templates/shop/product_detail.html:86
+#: templates/shop/product_detail_lg.html:99
+msgid "Description"
+msgstr "Beschreibung"
+
+#: templates/shop/product_detail.html:99 templates/shop/product_detail.html:107
+#: templates/shop/product_detail_lg.html:112
+#: templates/shop/product_detail_lg.html:120
+msgid "Reviews"
+msgstr "Bewertungen"
+
+#: templates/shop/product_detail.html:120
+#: templates/shop/product_detail.html:124
+#: templates/shop/product_detail.html:128
+#: templates/shop/product_detail.html:132
+#: templates/shop/product_detail.html:136
+#: templates/shop/product_detail_lg.html:133
+#: templates/shop/product_detail_lg.html:137
+#: templates/shop/product_detail_lg.html:141
+#: templates/shop/product_detail_lg.html:145
+#: templates/shop/product_detail_lg.html:149
+msgid "Rated"
+msgstr "Bewertet"
+
+#: templates/shop/product_detail.html:120
+#: templates/shop/product_detail.html:124
+#: templates/shop/product_detail.html:128
+#: templates/shop/product_detail.html:132
+#: templates/shop/product_detail.html:136
+msgid "out of"
+msgstr "aus"
+
+#: templates/shop/product_detail.html:141
+#: templates/shop/product_detail_lg.html:154
+msgid "Author"
+msgstr "Autor/Autorin"
+
+#: templates/shop/product_detail.html:172
+#: templates/shop/product_detail_lg.html:185
+msgid "There are no reviews yet."
+msgstr "Es gibt noch keine Bewertungen."
+
+#: templates/shop/product_detail.html:173
+#: templates/shop/product_detail_lg.html:186
+msgid "Be the first to review"
+msgstr "Schreiben Sie die erste Bewertung"
+
+#: templates/shop/product_detail.html:173
+#: templates/shop/product_detail_lg.html:186
+#: templates/users/profile_detail.html:147
+msgid "Cancel reply"
+msgstr "Antwort verwerfen"
+
+#: templates/shop/product_detail.html:183
+#: templates/shop/product_detail_lg.html:196
+msgid "Create Comment"
+msgstr "Kommentar erstellen"
+
+#: templates/shop/product_detail.html:189
+msgid "Your email address will not be published"
+msgstr "Deine Email-Adresse wird nicht veröffentlicht"
+
+#: templates/shop/product_detail.html:190
+#: templates/shop/product_detail_lg.html:203
+#: templates/users/profile_detail.html:86
+msgid "Required fields are marked"
+msgstr "erforderliche Felder sind markiert"
+
+#: templates/shop/product_detail.html:216
+#: templates/shop/product_detail_lg.html:229
+msgid "Category"
+msgstr "Kategorie"
+
+#: templates/shop/product_detail.html:222
+#: templates/shop/product_detail_lg.html:235
+#: templates/users/profile_detail.html:74
 msgid "Setting"
 msgstr "Einstellung"
 
-#: templates/user_detail.html:41
-msgid ""
-"In the settings you can enter the company code or change the password, also "
-"if you have passed the verification you can create a product for sale"
-msgstr ""
-"In den Einstellungen können Sie den Firmencode eingeben oder das Passwort "
-"ändern, auch Wenn Sie die Überprüfung bestanden haben, können Sie ein "
-"Produkt zum Verkauf erstellen"
+#: templates/shop/product_detail.html:224
+#: templates/shop/product_detail_lg.html:237
+msgid "Delete product"
+msgstr "Produkt löschen"
 
-#: templates/user_detail.html:43 templates/user_detail_lg.html:45
-msgid ""
-"Before you click on the button, please enter the company code (without it "
-"you will not receive a promotion)"
-msgstr ""
-"Bevor Sie auf die Schaltfläche klicken, geben Sie bitte den Firmencode ein "
-"(ohne Sie erhalten keine Beförderung)"
+#: templates/shop/product_detail.html:235
+#: templates/shop/product_detail_lg.html:248
+#: templates/users/profile_detail.html:225
+msgid "Contact Us"
+msgstr "Kontaktiere uns"
 
-#: templates/user_detail.html:45 templates/user_detail_lg.html:47
-msgid "Start Verification"
+#: templates/shop/product_detail.html:238
+#: templates/shop/product_detail_lg.html:251
+msgid "Enter your contact details or email form shortcode here."
+msgstr "Geben Sie hier Ihre Kontaktdaten oder den Shortcode des E-Mail-Formulars ein."
+
+#: templates/shop/product_detail.html:248
+#: templates/shop/product_detail_lg.html:261
+#: templates/users/profile_detail.html:238
+msgid "Leave Feedback"
+msgstr "Hinterlasse Kommentar"
+
+#: templates/shop/product_detail.html:251
+#: templates/users/profile_detail.html:241
+msgid "Enter your feedback modal content here."
+msgstr "Geben Sie hier Ihren modalen Feedback-Inhalt ein."
+
+#: templates/shop/product_detail.html:264
+#: templates/shop/product_detail_lg.html:277
+#: templates/users/profile_detail.html:254
+msgid "Related Products"
+msgstr "Verwandte Produkte"
+
+#: templates/shop/product_detail_lg.html:86
+msgid "Add description"
+msgstr "Füge eine Beschreibung hinzu"
+
+#: templates/shop/product_detail_lg.html:91
+msgid "Additional description"
+msgstr "Zusätzliche Beschreibung"
+
+#: templates/shop/product_detail_lg.html:133
+#: templates/shop/product_detail_lg.html:137
+#: templates/shop/product_detail_lg.html:141
+#: templates/shop/product_detail_lg.html:145
+#: templates/shop/product_detail_lg.html:149
+msgid "out of 5"
+msgstr "von 5"
+
+#: templates/shop/product_detail_lg.html:202
+msgid "Your email address will not be published."
+msgstr "Deine Email-Adresse wird nicht veröffentlicht."
+
+#: templates/shop/product_detail_lg.html:251
+#: templates/shop/product_detail_lg.html:264
+msgid "accepted"
+msgstr "akzeptiert"
+
+#: templates/shop/product_detail_lg.html:264
+msgid " Enter your feedback modal content here."
+msgstr " Geben Sie hier Ihren modalen Feedback-Inhalt ein."
+
+#: templates/users/create_message.html:4 templates/users/create_message.html:25
+#: templates/users/create_message.html:28
+#: templates/users/create_message.html:63
+msgid "Send message"
+msgstr "Nachricht senden"
+
+#: templates/users/create_message.html:43
+msgid "Created message"
+msgstr "Nachricht erstellt"
+
+#: templates/users/login.html:14 templates/users/register.html:25
+msgid "My Account"
+msgstr "Mein Konto"
+
+#: templates/users/login.html:46 templates/users/profile_detail.html:114
+msgid "Password"
+msgstr "Passwort"
+
+#: templates/users/login.html:56
+msgid "Dont have account?"
+msgstr "Sie haben kein Konto?"
+
+#: templates/users/profile_detail.html:79
+msgid "Here you can change the settings and parameters of your account"
+msgstr "Hier können Sie die Einstellungen und Parameter Ihres Kontos ändern"
+
+#: templates/users/profile_detail.html:80
+msgid "Code"
+msgstr "Code"
+
+#: templates/users/profile_detail.html:85
+msgid "Change or create a company code."
+msgstr "Ändern oder erstellen Sie einen Buchungskreis."
+
+#: templates/users/profile_detail.html:101
+msgid "Change avatar or password."
+msgstr "Avatar oder Passwort ändern."
+
+#: templates/users/profile_detail.html:104
+msgid "Avatar"
+msgstr "Benutzerbild"
+
+#: templates/users/profile_detail.html:115
+msgid ""
+"Be careful because if you change your password and forget it, you will not "
+"be able to log into your account"
+msgstr ""
+"Sei vorsichtig, denn wenn du dein Passwort änderst und es vergisst, wirst du nicht "
+"sich in Ihr Konto einloggen können"
+
+
+#: templates/users/profile_detail.html:136
+#: templates/users/profile_detail.html:144
+msgid "Verification"
+msgstr "Überprüfung"
+
+#: templates/users/profile_detail.html:146
+msgid ""
+"To gain access to the creation of products or legal services, you must pass "
+"the code verification."
+msgstr ""
+"Um Zugang zur Erstellung von Produkten oder juristischen Dienstleistungen zu erhalten, müssen Sie bestehen "
+"die Code-Überprüfung."
+
+
+#: templates/users/profile_detail.html:147
+msgid "Before starting the check, check if you have entered the code "
+msgstr "Prüfen Sie vor Beginn der Überprüfung, ob Sie den Code eingegeben haben "
+
+#: templates/users/profile_detail.html:158
+msgid "Start verification"
 msgstr "Bestätigung starten"
 
-#: templates/user_detail.html:50 templates/user_detail_lg.html:52
-msgid "Change code"
-msgstr "Code ändern"
+#: templates/users/profile_detail.html:162
+msgid "Something went wrong, try again"
+msgstr "Etwas ging schief, versuche es erneut"
 
-#: templates/user_detail.html:55 templates/user_detail_lg.html:57
-msgid "Create Legal service"
-msgstr "Rechtsdienst erstellen"
+#: templates/users/profile_detail.html:166
+msgid "Congrats you passed the verification"
+msgstr "Herzlichen Glückwunsch, Sie haben die Verifizierung bestanden"
 
-#: templates/user_detail.html:58 templates/user_detail_lg.html:60
-msgid "Edit password"
-msgstr "Passwort bearbeiten"
+#: templates/users/profile_detail.html:170
+msgid "Checking"
+msgstr "Überprüfung"
 
-#: templates/user_detail_lg.html:43
+#: templates/users/profile_detail.html:176
+msgid "User not verified"
+msgstr "Benutzer nicht verifiziert"
+
+#: templates/users/profile_detail.html:178
+msgid "The user has been verified"
+msgstr "Der Benutzer wurde verifiziert"
+
+#: templates/users/profile_detail.html:180
+msgid "The user is being verified"
+msgstr "Der Benutzer wird überprüft"
+
+#: templates/users/profile_detail.html:201
+msgid "All product(this user)"
+msgstr "Alle Produkte (dieser Benutzer)"
+
+#: templates/users/profile_detail.html:203
+msgid "All legal service(this user)"
+msgstr "Alle juristischen Dienste (dieser Benutzer)"
+
+#: templates/users/profile_detail.html:212
+msgid "Create legal services"
+msgstr "Erstellen Sie Rechtsdienstleistungen"
+
+#: templates/users/profile_detail.html:216
+msgid "If you need to send an email to the admin and report a problem"
+msgstr "Wenn Sie eine E-Mail an den Administrator senden und ein Problem melden müssen"
+
+#: templates/users/profile_detail.html:217
+msgid "Send email"
+msgstr "E-Mail senden"
+
+#: templates/users/profile_detail.html:228
 msgid ""
-" In the settings you can enter the company code or change the password, also "
-"if you have passed the verification you can create a product for sale"
+"Enter your contact details or email form shortcode here. (Text/HTML/"
+"Shortcodes accepted)."
 msgstr ""
-" In den Einstellungen können Sie den Firmencode eingeben oder das Passwort "
-"ändern, auch Wenn Sie die Überprüfung bestanden haben, können Sie ein "
-"Produkt zum Verkauf erstellen"
+"Geben Sie hier Ihre Kontaktdaten oder den Shortcode des E-Mail-Formulars ein. (Text/HTML/"
+"Shortcodes akzeptiert)."
+
+
+#: templates/users/register.html:4
+msgid "Registered"
+msgstr "Eingetragen"
+
+#: templates/users/register.html:41
+msgid "Registered customers"
+msgstr "Registrierte Kunden"
+
+#: templates/users/register.html:63
+msgid "You already have an account?"
+msgstr "Sie haben schon ein Konto?"

@@ -1,7 +1,18 @@
+.text-centrr{
+  margin-left: 10%;
+  margin-right: 50%;
+}
+
+.up{
+  margin-top: -10%;
+}
+
+
+
 .round {
     border-radius: 100px; /* Радиус скругления */
     box-shadow: 0 0 0 3px black, 0 0 13px #333; /* Параметры теней */
-    max-width: 250px;
+    max-width: 25px;
     max-height: 250px;
 }
 a {

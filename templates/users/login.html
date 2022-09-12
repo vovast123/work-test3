@@ -1,0 +1,70 @@
+{% extends 'shop/index.html' %}
+{% load static %}
+{% load i18n %}
+{%block title%}<title>Logis Cargo &#8211;{% trans "Login" %}</title>{%endblock title%}
+
+{%block class%}
+class="page-template-default page page-id-5864 page-shadow header-shadow responsive-fluid  theme-neighborhood woocommerce-account woocommerce-page woocommerce-no-js"
+{%endblock class%}
+{%block content%}
+<div id="main-container" class="clearfix">
+            <div class="page-heading  clearfix asset-bg alt-one">
+               <div class="container">
+                  <div class="heading-text">
+                     <h1 class="entry-title">{% trans "My Account" %}</h1>
+                  </div>
+
+               </div>
+            </div>
+            <div class="container">
+               <div id="page-wrap">
+                  <div class="inner-page-wrap has-no-sidebar clearfix">
+                     <div class="clearfix post-5864 page type-page status-publish hentry" id="5864">
+                        <div class="page-content clearfix">
+                           <div class="woocommerce">
+                              <div class="woocommerce-notices-wrapper"></div>
+                              <div class="my-account-login-wrap">
+                                 <div class="u-columns col2-set" id="customer_login" style="">
+                                    <div class="u-column1 col-1" style="display:flex; align-items: center; justify-content: center; width: 100%;">
+                                       <div class="login-wrap" style="width: 50%;">
+                                          <h4 class="lined-heading"><span>{% trans "Login" %}</span></h4>
+                                          <style>
+                                             .woocommerce-Input {
+                                                width: 100%;
+                                             }
+                                          </style>
+                                          <form class="woocommerce-form woocommerce-form-login login" method="post">
+                                              {% csrf_token %}
+                                              {%for messages in messages%}
+                                              <p id="messages" >{{messages}} </p>
+                                             {%endfor%}
+                                              <label>
+                                                <span class="label-text">{% trans "Login" %}</span>
+                                                <input type="text" name="username">
+                                             </label>
+                                             <label class="password">
+                                                <span class="label-text">{% trans "Password" %}</span>
+                                                
+                                                   <span class="glyphicon glyphicon-eye-close"></span>
+                                                
+                                                <input type="password" name="password">
+                                             </label>
+                                             <p class="form-row">
+                                                <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="c5a353ccf2" /><input type="hidden" name="_wp_http_referer" value="/my-account/" /> <button type="submit" class="woocommerce-Button button" name="login" value="Log in">{% trans "Login" %}</button>
+                                             </p>
+                                             <p class="woocommerce-LostPassword lost_password">
+                                                <a href="{%url 'reg'%}">{% trans "Dont have account?" %}</a>
+                                             </p>
+                                          </form>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+{%endblock content%}        

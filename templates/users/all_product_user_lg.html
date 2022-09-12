@@ -1,0 +1,241 @@
+{% extends 'shop/index.html' %}
+{% load static %}
+{% load i18n %}
+{%block title%}<title>Logis Cargo &#8211; {% trans "all legal services" %}</title>{%endblock title%}
+{%block class %}
+class="archive post-type-archive post-type-archive-product page-shadow header-shadow responsive-fluid  theme-neighborhood woocommerce woocommerce-page woocommerce-no-js"
+{%endblock class%}
+{%block content%}
+         <div id="main-container" class="clearfix">
+            <div class="page-heading  clearfix asset-bg alt-one">
+               <div class="container">
+                  <div class="heading-text">
+                     <h1 class="entry-title"><a >{% trans "Shop" %}</a></h1>
+                  </div>
+                  <div id="breadcrumbs">
+                     <a title="Go to Blackout." class="home">{% trans "Blackout" %}</a><i class="fa-angle-right"></i>{% trans "Shop" %}
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div id="page-wrap">
+                  <div class="page-content clearfix">
+                     <div class="inner-page-wrap woocommerce-shop-page has-right-sidebar has-one-sidebar row clearfix">
+                        <section class="span9 clearfix">
+                           <section class="page-content clearfix">
+                              <div class="woocommerce-notices-wrapper"></div>
+                              <div class="woocommerce-count-wrap">
+                                 <p class="woocommerce-result-count">
+                                    
+                                 </p>
+                              </div>
+                              <form class="woocommerce-ordering" method="get">
+                                 <style>
+                                    .__select {
+                                      position: relative;
+                                      width: 230px;
+                                      height: 40px;
+                                      margin: 0 auto;
+
+                                    .__select[data-state="active"] {
+                                        .__select__title {
+                                          &::before {
+                                            transform: translate(-3px, -50%) rotate(-45deg);
+                                          }
+
+                                          &::after {
+                                            transform: translate(3px, -50%) rotate(45deg);
+                                          }
+                                        }
+
+                                        .__select__content {
+                                          opacity: 1;
+                                        }
+
+                                        .__select__label + .__select__input + .__select__label {
+                                          max-height: 40px;
+                                          border-top-width: 1px;
+                                        }
+                                      }
+                                    }
+                                    .__select__title {
+                                      display: flex;
+                                      align-items: center;
+                                      width: 100%;
+                                      height: 100%;
+                                      padding: 8px 16px;
+
+                                      border-radius: 5px;
+                                      border: solid 1px #c7ccd1;
+
+                                      cursor: pointer;
+
+                                      &::before,
+                                      &::after {
+                                        content: "";
+
+                                        position: absolute;
+                                        top: 50%;
+                                        right: 16px;
+
+                                        display: block;
+                                        width: 10px;
+                                        height: 2px;
+
+                                        transition: all 0.3s ease-out;
+
+                                        background-color: #333333;
+
+                                        transform: translate(-3px, -50%) rotate(45deg);
+                                      }
+                                      &::after {
+                                        transform: translate(3px, -50%) rotate(-45deg);
+                                      }
+
+                                      &:hover {
+                                        border-color: #D8093A;
+
+                                        &::before,
+                                        &::after {
+                                          background-color: #D8093A;
+                                        }
+                                      }
+                                    }
+                                    .reset {
+                                      display: flex;
+                                      width: 230px;
+                                      padding: 8px 16px;
+                                      margin: 0 auto;
+                                      margin-bottom: 10px;
+
+                                      border: solid 1px #c7ccd1;
+                                      border-radius: 5px;
+
+                                      transition: all 0.2s ease-out;
+
+                                      cursor: pointer;
+
+                                      font-weight: bold;
+
+                                      background-color: #ffffff;
+                                      color: #333333;
+
+                                      &:hover {
+                                        background-color: #D8093A;
+                                        color: #ffffff;
+                                      }
+                                    }
+                                    .__select__content {
+                                      position: absolute;
+                                      top: 40px;
+                                      left: 3px;
+
+                                      display: flex;
+                                      flex-direction: column;
+                                      width: calc(100% - 6px);
+
+                                      background-color: #ffffff;
+
+                                      border: 1px solid #c7ccd1;
+                                      border-top: none;
+                                      border-bottom-left-radius: 5px;
+                                      border-bottom-right-radius: 5px;
+
+                                      transition: all 0.3s ease-out;
+
+                                      opacity: 0;
+                                      z-index: 8;
+                                    }
+                                    .__select__input {
+                                      display: none;
+
+                                      &:checked + label {
+                                        background-color: #dedede;
+                                      }
+                                      &:disabled + label {
+                                        opacity: 0.6;
+                                        pointer-events: none;
+                                      }
+                                    }
+                                    .__select__label {
+                                      display: flex;
+                                      align-items: center;
+                                      width: 100%;
+                                      height: 40px;
+                                      max-height: 0;
+                                      padding: 0 16px;
+
+                                      transition: all 0.2s ease-out;
+
+                                      cursor: pointer;
+
+                                      overflow: hidden;
+
+                                      & + input + & {
+                                        border-top: 0 solid #C7CCD160;
+                                      }
+
+                                      &:hover {
+                                        background-color: #D8093A !important;
+
+                                        color: #ffffff;
+                                      }
+                                    }
+                                 </style>
+                                    <a href="#" style="margin-right:15px;">{% trans "Shop" %}</a>
+                                    <a href="#">{% trans "Commerce" %}</a>
+
+                              </form>
+                              <ul id="products" class="products columns-4">
+                                 <style>
+                                    .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {width: 23.1%; margin:0 1.9% 2.992em 0;}
+                                 </style>
+                                 {%for p in prod%}
+                                 <li class="product type-product">
+                                    <figure class="product-transition" style="padding-bottom: 178.156px;">
+                                       
+                                       <div class="product-img-wrap">
+                                          <div class="product-image"><img width="540" height="720" src="{{p.picture.url}}" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy"></div>
+                                          <div class="product-image second-image"><img width="540" height="720" src="{{p.picture.url}}" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy"></div>
+                                       </div>
+                                       <a class="product-hover-link" href="{%url 'detail_lg' p.slug%}"></a>
+                                    </figure>
+                                    <div class="product-details">
+                                       <h3><a href="{%url 'detail_lg' p.slug%}">{{p.title}}</a></h3>
+                                       <span class="posted_in"><a href="{%url 'category_lg' p.category_sub.slug%}" rel="tag">{{p.category_sub}}</a>, <a href="{%url 'profile_detail' p.owner.id%}" rel="tag">{% trans "Owner" %} - {{p.owner}}</a></span>
+                                    </div>
+                                    <span class="price"> <ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">{{p.price}}</span>&#x20ac;</span></ins></span>
+                                 </li>
+                                 {%endfor%}
+
+                              </ul>
+                              {%if page_obj.has_other_pages%}
+                              <div class="centre-text">
+                                 <div class="pagination">
+                                       {%if page_obj.has_previous%}
+                                       <a class="pa" href="?page={{page_obj.previous_page_number}}">«</a>
+                                       {%endif%}
+                                       {%for p in page_obj.paginator.page_range%}
+                              
+                              
+                                       {%if page_obj.number == p%}
+                                       <a class="pa active" href="?page={{p}}" >{{p}}</a>
+                                       {%elif p >= page_obj.number|add:-2 and p <= page_obj.number|add:2  %}
+                                       <a class="pa" href="?page={{p}}" >{{p}}</a>
+                                       {%endif%}
+                                       {%endfor%}
+                                       {%if page_obj.has_next%}
+                                       <a class="pa" href="?page={{page_obj.next_page_number}}">»</a>
+                                       {%endif%}
+                                 </div>
+                              
+                              </div>
+                              {%endif%}
+                           </section>
+                        </section>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+{%endblock content%}
