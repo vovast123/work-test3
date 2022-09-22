@@ -28,7 +28,7 @@
                 }
             }
         </script>
-    <meta name='robots' content='noindex, nofollow' />
+    <meta name='robots' content='nofollow' />
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
     <link rel='dns-prefetch' href='//s.w.org' />
     <link rel='stylesheet' id='wc-block-style-css' href='{% static "content/plugins/woocommerce/packages/woocommerce-blocks/build/style.css" %}' type='text/css' media='all' />
@@ -465,12 +465,70 @@
 <body {%block class%} class="home page-template-default page page-id-7606 page-parent page-shadow header-shadow responsive-fluid  theme-neighborhood woocommerce-no-js" {%endblock class%}>
     
     <div id="container">
+
+        <div id="super-search" class="sf-super-search clearfix">
+            <div class="container">
+                <div class="search-options">
+                    <ul class="menu">
+                        <li class="parent aux-languages">
+         
+         
+                             {% get_current_language as LANGUAGE_CODE %}
+                             {% get_available_languages as LANGUAGES %}
+                             {% get_language_info_list for LANGUAGES as languages %}
+                             
+                             
+                                 
+                                     {% for language in languages %}
+                                     {% if language.code == LANGUAGE_CODE %}
+                                     <li>
+                                         <div class="current-language"><span class="language name">{{ language.name_local }} ({{ language.code }})</span></div>
+                                     </li>
+                                     <br>
+                                     {%endif%}
+                                     {% if language.code != LANGUAGE_CODE %}
+                                         
+                                         <li><a value="{{ language.code }}" href="http://127.0.0.1:8000/{{ language.code }}/"><span class="language name"> {{ language.name_local }} ({{ language.code }})</span></a></li><br>
+                                     {%endif%}
+                                     {% endfor %}
+                                 
+                             
+                        </li>
+                        <br>
+                        <br>
+                        <br>
+         
+         
+         
+         
+                        {% if request.user.is_authenticated %}
+                        <li> 
+                            <a href="{%url 'profile_detail' request.user.id%}">{{request.user}}</a>
+                        <li>
+                            
+                        <li>
+                            <a href="{%url 'logout'%}">{% trans "Logout" %}</a>
+                        </li>
+                        {%endif%}
+                        {% if request.user.is_authenticated == False %}
+                        <li> 
+                            <a href="{%url 'login'%}">{% trans "Login" %}</a>
+                        <li>
+                            
+                        <li>
+                            <a href="{%url 'reg'%}">{% trans "Register" %}</a>
+                        </li>
+                        {%endif%}
+                     </ul>
+
+                   </div></div></div>
+
 {%block tag%}
 
     <div class="header-wrap">
 
     <div id="top-bar" class="tb-1">
-    <div class="tb-ss hidden-desktop"><div class="tb-text"><a class="swift-search-link" href="#"><i class="fas fa-search-plus"></i><span>Personal Shopper</span></a></div></div>
+    <div class="tb-ss hidden-desktop"><div class="tb-text"><a class="swift-search-link" href="#"><i class="fas fa-search-plus"></i><span>{% trans "Account and language" %}</span></a></div></div>
     <div class="container">
     <div class="row">
     <div class="tb-left span6 clearfix">
@@ -500,9 +558,63 @@
         </a>
         <a href="#" class="hidden-desktop show-main-nav"><i class="fas fa-align-justify"></i></a>
         
-        <a href="#" class="hidden-desktop mobile-search-link"><i class="fas fa-search"></i></a>
+        <a  class="hidden-desktop mobile-search-link"><i class="fas fa-search"></i></a>
+
+        
+
     </div>
     <div class="header-right span4"><nav class="std-menu header-menu">
+        <nav class="std-menu header-menu">
+            <ul class="menu">
+               <li class="parent aux-languages">
+
+
+                    {% get_current_language as LANGUAGE_CODE %}
+                    {% get_available_languages as LANGUAGES %}
+                    {% get_language_info_list for LANGUAGES as languages %}
+                    <a >Language</a>
+                    <ul id="header-languages" class="header-languages sub-menu">
+                        
+                            {% for language in languages %}
+                            {% if language.code == LANGUAGE_CODE %}
+                            <li>
+                                <div class="current-language"><span class="language name">{{ language.name_local }} ({{ language.code }})</span></div>
+                            </li>
+                            {%endif%}
+                            {% if language.code != LANGUAGE_CODE %}
+                                
+                                <li><a value="{{ language.code }}" href="http://127.0.0.1:8000/{{ language.code }}/"><span class="language name"> {{ language.name_local }} ({{ language.code }})</span></a></li>
+                            {%endif%}
+                            {% endfor %}
+                            
+                        
+                    </ul>
+                    <hr>
+               </li>
+
+
+
+
+               {% if request.user.is_authenticated %}
+               <li> 
+                   <a href="{%url 'profile_detail' request.user.id%}">{{request.user}}</a>
+               <li>
+                   
+               <li>
+                   <a href="{%url 'logout'%}">{% trans "Logout" %}</a>
+               </li>
+               {%endif%}
+               {% if request.user.is_authenticated == False %}
+               <li> 
+                   <a href="{%url 'login'%}">{% trans "Login" %}</a>
+               <li>
+                   
+               <li>
+                   <a href="{%url 'reg'%}">{% trans "Register" %}</a>
+               </li>
+               {%endif%}
+            </ul>
+         </nav>
     <ul class="menu">
     </ul>
     </nav>
@@ -510,18 +622,20 @@
     </div> 
     </div> 
     </header>
+    рмылор
     
-    <form method="get" class="mobile-search-form container" action="{%url 'all_product'%}" ><input type="text" placeholder="Search" name="s" autocomplete="off" /></form><div id="main-nav">
+    <form method="get" class="mobile-search-form container" action="{%url 'all_product'%}" ><input type="text" placeholder="Search" name="search" autocomplete="off" /></form><div id="main-nav">
     <div class="container">
     <div class="row">
     <div class="span9">
     <nav id="main-navigation" class="std-menu clearfix">
+        
     <div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li class="menu-item-9269 menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7606 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children  sf-std-menu        "><a href="{%url 'base'%}"><span class="menu-item-text">{% trans "Home" %}</span></a>
     </li>
 
     
     <li class="menu-item-10288 menu-item menu-item-type-post_type menu-item-object-page  sf-std-menu        "><a href="{%url 'all_product'%}"><span class="menu-item-text">{% trans "Products" %}</span></a></li>
-    <li class="menu-item-10288 menu-item menu-item-type-post_type menu-item-object-page  sf-std-menu        "><a href="{%url 'all_product_lg'%}"><span class="menu-item-text">{% trans "Legal services" %}</span></a></li>
+    <li class="menu-item-10288 menu-item menu-item-type-post_type menu-item-object-page  sf-std-menu        "><a href="{%url 'all_product_lg'%}"><span class="menu-item-text">{% trans "Services" %}</span></a></li>
     <li class="menu-item-10288 menu-item menu-item-type-post_type menu-item-object-page  sf-std-menu        "><a href="{%url 'all_product'%}"><span class="menu-item-text">{% trans "What&#8217;s New" %}</span></a></li>
     <li class="menu-item-10288 menu-item menu-item-type-post_type menu-item-object-page  sf-std-menu        "><a href="https://www.facebook.com/golovko.oxana.9"><span class="menu-item-text">{% trans "Сonnect with us" %}</span></a></li>
     {% if request.user.is_authenticated %}
@@ -542,25 +656,11 @@
         <a href="{%url 'reg'%}">{% trans "Register" %}</a>
     </li>
     {%endif%}
-    <li class="menu-item-10288 menu-item menu-item-type-post_type menu-item-object-page  sf-std-menu        "><a ><span class="menu-item-text"><form action="{% url 'set_language' %}" method="post">{% csrf_token %}
-        <input name="next" type="hidden" value="{{ redirect_to }}">
-        <select name="language">
-            {% get_current_language as LANGUAGE_CODE %}
-            {% get_available_languages as LANGUAGES %}
-            {% get_language_info_list for LANGUAGES as languages %}
-            {% for language in languages %}
-                <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %}
-                        selected{% endif %}>
-                    {{ language.name_local }} ({{ language.code }})
-                </option>
-            {% endfor %}
-        </select>
-        <input type="submit" value="Select">
-    </form></span></a></li>
+    </span></a></li>
     </ul></div></nav>
     </div>
     <div class="span3 header-right">
-       {%block lg%} {% trans "if you want search legal service you need go to" %} <a href="{%url 'all_product_lg'%}">{% trans "This" %} </a>({% trans "here you can search only regular products" %}){%endblock lg%}
+       
     <nav class="mini-menu">
     <ul class="menu">
     <li class="menu-search no-hover"><a href="#"><i class="fas fa-search"></i></a>
@@ -602,9 +702,24 @@
 
 
 
-    <div class="tp-caption Flexform_BigCentreWhite  " id="slide-7-layer-1" data-x="center" data-hoffset="0" data-y="center" data-voffset="-40" data-width="auto" data-height="auto" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:bottom;","speed":300,"to":"","delay":500,"ease":"easeOutExpo"},{"delay":"wait","speed":300,"to":"y:50px;opacity:0;","ease":"nothing"}]' data-textAlign="['','','','']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; white-space: nowrap; color: #ffffff;text-transform:left;">{% trans "The best legal services" %} <br>{% trans "on the internet" %}! </div>
+    <div class="tp-caption Flexform_BigCentreWhite  " id="slide-7-layer-1" data-x="center" data-hoffset="0" data-y="center" data-voffset="-40" data-width="auto" data-height="auto" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:bottom;","speed":300,"to":"","delay":500,"ease":"easeOutExpo"},{"delay":"wait","speed":300,"to":"y:50px;opacity:0;","ease":"nothing"}]' data-textAlign="['','','','']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; white-space: nowrap; color: #ffffff;text-transform:left;">{% trans "The best  services" %} <br>{% trans "on the internet" %}! </div>
 
    </li>
+
+   <li data-index="rs-2" data-transition="fade" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"  data-rotate="0" data-saveperformance="off" data-title="Version 3" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+
+    <img src="{% static '/images/flower.jpeg'%}" alt="" title="nh_rev_update_slider_bkg" width="1920" height="527" data-lazyload="{% static '/images/flower.jpeg'%}" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+
+
+    <div class="tp-caption Flexform_BigCentreWhite  " id="slide-7-layer-1" data-x="center" data-hoffset="0" data-y="center" data-voffset="-40" data-width="auto" data-height="auto" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:bottom;","speed":300,"to":"","delay":500,"ease":"easeOutExpo"},{"delay":"wait","speed":300,"to":"y:50px;opacity:0;","ease":"nothing"}]' data-textAlign="['','','','']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; white-space: nowrap; color: #ffffff;text-transform:left; font-size: 16px;font-weight: bolder;">
+        {% trans "A mind-bending  raffle   site for pickers to sell their products all over the world with the ability to know your buyer." %}
+         <br> {% trans "Companies registered on the sites may be able  to research information about their  products for free and without commissions." %}
+         <br> {% trans "Seasonal, and you can always get information  for buyers. The main metasite is the creation of " %}
+          <br> {% trans "such sales volumes with any investment of  goods of seasonal individuals with a minimum." %}
+           <br> {% trans "All the services on the site are meant to increase the turnover in trade and to connect people more with their method  of optimizing logistics processes. " %}
+           <br> {% trans "The metasite is simple and accessible.  Support us in creating new trade blues.!" %} </div>
+
+    </li>
 
     </ul>
     <script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss="";
@@ -715,7 +830,7 @@
     <section class="container"><div class="row">
     <div class="spb_posts_carousel_widget spb_content_element span12">
     <div class="spb_wrapper">
-    <h4 class="spb_heading"><span>{% trans "Latest legal services" %}</span></h4>
+    <h4 class="spb_heading"><span>{% trans "Latest  services" %}</span></h4>
         <div class="carousel-wrap">
 
             
@@ -785,22 +900,40 @@
     </div>
 {%endblock content%}
 {%block footer%}
-    <div class="span3">
-     </div>
-    <div class="span3">
-     </div>
-    </div>
-    </div>
-
+    <section id="footer" class>  
+        <div class="container">
+            <div id="footer-widgets" class="row clearfix">
+            <div class="span3">
+            <section id="text-3" class="widget widget_text clearfix"><div class="widget-heading clearfix"><h4><span>Welcome to Logis Cargo</span></h4></div> <div class="textwidget"><br>
+                {% trans "The best site to buy or sell any product or service" %}
+            </section> </div>
+            <div class="span3">
+            <section id="nav_menu-6" class="widget widget_nav_menu clearfix"><div class="widget-heading clearfix"><h4><span>About Logis Cargo</span></h4></div><div class="menu-footer-menu-1-container"><ul id="menu-footer-menu-1" class="menu"><li id="menu-item-9910" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9910 default"><a >{% trans "Our Story" %}</a></li>
+            <li id="menu-item-9913" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9913 "><a>{% trans "We do not sell alcohol" %}</a></li>
+            <li id="menu-item-9912" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9912 default"><a>{% trans "We do not sell cigarettes" %}</a></li>
+            <li id="menu-item-9911" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9911 default"><a href="https://www.facebook.com/profile.php?id=100085346396916">{% trans "Manager" %}</a></li>
+            <li id="menu-item-9914" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9914 default"><a href="https://github.com/vovast123">{% trans "Site create by " %}</a></li>
+            </ul></div></section> </div>
+            <div class="span3">
+            <section id="nav_menu-7" class="widget widget_nav_menu clearfix"><div class="widget-heading clearfix"><h4><span>Cargo Bonus</span></h4></div><div class="menu-footer-menu-2-container"><ul id="menu-footer-menu-2" class="menu"><li id="menu-item-9915" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9915 default">
+                <a href="https://www.cargobonus.com.ua/">Cargo Bonus</a></li>
+            <li id="menu-item-9916" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9916 "><a>cargobonusua@gmail.com</a></li>
+            <li id="menu-item-9919" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9919 "><a href="https://t.me/cargobonusbot">We are on telegram</a></li>
+            <li id="menu-item-9918" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9918 "><a href="https://www.facebook.com/profile.php?id=100085346396916">{% trans "Manager" %}</a></li>
+            <li id="menu-item-9917" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9917 "><a>Privacy</a></li>
+            </ul></div></section> </div>
+            <div class="span3">
+            <section id="text-4" class="widget widget_text clearfix"><div class="widget-heading clearfix"><h4><span>{% trans "Follow Us" %}</span></h4></div> <div class="textwidget"><ul class="social-icons standard light">
+            <li class="dribbble"><a  target="_blank" rel="noopener">Dribbble</a></li>
+            <li class="facebook"><a href="https://www.facebook.com/profile.php?id=100085346396916" target="_blank" rel="noopener">Facebook</a></li>
+            <li class="twitter"><a  target="_blank" rel="noopener">Twitter</a></li>
+            <li class="vimeo"><a target="_blank" rel="noopener">Vimeo</a></li>
+            <li class="youtube"><a  target="_blank" rel="noopener">YouTube</a></li>
+            <li class="tumblr"><a  target="_blank" rel="noopener">Tumblr</a></li>
+            </ul>
+            <hr></div>
     </section>
 
-    <footer id="copyright" class="">
-    <div class="container">
-
-    <div class="beam-me-up three columns offset-by-one"><a href="#"><i class="fas fa-arrow-up"></i></a></div>
-    </div>
-
-    </footer>
 
     </div>
 

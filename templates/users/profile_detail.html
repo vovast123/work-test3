@@ -143,7 +143,7 @@ class="product-template-default single single-product postid-9356 page-shadow he
                                                    <h2 class="woocommerce-Reviews-title">
                                                       {% trans "Verification" %}
                                                    </h2>                            
-                                                   <p class="woocommerce-noreviews">{% trans "To gain access to the creation of products or legal services, you must pass the code verification." %}</p>
+                                                   <p class="woocommerce-noreviews">{% trans "To gain access to the creation of products or  services, you must pass the code verification." %}</p>
                                                    <span id="reply-title" class="comment-reply-title">&ldquo;{% trans "Before starting the check, check if you have entered the code " %}&ldquo; <small><a rel="nofollow" id="cancel-comment-reply-link" href="/product/adidas-boston-super-og/#respond" style="display:none;">{% trans "Cancel reply" %}</a></small></span>
 
 
@@ -200,7 +200,7 @@ class="product-template-default single single-product postid-9356 page-shadow he
                                     <p>
                                        <span class="posted_in"><a href="{%url 'all_product_user' user.id  %}"><button type="button" class="btn btn-success">{% trans "All product(this user)" %}</button></a></span>
                                        <hr>
-                                       <span class="posted_in"><a href="{%url 'all_product_user_lg' user.id  %}"><button type="button" class="btn btn-secondary">{% trans "All legal service(this user)" %}</button></a></span>
+                                       <span class="posted_in"><a href="{%url 'all_product_user_lg' user.id  %}"><button type="button" class="btn btn-secondary">{% trans "All  service(this user)" %}</button></a></span>
                                     </p>
                                     <hr>
                                     {%if request.user == user%}
@@ -209,7 +209,7 @@ class="product-template-default single single-product postid-9356 page-shadow he
                                           <a href="{%url 'create_product' user.id  %}"><button type="button" class="btn btn-success">{% trans "Create product" %}</button></a>
                                           <br>
                                           <br>
-                                          <a href="{%url 'create_product_lg' user.id  %}"><button type="button" class="btn btn-secondary">{% trans "Create legal services" %}</button></a>
+                                          <a href="{%url 'create_product_lg' user.id  %}"><button type="button" class="btn btn-secondary">{% trans "Create  services" %}</button></a>
                                        </p>
                                        {%endif%}
                                     <div>

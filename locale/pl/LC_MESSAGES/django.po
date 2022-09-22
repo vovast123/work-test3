@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-11 17:25+0200\n"
+"POT-Creation-Date: 2022-09-22 02:10+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,25 +61,24 @@ msgid "Owner"
 msgstr "Właściciel"
 
 #: templates/shop/all_product_lg.html:4
-#: templates/users/all_product_user_lg.html:4
-msgid "all legal services"
-msgstr "wszelkie usługi prawne"
+msgid "all services"
+msgstr "Usługi"
 
 #: templates/shop/all_product_lg.html:9
 msgid "if you want search product you need go to"
 msgstr "jeśli chcesz wyszukać produkt, którego potrzebujesz, przejdź do"
 
-#: templates/shop/all_product_lg.html:9 templates/shop/index.html:548
+#: templates/shop/all_product_lg.html:9
 msgid "This"
 msgstr "Ten"
 
 #: templates/shop/all_product_lg.html:9
-msgid "here you can search only legal services"
-msgstr "tutaj możesz przeszukiwać tylko usługi prawne"
+msgid "here you can search only services"
+msgstr "tutaj możesz przeszukiwać tylko usługi"
 
 #: templates/shop/category_lg.html:4
-msgid "category legal service"
-msgstr "kategoria obsługa prawna"
+msgid "category  service"
+msgstr "kategoria osługa "
 
 #: templates/shop/create_product.html:4 templates/shop/create_product.html:28
 msgid "Created product"
@@ -96,15 +95,18 @@ msgid "Create"
 msgstr "Tworzyć"
 
 #: templates/shop/create_product.html:66
-msgid "Want you  create legal service?"
-msgstr "Chcesz stworzyć obsługę prawną?"
+msgid "Want you  create service?"
+msgstr "Chcesz stworzyć usługi ?"
 
 #: templates/shop/create_product_lg.html:4
+#: templates/shop/create_product_lg.html:43
+msgid "Create  service"
+msgstr "Utwórz usługa "
+
 #: templates/shop/create_product_lg.html:25
 #: templates/shop/create_product_lg.html:28
-#: templates/shop/create_product_lg.html:43
-msgid "Create legal service"
-msgstr "Utwórz obsługę prawną"
+msgid "Create service"
+msgstr "Utwórz usługa"
 
 #: templates/shop/create_product_lg.html:66
 msgid "Want you create product?"
@@ -124,90 +126,161 @@ msgstr "Edytować"
 #: templates/shop/edit_product_lg.html:4 templates/shop/edit_product_lg.html:25
 #: templates/shop/edit_product_lg.html:28
 #: templates/shop/edit_product_lg.html:43
-msgid "Edit legal service"
-msgstr "Edytuj usługę prawną"
+msgid "Edit  service"
+msgstr "Edytuj usługa"
 
 #: templates/shop/index.html:17
 msgid " Welcome to the"
 msgstr " Welcome to the"
 
-#: templates/shop/index.html:519 templates/shop/index.html:621
-msgid "Home"
-msgstr "Dom"
-
-#: templates/shop/index.html:523
-msgid "Products"
-msgstr "Produkty"
-
-#: templates/shop/index.html:524
-msgid "Legal services"
-msgstr "Usługi prawne"
-
-#: templates/shop/index.html:525
-msgid "What&#8217;s New"
-msgstr "Co nowego"
-
-#: templates/shop/index.html:526
-msgid "Сonnect with us"
-msgstr "Połącz się z nami"
-
-#: templates/shop/index.html:533
+#: templates/shop/index.html:510 templates/shop/index.html:602
+#: templates/shop/index.html:645
 msgid "Logout"
 msgstr "Wyloguj"
 
-#: templates/shop/index.html:538 templates/users/login.html:4
+#: templates/shop/index.html:515 templates/shop/index.html:607
+#: templates/shop/index.html:650 templates/users/login.html:4
 #: templates/users/login.html:30 templates/users/login.html:42
 #: templates/users/login.html:53 templates/users/register.html:60
 msgid "Login"
 msgstr "Zaloguj sie"
 
-#: templates/shop/index.html:542
+#: templates/shop/index.html:519 templates/shop/index.html:611
+#: templates/shop/index.html:654
 msgid "Register"
 msgstr "Zarejestrować"
 
-#: templates/shop/index.html:548
-msgid "if you want search legal service you need go to"
-msgstr "jeśli chcesz wyszukać usługi prawne, przejdź do"
+#: templates/shop/index.html:531
+msgid "Account and language"
+msgstr "Konto i język"
 
-#: templates/shop/index.html:548
-msgid "here you can search only regular products"
-msgstr "tutaj możesz wyszukiwać tylko zwykłe produkty"
+#: templates/shop/index.html:631 templates/shop/index.html:749
+msgid "Home"
+msgstr "Dom"
 
-#: templates/shop/index.html:580
+#: templates/shop/index.html:635
+msgid "Products"
+msgstr "Produkty"
+
+#: templates/shop/index.html:636
+msgid "Services"
+msgstr "Usługi"
+
+#: templates/shop/index.html:637
+msgid "What&#8217;s New"
+msgstr "Co nowego"
+
+#: templates/shop/index.html:638
+msgid "Сonnect with us"
+msgstr "Połącz się z nami"
+
+#: templates/shop/index.html:693
 msgid "The best wholesale products "
 msgstr "Najlepsze produkty hurtowe"
 
-#: templates/shop/index.html:580
+#: templates/shop/index.html:693
 msgid "and prices"
 msgstr "i ceny"
 
-#: templates/shop/index.html:590
-msgid "The best legal services"
-msgstr "Najlepsze usługi prawne"
+#: templates/shop/index.html:703
+msgid "The best  services"
+msgstr "Najlepsze usługi"
 
-#: templates/shop/index.html:590
+#: templates/shop/index.html:703
 msgid "on the internet"
 msgstr "w Internecie"
 
-#: templates/shop/index.html:639
+#: templates/shop/index.html:713
+msgid ""
+"A mind-bending  raffle   site for pickers to sell their products all over "
+"the world with the ability to know your buyer."
+msgstr ""
+"Niesamowita strona z loterią dla zbieraczy, którzy mogą sprzedawać swoje produkty na całym świecie"
+"świat z możliwością poznania kupującego."
+#: templates/shop/index.html:714
+msgid ""
+"Companies registered on the sites may be able  to research information about "
+"their  products for free and without commissions."
+msgstr ""
+"Firmy zarejestrowane w witrynach mogą być w stanie badać informacje na temat"
+"swoje produkty za darmo i bez prowizji."
+#: templates/shop/index.html:715
+msgid ""
+"Seasonal, and you can always get information  for buyers. The main metasite "
+"is the creation of "
+msgstr ""
+"Sezonowo i zawsze możesz uzyskać informacje dla kupujących. Główny metasite"
+"jest stworzeniem"
+#: templates/shop/index.html:716
+msgid ""
+"such sales volumes with any investment of  goods of seasonal individuals "
+"with a minimum."
+msgstr ""
+"takie wielkości sprzedaży przy każdej inwestycji towarów sezonowych osób fizycznych"
+"z minimum."
+#: templates/shop/index.html:717
+msgid ""
+"All the services on the site are meant to increase the turnover in trade and "
+"to connect people more with their method  of optimizing logistics processes. "
+msgstr ""
+"Wszystkie usługi na stronie mają na celu zwiększenie obrotów w handlu i"
+"aby bardziej łączyć ludzi dzięki ich metodzie optymalizacji procesów logistycznych."
+#: templates/shop/index.html:718
+msgid ""
+"The metasite is simple and accessible.  Support us in creating new trade "
+"blues.!"
+msgstr ""
+"Metasite jest prosta i dostępna. Wesprzyj nas w tworzeniu nowego handlu"
+"blues.!"
+#: templates/shop/index.html:767
 msgid "Latest Products"
 msgstr "Najnowsze produkty"
 
-#: templates/shop/index.html:657
+#: templates/shop/index.html:785
 msgid "owner"
 msgstr "właściciel"
 
-#: templates/shop/index.html:686
+#: templates/shop/index.html:814
 msgid "See all products"
 msgstr "Zobacz wszystkie produkty"
 
-#: templates/shop/index.html:703
-msgid "Latest legal services"
-msgstr "Najnowsze usługi prawne"
+#: templates/shop/index.html:831
+msgid "Latest  services"
+msgstr "Najnowsze usługi"
 
-#: templates/shop/index.html:747
+#: templates/shop/index.html:875
+#, fuzzy
+#| msgid "See all  services"
 msgid "See all legal services"
-msgstr "Zobacz wszystkie usługi prawne"
+msgstr "Zobacz wszystkie usługi"
+
+#: templates/shop/index.html:906
+msgid "The best site to buy or sell any product or service"
+msgstr "Najlepsza strona do kupna lub sprzedaży dowolnego produktu lub usługi"
+
+#: templates/shop/index.html:909
+msgid "Our Story"
+msgstr "Nasza historia"
+
+#: templates/shop/index.html:910
+msgid "We do not sell alcohol"
+msgstr "Nie sprzedajemy alkoholu"
+
+#: templates/shop/index.html:911
+msgid "We do not sell cigarettes"
+msgstr "Nie sprzedajemy papierosów"
+
+#: templates/shop/index.html:912 templates/shop/index.html:920
+msgid "Manager"
+msgstr "Menedżer"
+
+#: templates/shop/index.html:913
+msgid "Site create by "
+msgstr "Witryna utworzona przez"
+
+#: templates/shop/index.html:924
+msgid "Follow Us"
+msgstr "Podążaj za nami"
 
 #: templates/shop/product_detail.html:73
 #: templates/shop/product_detail_lg.html:73
@@ -364,6 +437,10 @@ msgstr "przyjęty"
 msgid " Enter your feedback modal content here."
 msgstr " Wpisz tutaj treść modalną opinii."
 
+#: templates/users/all_product_user_lg.html:4
+msgid "all  services"
+msgstr "wszelkie usługi "
+
 #: templates/users/create_message.html:4 templates/users/create_message.html:25
 #: templates/users/create_message.html:28
 #: templates/users/create_message.html:63
@@ -411,8 +488,8 @@ msgid ""
 "Be careful because if you change your password and forget it, you will not "
 "be able to log into your account"
 msgstr ""
-"Bądź ostrożny, ponieważ jeśli zmienisz hasło i je zapomnisz, nie będziesz"
-"móc zalogować się na swoje konto"
+"Bądź ostrożny, ponieważ jeśli zmienisz hasło i je zapomnisz, nie będzieszmóc "
+"zalogować się na swoje konto"
 
 #: templates/users/profile_detail.html:136
 #: templates/users/profile_detail.html:144
@@ -421,10 +498,10 @@ msgstr "Weryfikacja"
 
 #: templates/users/profile_detail.html:146
 msgid ""
-"To gain access to the creation of products or legal services, you must pass "
-"the code verification."
+"To gain access to the creation of products or  services, you must pass the "
+"code verification."
 msgstr ""
-"Aby uzyskać dostęp do tworzenia produktów lub usług prawnych, należy zdać "
+"Aby uzyskać dostęp do tworzenia produktów lub usługi, należy zdać "
 "weryfikacja kodu."
 
 #: templates/users/profile_detail.html:147
@@ -464,12 +541,12 @@ msgid "All product(this user)"
 msgstr "Wszystkie produkty (ten użytkownik)"
 
 #: templates/users/profile_detail.html:203
-msgid "All legal service(this user)"
-msgstr "Cała obsługa prawna (ten użytkownik)"
+msgid "All  service(this user)"
+msgstr "Cała usługa (ten użytkownik)"
 
 #: templates/users/profile_detail.html:212
-msgid "Create legal services"
-msgstr "Tworzenie usług prawnych"
+msgid "Create  services"
+msgstr "Tworzenie usługi"
 
 #: templates/users/profile_detail.html:216
 msgid "If you need to send an email to the admin and report a problem"
@@ -484,9 +561,8 @@ msgid ""
 "Enter your contact details or email form shortcode here. (Text/HTML/"
 "Shortcodes accepted)."
 msgstr ""
-"Wprowadź tutaj swoje dane kontaktowe lub skrócony kod formularza e-mail. (Tekst/HTML/"
-"Skróty są akceptowane)."
-
+"Wprowadź tutaj swoje dane kontaktowe lub skrócony kod formularza e-mail. "
+"(Tekst/HTML/Skróty są akceptowane)."
 
 #: templates/users/register.html:4
 msgid "Registered"
@@ -499,3 +575,32 @@ msgstr "Zarejestrowani Klienci"
 #: templates/users/register.html:63
 msgid "You already have an account?"
 msgstr "Posiadasz już konto?"
+
+#~ msgid "if you want search  service you need go to"
+#~ msgstr "jeśli chcesz wyszukać usługa, przejdź do"
+
+#~ msgid "here you can search only regular products"
+#~ msgstr "tutaj możesz wyszukiwać tylko zwykłe produkty"
+
+#~ msgid ""
+#~ "A mind-bending raffle site for pickers to sell their products all over "
+#~ "the world with the ability to know your buyer. Companies registered on "
+#~ "the sites may be able to research information about their products for "
+#~ "free and without commissions. Seasonal, and you can always get "
+#~ "information for buyers. The main metasite is the creation of such sales "
+#~ "volumes with any investment of goods of seasonal individuals with a "
+#~ "minimum. All the services on the site are meant to increase the turnover "
+#~ "in trade and to connect people more with their method of optimizing "
+#~ "logistics processes. The metasite is simple and accessible. Support us in "
+#~ "creating new trade blues."
+#~ msgstr ""
+#~ "Oszałamiająca strona z loterią, w której zbieracze mogą sprzedawać swoje "
+#~ "produkty w całym świat z możliwością poznania swojego nabywcy. Firmy "
+#~ "zarejestrowane w serwisachmoże być w stanie bezpłatnie wyszukiwać "
+#~ "informacje o swoich produktach ibez prowizji. Sezonowo i zawsze można "
+#~ "uzyskać informacje o kupujący. Główną metawitryną jest tworzenie takich "
+#~ "wielkości sprzedaży z dowolnymiinwestycja w dobra sezonowe osób "
+#~ "fizycznych z minimum. Wszystkie usługiw serwisie mają na celu zwiększenie "
+#~ "obrotów w handlu i łączenieLudzie bardziej ze swoją metodą optymalizacji "
+#~ "procesów logistycznych. metasite jest prosty i dostępny. Wesprzyj nas w "
+#~ "tworzeniu nowego trade bluesa."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-11 17:21+0200\n"
+"POT-Creation-Date: 2022-09-22 01:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,29 +62,26 @@ msgid "Owner"
 msgstr "Власник"
 
 #: templates/shop/all_product_lg.html:4
-#: templates/users/all_product_user_lg.html:4
-msgid "all legal services"
-msgstr "всі юридичні послуги"
+msgid "all services"
+msgstr "Всi послуги"
 
 #: templates/shop/all_product_lg.html:9
 msgid "if you want search product you need go to"
 msgstr "якщо ви хочете знайти продукт, який вам потрібно перейти"
 
-#: templates/shop/all_product_lg.html:9 templates/shop/index.html:548
+#: templates/shop/all_product_lg.html:9
 msgid "This"
 msgstr "Сюди"
 
 #: templates/shop/all_product_lg.html:9
-msgid "here you can search only legal services"
-msgstr "тут можна шукати тільки юридичні послуги"
+msgid "here you can search only services"
+msgstr "тут можна шукати тільки послуги"
 
 #: templates/shop/category_lg.html:4
-msgid "category legal service"
-msgstr "категорія юридична служба"
+msgid "category  service"
+msgstr "категоріi послуг"
 
 #: templates/shop/create_product.html:4 templates/shop/create_product.html:28
-#, fuzzy
-#| msgid "Create product"
 msgid "Created product"
 msgstr "Створити продукт"
 
@@ -99,21 +96,20 @@ msgid "Create"
 msgstr "Створити"
 
 #: templates/shop/create_product.html:66
-#, fuzzy
-#| msgid "Wond you  create legal service?"
-msgid "Want you  create legal service?"
-msgstr "Хочете створити юридичну службу?"
+msgid "Want you  create service?"
+msgstr "Хочете створити послугу?"
 
 #: templates/shop/create_product_lg.html:4
+#: templates/shop/create_product_lg.html:43
+msgid "Create  service"
+msgstr "Створити послугу"
+
 #: templates/shop/create_product_lg.html:25
 #: templates/shop/create_product_lg.html:28
-#: templates/shop/create_product_lg.html:43
-msgid "Create legal service"
-msgstr "Створити юридичну службу"
+msgid "Create service"
+msgstr "Створити послугу"
 
 #: templates/shop/create_product_lg.html:66
-#, fuzzy
-#| msgid "Wond you create product?"
 msgid "Want you create product?"
 msgstr "Хочете створити продукт?"
 
@@ -131,90 +127,167 @@ msgstr "Редагувати"
 #: templates/shop/edit_product_lg.html:4 templates/shop/edit_product_lg.html:25
 #: templates/shop/edit_product_lg.html:28
 #: templates/shop/edit_product_lg.html:43
-msgid "Edit legal service"
-msgstr "Правка юридичної служби"
+msgid "Edit  service"
+msgstr "Правка послуги"
 
 #: templates/shop/index.html:17
 msgid " Welcome to the"
 msgstr "Ласкаво просимо до"
 
-#: templates/shop/index.html:519 templates/shop/index.html:621
-msgid "Home"
-msgstr "Головна"
-
-#: templates/shop/index.html:523
-msgid "Products"
-msgstr "Продукти"
-
-#: templates/shop/index.html:524
-msgid "Legal services"
-msgstr "Юридичні послуги"
-
-#: templates/shop/index.html:525
-msgid "What&#8217;s New"
-msgstr "Що нового"
-
-#: templates/shop/index.html:526
-msgid "Сonnect with us"
-msgstr "Зв'яжіться з нами"
-
-#: templates/shop/index.html:533
+#: templates/shop/index.html:510 templates/shop/index.html:602
+#: templates/shop/index.html:645
 msgid "Logout"
 msgstr "Вийти"
 
-#: templates/shop/index.html:538 templates/users/login.html:4
+#: templates/shop/index.html:515 templates/shop/index.html:607
+#: templates/shop/index.html:650 templates/users/login.html:4
 #: templates/users/login.html:30 templates/users/login.html:42
 #: templates/users/login.html:53 templates/users/register.html:60
 msgid "Login"
 msgstr "Логін"
 
-#: templates/shop/index.html:542
+#: templates/shop/index.html:519 templates/shop/index.html:611
+#: templates/shop/index.html:654
 msgid "Register"
 msgstr "Зареєструватися"
 
-#: templates/shop/index.html:548
-msgid "if you want search legal service you need go to"
-msgstr "якщо вам потрібна пошукова юридична служба, вам потрібно звернутися"
+#: templates/shop/index.html:531
+msgid "Account and language"
+msgstr "Обліковий запис і мова"
 
-#: templates/shop/index.html:548
-msgid "here you can search only regular products"
-msgstr "тут ви можете шукати лише звичайні товари"
+#: templates/shop/index.html:631 templates/shop/index.html:749
+msgid "Home"
+msgstr "Головна"
 
-#: templates/shop/index.html:580
+#: templates/shop/index.html:635
+msgid "Products"
+msgstr "Продукти"
+
+#: templates/shop/index.html:636
+msgid "Services"
+msgstr "Послуги"
+
+#: templates/shop/index.html:637
+msgid "What&#8217;s New"
+msgstr "Що нового"
+
+#: templates/shop/index.html:638
+msgid "Сonnect with us"
+msgstr "Зв'яжіться з нами"
+
+#: templates/shop/index.html:693
 msgid "The best wholesale products "
 msgstr "Кращі оптові товари"
 
-#: templates/shop/index.html:580
+#: templates/shop/index.html:693
 msgid "and prices"
 msgstr "і ціни"
 
-#: templates/shop/index.html:590
-msgid "The best legal services"
-msgstr "Найкращі юридичні послуги"
+#: templates/shop/index.html:703
+msgid "The best  services"
+msgstr "Найкращі послуги"
 
-#: templates/shop/index.html:590
+#: templates/shop/index.html:703
 msgid "on the internet"
 msgstr "в інтернеті"
 
-#: templates/shop/index.html:639
+#: templates/shop/index.html:713
+msgid ""
+"A mind-bending  raffle   site for pickers to sell their products all over "
+"the world with the ability to know your buyer."
+msgstr ""
+"Сайт розроблений з метою  створення умов для виробників  продавати "
+"свою продукцію по всьому світу з можливістю знайти свого покупця."
+
+#: templates/shop/index.html:714
+msgid ""
+"Companies registered on the sites may be able  to research information about "
+"their  products for free and without commissions."
+msgstr ""
+"Зареєстровані на сайті компанії мають можливість розміщувати "
+"інформацію про свої товари безкоштовно та без комісій. "
+
+#: templates/shop/index.html:715
+msgid ""
+"Seasonal, and you can always get information  for buyers. The main metasite "
+"is the creation of "
+msgstr ""
+"Сезонно та у будь який час коригувати та доповнювати інфо для покупців.Основна мета сайту "
+"створення таких умов "
+
+#: templates/shop/index.html:716
+msgid ""
+"such sales volumes with any investment of  goods of seasonal individuals "
+"with a minimum."
+msgstr ""
+"продажів при яких втрати товарів особливо сезонних  "
+"були б мінімальними."
+
+#: templates/shop/index.html:717
+msgid ""
+"All the services on the site are meant to increase the turnover in trade and "
+"to connect people more with their method  of optimizing logistics processes. "
+msgstr ""
+"Всі послуги на сайті носять за мету поліпшувати товарооборот в торгівлі та "
+" максимально об'єднувати людей у своїй меті оптимізації процесів логістики."
+
+#: templates/shop/index.html:718
+msgid ""
+"The metasite is simple and accessible.  Support us in creating new trade "
+"blues.!"
+msgstr ""
+"Мета сайту бути простим та доступним. Підтримайте нас в бажанні "
+"створити нові торговельні відносини."
+
+#: templates/shop/index.html:767
 msgid "Latest Products"
 msgstr "Останні продукти"
 
-#: templates/shop/index.html:657
+#: templates/shop/index.html:785
 msgid "owner"
 msgstr "власник"
 
-#: templates/shop/index.html:686
+#: templates/shop/index.html:814
 msgid "See all products"
 msgstr "Переглянути всі продукти"
 
-#: templates/shop/index.html:703
-msgid "Latest legal services"
-msgstr "Новітній юридичний сервіс"
+#: templates/shop/index.html:831
+msgid "Latest  services"
+msgstr "Новітні послуги "
 
-#: templates/shop/index.html:747
+#: templates/shop/index.html:875
 msgid "See all legal services"
-msgstr "Переглянути всі юридичні послуги"
+msgstr "Переглянути всі  послуги"
+
+#: templates/shop/index.html:906
+#, fuzzy
+#| msgid "the higher the rating of the product or servic."
+msgid "The best site to buy or sell any product or service"
+msgstr "тим вищий рейтинг товару чи послуги."
+
+#: templates/shop/index.html:909
+msgid "Our Story"
+msgstr "Наша історія"
+
+#: templates/shop/index.html:910
+msgid "We do not sell alcohol"
+msgstr "Ми не продаємо алкоголь"
+
+#: templates/shop/index.html:911
+msgid "We do not sell cigarettes"
+msgstr "Ми не продаємо сигарети"
+
+#: templates/shop/index.html:912 templates/shop/index.html:920
+msgid "Manager"
+msgstr "Менеджер"
+
+#: templates/shop/index.html:913
+msgid "Site create by "
+msgstr "Створення сайту"
+
+#: templates/shop/index.html:924
+msgid "Follow Us"
+msgstr "Слідкуй за нами"
 
 #: templates/shop/product_detail.html:73
 #: templates/shop/product_detail_lg.html:73
@@ -343,8 +416,6 @@ msgid "Related Products"
 msgstr "Супутні товари"
 
 #: templates/shop/product_detail_lg.html:86
-#, fuzzy
-#| msgid "Additional description"
 msgid "Add description"
 msgstr "Додатковий опис"
 
@@ -373,6 +444,10 @@ msgstr "прийнято"
 msgid " Enter your feedback modal content here."
 msgstr "Введіть свій модальний вміст відгуку тут."
 
+#: templates/users/all_product_user_lg.html:4
+msgid "all  services"
+msgstr "всі послуги"
+
 #: templates/users/create_message.html:4 templates/users/create_message.html:25
 #: templates/users/create_message.html:28
 #: templates/users/create_message.html:63
@@ -380,8 +455,6 @@ msgid "Send message"
 msgstr "Відправити повідомлення"
 
 #: templates/users/create_message.html:43
-#, fuzzy
-#| msgid "Create message"
 msgid "Created message"
 msgstr "Створене повідомлення"
 
@@ -433,10 +506,10 @@ msgstr "Перевірка"
 
 #: templates/users/profile_detail.html:146
 msgid ""
-"To gain access to the creation of products or legal services, you must pass "
-"the code verification."
+"To gain access to the creation of products or  services, you must pass the "
+"code verification."
 msgstr ""
-"Щоб отримати доступ до створення продуктів або юридичних послуг, ви повинні "
+"Щоб отримати доступ до створення продуктів або послуг, ви повинні "
 "пройтиперевірка коду."
 
 #: templates/users/profile_detail.html:147
@@ -476,12 +549,12 @@ msgid "All product(this user)"
 msgstr "Усі продукти (цього користувача)"
 
 #: templates/users/profile_detail.html:203
-msgid "All legal service(this user)"
-msgstr "Усі юридичні послуги (цей користувач)"
+msgid "All  service(this user)"
+msgstr "Усі послуги (цей користувач)"
 
 #: templates/users/profile_detail.html:212
-msgid "Create legal services"
-msgstr "Створення юридичних послуг"
+msgid "Create  services"
+msgstr "Створення послуг"
 
 #: templates/users/profile_detail.html:216
 msgid "If you need to send an email to the admin and report a problem"
@@ -502,14 +575,10 @@ msgstr ""
 "HTML/Приймаються короткі коди)."
 
 #: templates/users/register.html:4
-#, fuzzy
-#| msgid "Register"
 msgid "Registered"
 msgstr "Зареєструватися"
 
 #: templates/users/register.html:41
-#, fuzzy
-#| msgid "Register customer"
 msgid "Registered customers"
 msgstr "Реєстрація клієнта"
 
@@ -517,17 +586,46 @@ msgstr "Реєстрація клієнта"
 msgid "You already have an account?"
 msgstr "Ви вже маєте акаунт?"
 
+#~ msgid "if you want search  service you need go to"
+#~ msgstr "якщо вам потрібен пошук послуг, вам потрібно звернутися"
+
+#~ msgid "here you can search only regular products"
+#~ msgstr "тут ви можете шукати лише звичайні товари"
+
+#~ msgid ""
+#~ "A mind-bending raffle site for pickers to sell their products all over "
+#~ "the world with the ability to know your buyer. Companies registered on "
+#~ "the sites may be able to research information about their products for "
+#~ "free and without commissions. Seasonal, and you can always get "
+#~ "information for buyers. The main metasite is the creation of such sales "
+#~ "volumes with any investment of goods of seasonal individuals with a "
+#~ "minimum. All the services on the site are meant to increase the turnover "
+#~ "in trade and to connect people more with their method of optimizing "
+#~ "logistics processes. The metasite is simple and accessible. Support us in "
+#~ "creating new trade blues."
+#~ msgstr ""
+#~ "Сайт розроблений з метою  створення умов для виробників  продавати свою "
+#~ "продукціюпо всьому світу з можливістю знайти свого покупця.Зареєстровані "
+#~ "на сайті компанії мають можливість розміщувати інформацію про своїтовари "
+#~ "безкоштовно та без комісій.Сезонно та у будь який час коригувати та "
+#~ "доповнювати інфо для покупців. Основна мета сайту створення таких умов "
+#~ "продажів при яких втрати товарівособливо сезонних (овочів, фруктів, "
+#~ "зернових культур и тп) були б мінімальними.Всі послуги на сайті носять за "
+#~ "мету поліпшувати товарооборот в торгівлі та максимально об'єднувати людей "
+#~ "у своїй меті оптимізації процесів логістики.Мета сайту бути простим та "
+#~ "доступним. Підтримайте нас в бажанні створити нові торговельні відносини."
+
 #~ msgid "All product"
 #~ msgstr "Весь товар"
 
-#~ msgid "All legal services"
-#~ msgstr "Всі юридичні послуги"
+#~ msgid "All  services"
+#~ msgstr "Всі послуги"
 
 #~ msgid "Product"
 #~ msgstr "Продукт"
 
-#~ msgid "Еhe best legal services and wholesale prices for goods"
-#~ msgstr "Найкращі юридичні послуги та оптові ціни на товари"
+#~ msgid "The best  services and wholesale prices for goods"
+#~ msgstr "Найкращі послуги та оптові ціни на товари"
 
 #~ msgid "Latest arrivals"
 #~ msgstr "Останні надходження"
@@ -563,8 +661,7 @@ msgstr "Ви вже маєте акаунт?"
 #~ msgstr "Детальна інформація"
 
 #~ msgid "Here you can see full information about the legal service."
-#~ msgstr ""
-#~ "Тут Ви можете ознайомитися з повною інформацією про юридичну послугу."
+#~ msgstr "Тут Ви можете ознайомитися з повною інформацією про послугу."
 
 #~ msgid "Name:"
 #~ msgstr "Ім'я:"
@@ -590,9 +687,6 @@ msgstr "Ви вже маєте акаунт?"
 #~ msgid "the higher the number,"
 #~ msgstr "чим більше число,"
 
-#~ msgid "the higher the rating of the product or servic."
-#~ msgstr "тим вищий рейтинг товару чи послуги."
-
 #~ msgid "Text:"
 #~ msgstr "Текст:"
 
@@ -605,5 +699,5 @@ msgstr "Ви вже маєте акаунт?"
 #~ msgid "Create a product"
 #~ msgstr "Створити продукт"
 
-#~ msgid "Create a legal service"
-#~ msgstr "Створити юридична служба"
+#~ msgid "Create a  service"
+#~ msgstr "Створити послугу"

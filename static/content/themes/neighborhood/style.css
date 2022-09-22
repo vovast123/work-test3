@@ -522,7 +522,7 @@ html[xmlns] .wooslider .slides { display: block; }
 .wooslider .carousel li { margin-right: 5px; }
 
 /* Direction Nav */
-.wooslider-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block; background: url(../images/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease;}
+.wooslider-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block;  position: absolute; top: 50%; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease;}
 .wooslider-direction-nav .wooslider-next {background-position: 100% 0; right: -36px; }
 .wooslider-direction-nav .wooslider-prev {left: -36px;}
 .wooslider:hover .wooslider-next {opacity: 0.8; right: 5px;}

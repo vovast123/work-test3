@@ -1,12 +1,12 @@
 {% extends 'shop/index.html' %}
 {% load i18n %}
 {% load static %}
-{%block title%}<title>Logis Cargo &#8211; {% trans "all legal services" %}</title>{%endblock title%}
+{%block title%}<title>Logis Cargo &#8211; {% trans "all services" %}</title>{%endblock title%}
 {%block class %}
 class="archive post-type-archive post-type-archive-product page-shadow header-shadow responsive-fluid  theme-neighborhood woocommerce woocommerce-page woocommerce-no-js"
 {%endblock class%}
 {%block search%} <form method="get" class="ajax-search-form"  action="{%url 'all_product_lg'%}">{%endblock search%}
-{%block lg%} {% trans "if you want search product you need go to" %} <a href="{%url 'all_product'%}">{% trans "This" %}</a>({% trans "here you can search only legal services" %}){%endblock lg%}
+{%block lg%} {% trans "if you want search product you need go to" %} <a href="{%url 'all_product'%}">{% trans "This" %}</a>({% trans "here you can search only services" %}){%endblock lg%}
 {%block content%}
          <div id="main-container" class="clearfix">
             <div class="page-heading  clearfix asset-bg alt-one">

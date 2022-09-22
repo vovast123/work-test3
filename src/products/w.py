@@ -2,6 +2,7 @@
 
 
 from tkinter import N
+from urllib.request import AbstractDigestAuthHandler
 
 
 class Model1():
@@ -18,3 +19,4 @@ names = Model1.name,Model2.name
 for n in names:
     print(n)
     
+
