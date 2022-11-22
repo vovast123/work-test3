@@ -3,7 +3,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-x&o4$j4$0rrwgs!i^=nld&binuj^ez2fm$_1w68)f_sgbq750y'
+SECRET_KEY = ''
 
 CSRF_COOKIE_SECURE = True
 
